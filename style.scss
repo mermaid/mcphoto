@@ -29,6 +29,10 @@ $source-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     bottom: 0;
     height: 100%;
 
+    .skidder-clickwrapper {
+        display: none;
+    }
+
     @media (min-width: 38em) {
         left: 20%; 
     }
