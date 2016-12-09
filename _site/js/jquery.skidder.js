@@ -140,7 +140,6 @@ if ( typeof Object.create != 'function') {
         self.scaleSlides();
       
       } else if (self.$images && self.$images.length) { // no scaling, slideshowheight = highest image height
-        debugger;
         var newMaxHeight = 0;
         self.$images.each(function() { // TODO: for no-image slideshows
           newMaxHeight = Math.max($(this).innerHeight(), newMaxHeight);
