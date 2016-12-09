@@ -176,7 +176,6 @@ if ( typeof Object.create != 'function') {
     },
 
     scaleSlides: function() {
-      debugger
       var self = $(this).data('skidder') || this;
       var maxWidth;
       var maxHeight;
