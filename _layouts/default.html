@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body class="preload">
+    <div class="top"></div>
+    <div class="profile">
+        <img src="/logo.png" />
+        <h3>Portfolio</h3>
+        <!--<p>{{ site.description }}</p>-->
+        <div class="gallery-nav">
+            <ul>
+                <li class="current">
+                    <a data-cat="wedding" class="filter active" href="#">Wedding</a>
+                </li>
+                <li class="">
+                    <a data-cat="portraits" class="filter" href="#">Portraits</a>
+                </li>
+                <li class="">
+                    <a data-cat="adventure" class="filter" href="#">Adventure</a>
+                </li>
+                <li class="">
+                    <a data-cat="underwater" class="filter" href="#">Underwater</a>
+                </li>
+                <li class="">
+                    <a data-cat="bucketlist" class="filter" href="#">The Bucketlist Tales</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="social">
+            <a href="#">contact</a> 
+            {% if site.facebook %}
+            <a type="button" href="http://facebook.com/{{ site.facebook }}">
+                <i class="fa fa-facebook"></i>
+            </a>
+            {% endif %} {% if site.instagram %}
+            <a type="button" href="https://www.instagram.com/{{ site.instagram }}">
+                <i class="fa fa-instagram"></i>
+            </a>
+            {% endif %}
+        </ul>
+    </div>
+    <!--<div class="gallery-wrapper">
+        <div class="gallery">
+            <div class="img-container" style="/*background: url() no-repeat center center; background-size: cover; text-align: center;*/"><img src="DakotaForest.jpg"></img></div>
+            <div class="img-container" style="/*background: url(BryceCrack.jpg) no-repeat center center; background-size: cover; text-align: center;*/"><img src="BryceCrack.jpg"></img></div>
+        </div>
+    </div>-->
+    <div class="slideshow-wrapper">
+        <div class="slideshow" style="">
+            <div class="slide"><img src="images/underwater/Beauty.jpg"></div>
+            <div class="slide"><img src="images/underwater/Freedom.jpg"></div>
+            <div class="slide"><img src="images/underwater/Happy.jpg"></div>
+            <div class="slide"><img src="images/underwater/Seastar.jpg"></div>
+            <div class="slide"><img src="images/underwater/Shell1.jpg"></div>
+            <div class="slide"><img src="images/underwater/Shell3.jpg"></div>
+            <div class="slide"><img src="images/underwater/Shell4.jpg"></div>
+            <div class="slide"><img src="images/underwater/Shell6.jpg"></div>
+        </div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script src="{{ site.baseurl }}/js/imagesloaded.pkgd.min.js"></script>
+<script src="{{ site.baseurl }}/js/jquery.skidder.js"></script>
+<script>
+
+$('.slideshow').each( function() {
+  var $slideshow = $(this);
+  $slideshow.imagesLoaded( function() {
+    // $slideshow.skidder({animationType: 'css', maxWidth: 0, maxHeight: 0, leftaligned: true, scaleSlides: true});
+    $slideshow.skidder({scaleSlides: false, maxWidth: 0, maxHeight: 0});
+  });
+});
+  
+</script>
+
+<script type="text/javascript">
+    window.onload = function(){
+        document.getElementsByTagName("BODY")[0].classList.remove("preload");
+    }
+</script>
+</html>
