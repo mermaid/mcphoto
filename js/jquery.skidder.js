@@ -140,6 +140,7 @@ if ( typeof Object.create != 'function') {
         self.scaleSlides();
       
       } else if (self.$images && self.$images.length) { // no scaling, slideshowheight = highest image height
+        
         var newMaxHeight = 0;
         self.$images.each(function() { // TODO: for no-image slideshows
           newMaxHeight = Math.max($(this).innerHeight(), newMaxHeight);
@@ -176,6 +177,7 @@ if ( typeof Object.create != 'function') {
     },
 
     scaleSlides: function() {
+
       var self = $(this).data('skidder') || this;
       var maxWidth;
       var maxHeight;
@@ -185,7 +187,7 @@ if ( typeof Object.create != 'function') {
         // set width to viewportwidth or maxWidth (if smaller)
         maxWidth = Math.min(self.$viewport.innerWidth(), self.options.maxWidth);
       } else {
-        maxWidth = 10000000;
+        maxWidth = self.$viewport.innerWidth();
       }
 
       // smallest scaling mode: slideshow height and slide height are defined by smallest image height (or maxHeight if smaller)
@@ -1000,7 +1002,7 @@ if ( typeof Object.create != 'function') {
         method.apply(this, arguments);
       });
     } else if( typeof(method) == 'object' || !method ) {
-      return this.each(function() {
+      return this.each(function() {
         var skidder = Object.create(Skidder);
         skidder.init(options, this);
       });

@@ -13,41 +13,47 @@
 
 <body class="preload">
     <div class="top"></div>
-    <div class="profile">
-        <img src="logo.png" />
-        <h3>Portfolio</h3>
-        <!--<p>A minimalistic jekyll theme for humans</p>-->
-        <div class="gallery-nav">
-            <ul>
-                <li class="current">
-                    <a data-cat="wedding" class="filter active" href="#">Wedding</a>
-                </li>
-                <li class="">
-                    <a data-cat="portraits" class="filter" href="#">Portraits</a>
-                </li>
-                <li class="">
-                    <a data-cat="adventure" class="filter" href="#">Adventure</a>
-                </li>
-                <li class="">
-                    <a data-cat="underwater" class="filter" href="#">Underwater</a>
-                </li>
-                <li class="">
-                    <a data-cat="bucketlist" class="filter" href="#">The Bucketlist Tales</a>
-                </li>
+    <div class="profile mobile-hidden">
+        <img id="logo" src="logo.png" />
+        <button id="menu-button" class="c-hamburger c-hamburger--htx">
+        <span>toggle menu</span>
+        </button>
+        <p class="clear"></p>
+        <div id="nav" class="mobile-hidden">
+            <h3>Portfolio</h3>
+            <!--<p>A minimalistic jekyll theme for humans</p>-->
+            <div class="gallery-nav">
+                <ul>
+                    <li class="current">
+                        <a data-cat="wedding" class="filter active" href="#">Wedding</a>
+                    </li>
+                    <li class="">
+                        <a data-cat="portraits" class="filter" href="#">Portraits</a>
+                    </li>
+                    <li class="">
+                        <a data-cat="adventure" class="filter" href="#">Adventure</a>
+                    </li>
+                    <li class="">
+                        <a data-cat="underwater" class="filter" href="#">Underwater</a>
+                    </li>
+                    <li class="">
+                        <a data-cat="bucketlist" class="filter" href="#">The Bucketlist Tales</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="social">
+                <a href="#">contact</a> 
+                
+                <a type="button" href="http://facebook.com/m.c._photography_">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                 
+                <a type="button" href="https://www.instagram.com/m.c._photography_">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                
             </ul>
         </div>
-        <ul class="social">
-            <a href="#">contact</a> 
-            
-            <a type="button" href="http://facebook.com/m.c._photography_">
-                <i class="fa fa-facebook"></i>
-            </a>
-             
-            <a type="button" href="https://www.instagram.com/m.c._photography_">
-                <i class="fa fa-instagram"></i>
-            </a>
-            
-        </ul>
     </div>
     <!--<div class="gallery-wrapper">
         <div class="gallery">
@@ -69,7 +75,7 @@
     </div>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script src="/js/jquery.js"></script>
 <script src="/js/imagesloaded.pkgd.min.js"></script>
 <script src="/js/jquery.skidder.js"></script>
 <script>
@@ -77,10 +83,57 @@
 $('.slideshow').each( function() {
   var $slideshow = $(this);
   $slideshow.imagesLoaded( function() {
-    $slideshow.skidder({animationType: 'css', maxWidth: 0, maxHeight: 0, scaleSlides: true});
-    //$slideshow.skidder({scaleSlides: false, maxWidth: 0, maxHeight: 0});
+    // $slideshow.skidder({animationType: 'css', maxWidth: 0, maxHeight: 0, scaleSlides: true});
+    $slideshow.skidder({animationType: 'css', scaleSlides: false, maxWidth: 0, maxHeight: 0});
   });
 });
+
+(function() {
+
+  "use strict";
+
+  var toggles = document.querySelectorAll(".c-hamburger");
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      if (this.classList.contains("is-active") === true) {
+        $(this).removeClass("is-active");
+        $('#nav').addClass('mobile-hidden');
+        $('.profile').addClass('mobile-hidden');
+      } else {
+        $(this).addClass("is-active");
+        $('#nav').removeClass('mobile-hidden');
+        $('.profile').removeClass('mobile-hidden');
+      }
+    });
+  }
+
+
+  $(window).on('resize', function() {
+      $('.slideshow').skidder('resize');
+      centerSlides();
+  });
+
+  function centerSlides() {
+      var left = $('.skidder-wrapper').css('margin-left');
+      var imgWidth = $('.slide.active').width();
+      var slideshowWidth = $('.slideshow-wrapper').width();
+      var dif =  $('.slide.active').offset().left - $('.slideshow-wrapper').offset().left + imgWidth/2 - slideshowWidth/2;
+
+      console.log('left: ', left);
+      console.log('img: ', imgWidth);
+      console.log('slideshow Left: ', $('.slideshow-wrapper').offset().left);
+      console.log('dif: ', dif);
+
+      $('.skidder-wrapper').css('margin-left', parseInt(left.replace('px', '')) - dif + 'px');
+  }
+})();
   
 </script>
 

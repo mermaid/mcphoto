@@ -10,6 +10,15 @@ $source-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
  $darkGrey: #111;
  $lightGrey: #eee;
 
+ $button-width: 96px;                    // The width of the button area
+$button-height: 96px;                   // The height of the button area
+$bar-thickness: 8px;                    // The thickness of the button bars
+$button-pad: 18px;                      // The left/right padding between button area and bars.
+$button-bar-space: 12px;                // The spacing between button bars
+$button-transistion-duration: 0.2s;     // The transition duration
+$hamburgerColor: transparent;
+$hamburgerBarColor: rgb(0, 0, 128);
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -18,7 +27,50 @@ $source-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media (orientation:landscape) { /* ====== */
+ 
+}
 
+p.clear {
+    clear: both;
+}
+
+#logo {
+    z-index: 10;
+    position: relative;
+    max-width: 150px;
+    float: left;
+    pointer-events: initial;
+    
+    @media (min-width: 768px) {
+        max-width: 100%;
+    }
+}
+
+#nav {
+    // position: relative;
+    z-index: 10;
+    // background-color: $lightGrey;
+    height: 100%;
+    transition: opacity $button-transistion-duration ease-in-out;
+    &.mobile-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+    @media (min-width: 768px) {
+        &.mobile-hidden {
+            opacity: 1;
+        }
+    }
+}
+
+#menu-button {
+    position: relative;
+    z-index: 10;
+    float: right;
+    pointer-events: initial;
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
 
 .slideshow-wrapper {
@@ -29,26 +81,46 @@ $source-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     bottom: 0;
     height: 100%;
 
-    .skidder-clickwrapper {
-        display: none;
+    // .skidder-clickwrapper {
+    //     display: none;
+    // }
+
+    .skidder-viewport {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: inherit !important;
+        
+        .skidder-wrapper {
+            height: inherit !important;
+        }
+
+        .skidder-pager {
+            display: none;
+        }
     }
 
-    @media (min-width: 38em) {
+    @media (min-width: 768px) {
         left: 20%; 
     }
 }
 .slideshow {
-    height: 100% !important;
+    height: inherit !important;
 }
 .slide {
     display: inline-block;
     width: auto;
     height: 100%;
-    
-    
+    max-width: 90vw;
     transform: translate3d(0, 0, 0);
+    box-shadow: none !important;
 
-
+    @media (min-width : 768px) {
+        max-width: 75vw;; 
+    }
+    
 
     img {
         filter: blur(5px);
@@ -74,13 +146,28 @@ $source-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 .profile {
     border-right: 1px solid $lightGrey;
     padding: 2%;
+    height: 100%;
+    background-color: $lightGrey;
+    transition: background-color $button-transistion-duration ease-in-out;
+    position: relative;
+    z-index: 10;
+
+    &.mobile-hidden {
+        background-color: transparent;
+        pointer-events: none;
+
+        @media (min-width: 768px) {
+            pointer-events: initial;
+        }
+    }
+
     h3 {
         height: auto;
-        margin-right: 4vw;
-        margin-top: 10vw;
-        width: 50%;
-        float: right;
+
+        margin: 0;
         color: $darkGrey;
+        width: 100%;
+        text-align: center;
     }
     p {
         height: auto;
@@ -93,7 +180,7 @@ $source-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
         height: auto;
         width: 100%;
     }
-    @media (min-width: 38em) {
+    @media (min-width: 768px) {
         position: fixed;
         width: 20%;
         height: 100%;
@@ -133,6 +220,7 @@ $source-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   display: table;
   border-spacing: 8px;
+  
     li {
         float: none;
         display: table-row;
@@ -214,9 +302,10 @@ html,
 body {
     margin: 0;
     padding: 0;
-    @media (min-width: 38em) {
+    @media (min-width: 768px) {
         // overflow: hidden;
     }
+    height: 100%;
 }
 
 html {
@@ -224,7 +313,7 @@ html {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.6;
-    @media (min-width: 38em) {
+    @media (min-width: 768px) {
         font-size: 20px;
     }
 }
@@ -433,7 +522,7 @@ pre code {
     margin-left: -2vw;
     font-size: 1.5em;
     margin-right: 6vw;
-    @media (min-width: 38em) {
+    @media (min-width: 768px) {
         font-size: 2vw;
         margin-left: 0;
         margin-right: 1.4vw;
@@ -992,3 +1081,264 @@ tbody tr:nth-child(odd) th {
 
 
 /* Literal.Number.Integer.Long */
+
+$button-width: 96px;                    // The width of the button area
+$button-height: 96px;                   // The height of the button area
+$bar-thickness: 8px;                    // The thickness of the button bars
+$button-pad: 18px;                      // The left/right padding between button area and bars.
+$button-bar-space: 12px;                // The spacing between button bars
+$button-transistion-duration: 0.3s;     // The transition duration
+
+/**
+ * Toggle Switch Globals
+ *
+ * All switches should take on the class `c-hamburger` as well as their
+ * variant that will give them unique properties. This class is an overview
+ * class that acts as a reset for all versions of the icon.
+ */
+
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: $button-width;
+  height: $button-height;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background $button-transistion-duration;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: ($button-height / 2) - ($bar-thickness / 2);
+  left: $button-pad;
+  right: $button-pad;
+  height: $bar-thickness;
+  background: rgb(255,255,255);
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: $bar-thickness;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -$bar-thickness - $button-bar-space;
+}
+
+.c-hamburger span::after {
+  bottom: -$bar-thickness - $button-bar-space;
+}
+
+/**
+ * Style 1
+ *
+ * Rotating hamburger icon (rot), that simply rotates 90 degrees when activated.
+ * Nothing too fancy, simple transition.
+ */
+
+.c-hamburger--rot {
+  background-color: rgb(40,170,220);
+}
+
+.c-hamburger--rot span {
+  transition: transform $button-transistion-duration;
+}
+
+/* active state, i.e. menu open */
+
+.c-hamburger--rot.is-active {
+  background-color: darken(rgb(40,170,220), 20%);
+}
+
+.c-hamburger--rot.is-active span {
+  transform: rotate(90deg);
+}
+
+/**
+ * Style 2
+ * 
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+
+.c-hamburger--htx {
+  background-color: $hamburgerColor;
+}
+
+.c-hamburger--htx span {
+  background-color: $hamburgerBarColor;
+  transition: background $button-transistion-duration;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  background-color: $hamburgerBarColor;
+  transition-duration: $button-transistion-duration, $button-transistion-duration;
+  transition-delay: 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+
+.c-hamburger--htx.is-active {
+  background-color: darken($hamburgerColor, 20%);
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s;
+}
+
+/**
+ * Style 3
+ *
+ * Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing
+ * arrow. Usually indicates an off canvas menu sliding in from left that
+ * will be close on re-click of the icon.
+ */
+
+.c-hamburger--htla {
+  background-color: rgb(50,220,100);
+}
+
+.c-hamburger--htla span {
+  transition: transform $button-transistion-duration;
+}
+
+.c-hamburger--htla span::before,
+.c-hamburger--htla span::after {
+  
+}
+
+.c-hamburger--htla span::before {
+  transform-origin: top right;
+  transition: transform $button-transistion-duration, width $button-transistion-duration, top $button-transistion-duration;
+}
+
+.c-hamburger--htla span::after {
+  transform-origin: bottom right;
+  transition: transform $button-transistion-duration, width $button-transistion-duration, bottom $button-transistion-duration;
+}
+
+/* active state, i.e. menu open */
+
+.c-hamburger--htla.is-active {
+  background-color: darken(rgb(50,220,100), 20%);
+}
+
+.c-hamburger--htla.is-active span {
+  transform: rotate(180deg);
+}
+
+.c-hamburger--htla.is-active span::before,
+.c-hamburger--htla.is-active span::after {
+  width: 50%;
+}
+
+.c-hamburger--htla.is-active span::before {
+  top: 0;
+  transform: translateX($button-width/2 - $button-pad + $bar-thickness) translateY($bar-thickness/2) rotate(45deg);
+}
+
+.c-hamburger--htla.is-active span::after {
+  bottom: 0;
+  transform: translateX($button-width/2 - $button-pad + $bar-thickness) translateY(-$bar-thickness/2) rotate(-45deg);
+}
+
+/**
+ * Style 4
+ *
+ * Hamburger to right-arrow (htra). Hamburger menu transforms to a
+ * right-pointing arrow. Usually indicates an off canvas menu sliding in from 
+ * right that will be close on re-click of the icon.
+ */
+
+.c-hamburger--htra {
+  background-color: rgb(255,150,80);
+}
+
+.c-hamburger--htra span {
+  transition: transform $button-transistion-duration;
+}
+
+.c-hamburger--htra span::before,
+.c-hamburger--htra span::after {
+  
+}
+
+.c-hamburger--htra span::before {
+  transform-origin: top left;
+  transition: transform $button-transistion-duration, width $button-transistion-duration, top $button-transistion-duration;
+}
+
+.c-hamburger--htra span::after {
+  transform-origin: bottom left;
+  transition: transform $button-transistion-duration, width $button-transistion-duration, bottom $button-transistion-duration;
+}
+
+/* active state, i.e. menu open */
+
+.c-hamburger--htra.is-active {
+  background-color: darken(rgb(255,150,80), 20%);
+}
+
+.c-hamburger--htra.is-active span {
+  transform: rotate(180deg);
+}
+
+.c-hamburger--htra.is-active span::before,
+.c-hamburger--htra.is-active span::after {
+  width: 50%;
+}
+
+.c-hamburger--htra.is-active span::before {
+  top: 0;
+  transform: translateX(-$bar-thickness) translateY($bar-thickness/2) rotate(-45deg);
+}
+
+.c-hamburger--htra.is-active span::after {
+  bottom: 0;
+  transform: translateX(-$bar-thickness) translateY(-$bar-thickness/2) rotate(45deg);
+}
