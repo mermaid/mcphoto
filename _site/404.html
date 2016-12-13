@@ -39,8 +39,10 @@
                     </li>-->
                 </ul>
             </div>
-            <ul class="social">
-                <a href="#">contact</a> 
+
+            <div class="contact">
+                <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
+                <br>&nbsp;
                 
                 <a type="button" href="http://facebook.com/m.c._photography_">
                     <i class="fa fa-facebook"></i>
@@ -50,7 +52,7 @@
                     <i class="fa fa-instagram"></i>
                 </a>
                 
-            </ul>
+            </div>
         </div>
     </div>
     <!--<div class="gallery-wrapper">
@@ -59,14 +61,14 @@
             <div class="img-container" style="/*background: url(BryceCrack.jpg) no-repeat center center; background-size: cover; text-align: center;*/"><img src="BryceCrack.jpg"></img></div>
         </div>
     </div>-->
-    <div class="slideshow-wrapper adventure active">
+    <div id="adventure" class="slideshow-wrapper active">
         <div class="slideshow" style="">
             <div class="slide"><img src="images/adventure/DakotaForest.jpg"></div>
             <div class="slide"><img src="images/adventure/DakotaTrainDesaturated.jpg"></div>
             <div class="slide"><img src="images/adventure/StarStruck.jpg"></div>
         </div>
     </div>
-    <div class="slideshow-wrapper landscape">
+    <div id="landscape" class="slideshow-wrapper">
         <div class="slideshow" style="">
             <div class="slide"><img src="images/landscape/BryceCrack.jpg"></div>
             <div class="slide"><img src="images/landscape/BryceThorsHammer.jpg"></div>
@@ -82,7 +84,7 @@
         </div>
     </div>
 
-    <div class="slideshow-wrapper portrait">
+    <div id="portrait" class="slideshow-wrapper">
         <div class="slideshow" style="">
             <div class="slide"><img src="images/portrait/AllyTrain1.jpg"></div>
             <div class="slide"><img src="images/portrait/AllyTrain2.jpg"></div>
@@ -93,7 +95,7 @@
             <div class="slide"><img src="images/portrait/JosieKolob.jpg"></div>
         </div>
     </div>
-    <div class="slideshow-wrapper underwater">
+    <div id="underwater" class="slideshow-wrapper">
         <div class="slideshow" style="">
             <div class="slide"><img src="images/underwater/Beauty.jpg"></div>
             <div class="slide"><img src="images/underwater/Freedom.jpg"></div>
@@ -105,11 +107,27 @@
             <div class="slide"><img src="images/underwater/Shell6.jpg"></div>
         </div>
     </div>
+    <div id="contact" class="slideshow-wrapper">
+        <form id="contact-form" method="POST">
+            <p id="thanks" style="display: none;">
+                Thanks for contacting! I'll be in touch soon!
+            </p>
+            <div class="medium-12 columns">
+                <input class="required" name="name" placeholder="name" type="text">
+                <input class="required email" name="email" placeholder="email" type="text">
+                <input class="required" name="subject" placeholder="subject" type="text">
+                <textarea class="required" name="message" placeholder="message"></textarea>
+                <input type="text" name="_gotcha" style="display:none" />
+                <a id="submit" href="#">Submit</a>
+            </div>
+        </form>
+    </div>
 </body>
 
 <script src="/js/jquery.js"></script>
 <script src="/js/imagesloaded.pkgd.min.js"></script>
 <script src="/js/jquery.skidder.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script>
 
 $('.slideshow').each( function() {
@@ -178,8 +196,33 @@ $('.filter').click(function() {
         $('.filter').removeClass('active');
 
         $('.slideshow-wrapper').removeClass('active');
-        $('.slideshow-wrapper.' + cat).addClass('active');
+        $('.slideshow-wrapper#' + cat).addClass('active');
+
+
+        $('#' + cat).addClass('active');
     } 
+});
+
+$('#submit').click(function() {
+    $('form#contact-form').submit();
+});
+
+$('form#contact-form').validate({
+  messages: { },
+  submitHandler: function(form) {
+    $.ajax({
+      url: "//formspree.io/cameronholiman%40gmail%2Ecom",
+      method: "POST",
+      data: $(form).serialize(),
+      dataType: "json",
+      success: function(data) {
+          $("form#contact-form :input").prop("disabled", true);
+          $('#submit').addClass('disabled');
+          $('#thanks').show();
+      }
+    });
+    return false;
+  }
 });
 </script>
 
