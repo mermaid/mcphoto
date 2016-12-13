@@ -143,6 +143,8 @@ p.clear {
         position: relative;
         top: 50%;
         transform: translateY(-50%) translate3d(0, 0, 0);
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     &.active {
