@@ -7,7 +7,7 @@ $source-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
  $darkBlue: rgb(0, 0, 128);
  $darkBlueTransparent: rgba(0, 0, 128, 0.8);
  $greyText: #999;
- $hoverText: #666;
+ $hoverText: #555;
  $submitColor: rgb(0, 0, 128);
  $submitColorHover: #005;
 
@@ -198,10 +198,10 @@ p.clear {
 
     #submit {
         float: right;
-        color: $submitColor;
+        color: $greyText;
 
         &:hover {
-            text-shadow: 0 0 3px #aaf;
+            color: $darkBlue;
         }
 
         &.disabled {
@@ -245,16 +245,26 @@ p.clear {
         text-align: center;
         color: $darkGrey;
     }
+
     .contact {
-        margin-left: 25vw;
-        height: auto;
+        position: absolute;
+        bottom: 10px;
+        margin-left: 0;
+        text-align: center;
+
         width: 100%;
 
+        a {
+            padding: 0;
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
         #contact-button {
             position: relative;
             top: -10px;
         }
     }
+
     @media (min-width: 768px) {
         position: fixed;
         width: $sidebar-width;
@@ -278,18 +288,7 @@ p.clear {
             margin-top: 25%;
             margin-left: 24%;
         }
-        .contact {
-            position: absolute;
-            bottom: 10px;
-            margin-left: 0;
-            text-align: center;
 
-            a {
-                padding: 0;
-                margin-left: 0;
-                margin-bottom: 20px;
-            }
-        }
     }
 }
 
