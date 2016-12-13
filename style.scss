@@ -59,6 +59,7 @@ p.clear {
     @media (min-width: 768px) {
         &.mobile-hidden {
             opacity: 1;
+            pointer-events: initial;
         }
     }
 }
@@ -80,6 +81,14 @@ p.clear {
     right: 0;
     bottom: 0;
     height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $button-transistion-duration ease-in-out;
+
+    &.active {
+        opacity: 1;
+        pointer-events: initial;
+    }
 
     // .skidder-clickwrapper {
     //     display: none;
@@ -230,15 +239,16 @@ p.clear {
         >a {
             color: #999;
             display: table-cell;
-            border: 1px solid #bbb;
+            // border: 1px solid #bbb;
             padding-left: 16px;
             padding-right: 16px;
         }
-        .current a {
-            border: 1px solid rgb(0,0,128);
+        &.current a {
+            // border: 1px solid rgb(0,0,128);
             color: rgb(0,0,128);
         }
     }
+    
 }
 // ::-webkit-scrollbar {
 //     -webkit-appearance: none;

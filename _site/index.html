@@ -12,7 +12,6 @@
 
 
 <body class="preload">
-    <div class="top"></div>
     <div class="profile mobile-hidden">
         <img id="logo" src="logo.png" />
         <button id="menu-button" class="c-hamburger c-hamburger--htx">
@@ -21,24 +20,23 @@
         <p class="clear"></p>
         <div id="nav" class="mobile-hidden">
             <h3>Portfolio</h3>
-            <!--<p>A minimalistic jekyll theme for humans</p>-->
             <div class="gallery-nav">
                 <ul>
                     <li class="current">
-                        <a data-cat="wedding" class="filter active" href="#">Wedding</a>
+                        <a data-cat="adventure" class="filter active" href="#">Adventure</a>
                     </li>
                     <li class="">
-                        <a data-cat="portraits" class="filter" href="#">Portraits</a>
+                        <a data-cat="landscape" class="filter" href="#">Landscape</a>
                     </li>
                     <li class="">
-                        <a data-cat="adventure" class="filter" href="#">Adventure</a>
+                        <a data-cat="portrait" class="filter" href="#">Portrait</a>
                     </li>
                     <li class="">
                         <a data-cat="underwater" class="filter" href="#">Underwater</a>
                     </li>
-                    <li class="">
+                    <!--<li class="">
                         <a data-cat="bucketlist" class="filter" href="#">The Bucketlist Tales</a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <ul class="social">
@@ -61,7 +59,41 @@
             <div class="img-container" style="/*background: url(BryceCrack.jpg) no-repeat center center; background-size: cover; text-align: center;*/"><img src="BryceCrack.jpg"></img></div>
         </div>
     </div>-->
-    <div class="slideshow-wrapper">
+    <div class="slideshow-wrapper adventure active">
+        <div class="slideshow" style="">
+            <div class="slide"><img src="images/adventure/DakotaForest.jpg"></div>
+            <div class="slide"><img src="images/adventure/DakotaTrainDesaturated.jpg"></div>
+            <div class="slide"><img src="images/adventure/StarStruck.jpg"></div>
+        </div>
+    </div>
+    <div class="slideshow-wrapper landscape">
+        <div class="slideshow" style="">
+            <div class="slide"><img src="images/landscape/BryceCrack.jpg"></div>
+            <div class="slide"><img src="images/landscape/BryceThorsHammer.jpg"></div>
+            <div class="slide"><img src="images/landscape/BryceWall.jpg"></div>
+            <div class="slide"><img src="images/landscape/IMG_2751.jpg"></div>
+            <div class="slide"><img src="images/landscape/IMG_2772.jpg"></div>
+            <div class="slide"><img src="images/landscape/LavaPointEnteranceZion-3.jpg"></div>
+            <div class="slide"><img src="images/landscape/LavaPointEnteranceZion-4.jpg"></div>
+            <div class="slide"><img src="images/landscape/LookUpBryce.jpg"></div>
+            <div class="slide"><img src="images/landscape/MilkyWay.jpg"></div>
+            <div class="slide"><img src="images/landscape/TinyTree.jpg"></div>
+            <div class="slide"><img src="images/landscape/Tree.jpg"></div>            
+        </div>
+    </div>
+
+    <div class="slideshow-wrapper portrait">
+        <div class="slideshow" style="">
+            <div class="slide"><img src="images/portrait/AllyTrain1.jpg"></div>
+            <div class="slide"><img src="images/portrait/AllyTrain2.jpg"></div>
+            <div class="slide"><img src="images/portrait/AllyUmbrella1.jpg"></div>
+            <div class="slide"><img src="images/portrait/AllyUmbrella2.jpg"></div>
+            <div class="slide"><img src="images/portrait/Desat.jpg"></div>
+            <div class="slide"><img src="images/portrait/Jon.jpg"></div>
+            <div class="slide"><img src="images/portrait/JosieKolob.jpg"></div>
+        </div>
+    </div>
+    <div class="slideshow-wrapper underwater">
         <div class="slideshow" style="">
             <div class="slide"><img src="images/underwater/Beauty.jpg"></div>
             <div class="slide"><img src="images/underwater/Freedom.jpg"></div>
@@ -134,7 +166,21 @@ $('.slideshow').each( function() {
       $('.skidder-wrapper').css('margin-left', parseInt(left.replace('px', '')) - dif + 'px');
   }
 })();
-  
+
+$('.filter').click(function() {
+    $('.gallery-nav ul li').removeClass('current');
+    $(this).closest('li').addClass('current');
+
+    var cat = $(this).attr('data-cat');
+
+    if (!$(this).hasClass('active')) {
+        $(this).addClass('active');
+        $('.filter').removeClass('active');
+
+        $('.slideshow-wrapper').removeClass('active');
+        $('.slideshow-wrapper.' + cat).addClass('active');
+    } 
+});
 </script>
 
 <script type="text/javascript">
