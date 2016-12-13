@@ -130,29 +130,26 @@ $('.slideshow').each( function() {
 });
 
 (function() {
-
-  "use strict";
-
-  var toggles = document.querySelectorAll(".c-hamburger");
-
-  for (var i = toggles.length - 1; i >= 0; i--) {
-    var toggle = toggles[i];
-    toggleHandler(toggle);
-  };
-
-  function toggleHandler(toggle) {
-    toggle.addEventListener( "click", function(e) {
-      e.preventDefault();
-      if (this.classList.contains("is-active") === true) {
-        $(this).removeClass("is-active");
-        $('#nav').addClass('mobile-hidden');
-        $('.profile').addClass('mobile-hidden');
-      } else {
-        $(this).addClass("is-active");
-        $('#nav').removeClass('mobile-hidden');
-        $('.profile').removeClass('mobile-hidden');
-      }
+  'use strict';
+    $('#menu-button').on('click', function(e) {
+        e.preventDefault();
+        if ($(this).hasClass('is-active')) {
+            hideProfile();
+        } else {
+            showProfile();
+        }
     });
+
+  function hideProfile() {
+    $('#menu-button').removeClass('is-active');
+    $('#nav').addClass('mobile-hidden');
+    $('.profile').addClass('mobile-hidden');
+  }
+
+  function showProfile() {
+    $('#menu-button').addClass('is-active');
+    $('#nav').removeClass('mobile-hidden');
+    $('.profile').removeClass('mobile-hidden');
   }
 
 
@@ -174,7 +171,8 @@ $('.slideshow').each( function() {
 
       $('.skidder-wrapper').css('margin-left', parseInt(left.replace('px', '')) - dif + 'px');
   }
-})();
+
+
 
 $('.filter').click(function() {
     $('.gallery-nav ul li').removeClass('current');
@@ -192,29 +190,32 @@ $('.filter').click(function() {
 
         $('#' + cat).addClass('active');
     } 
+    hideProfile();
 });
 
-$('#submit').click(function() {
-    $('form#contact-form').submit();
-});
-
-$('form#contact-form').validate({
-  messages: { },
-  submitHandler: function(form) {
-    $.ajax({
-      url: "//formspree.io/michellecgray1%40gmail%2Ecom",
-      method: "POST",
-      data: $(form).serialize(),
-      dataType: "json",
-      success: function(data) {
-          $("form#contact-form :input").prop("disabled", true);
-          $('#submit').addClass('disabled');
-          $('#thanks').show();
-      }
+    $('#submit').click(function() {
+        $('form#contact-form').submit();
     });
-    return false;
-  }
-});
+
+    $('form#contact-form').validate({
+    messages: { },
+    submitHandler: function(form) {
+        $.ajax({
+        url: '//formspree.io/michellecgray1%40gmail%2Ecom',
+        method: 'POST',
+        data: $(form).serialize(),
+        dataType: 'json',
+        success: function(data) {
+            $('form#contact-form :input').prop('disabled', true);
+            $('#submit').addClass('disabled');
+            $('#thanks').show();
+        }
+        });
+        return false;
+    }
+    });
+
+})();
 </script>
 
 <script type="text/javascript">
