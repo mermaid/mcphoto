@@ -2,18 +2,9 @@ name:               "Michelle Gray"
 description:        "A minimalistic jekyll theme for humans"
 
 url:                ""
-author:             "thinker3197"
-email:              "jhondoe@abc.com"
-gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
-twitter:            "jhondoe"
-email:              "jhondoe@abc.com"
-github:             "jhondoe"
-pinterest:          "jhondoe"
-linkedin:           "jhondoe"
-facebook:           "m.c._photography_"
+author:             "mermaid"
+email:              "michellecgray1%40gmail%2Ecom"
 instagram:          "m.c._photography_"
-
-disqus_shortname:   "thinker3197"
 
 background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
 
@@ -24,12 +15,6 @@ baseurl:            ""
 permalink:          /:year/:month/:day/:title/
 
 markdown:           kramdown
-
-nav:
-  - name:           "About"
-    href:           "/about"
-  - name:           "Download"
-    href:           "/releases"
 
 sass:
   style:            :compressed

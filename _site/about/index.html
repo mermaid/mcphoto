@@ -44,10 +44,6 @@
                 <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
                 
                 <div class="social">
-                    
-                    <a type="button" href="http://facebook.com/m.c._photography_">
-                        <i class="fa fa-facebook"></i>
-                    </a>
                      
                     <a type="button" href="https://www.instagram.com/m.c._photography_">
                         <i class="fa fa-instagram"></i>
@@ -211,8 +207,9 @@ $('.filter').click(function() {
     $('form#contact-form').validate({
     messages: { },
     submitHandler: function(form) {
+        var email = "michellecgray1%40gmail%2Ecom";
         $.ajax({
-        url: '//formspree.io/michellecgray1%40gmail%2Ecom',
+        url: '//formspree.io/' + email,
         method: 'POST',
         data: $(form).serialize(),
         dataType: 'json',
