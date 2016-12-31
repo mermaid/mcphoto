@@ -15,17 +15,19 @@ $source-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
  $lightGrey: #eee;
  $outlineColor: #ddd;
 
- $button-width: 96px;                    // The width of the button area
-$button-height: 96px;                   // The height of the button area
-$bar-thickness: 8px;                    // The thickness of the button bars
-$button-pad: 18px;                      // The left/right padding between button area and bars.
-$button-bar-space: 12px;                // The spacing between button bars
+$button-width: 50px;                    // == $header-mobile-height The width of the button area 
+$button-height: 50px;                   // == $header-mobile-height The height of the button area
+$bar-thickness: 2px;                    // The thickness of the button bars
+$button-pad: 10px;                      // The left/right padding between button area and bars.
+$button-bar-space: 8px;                // The spacing between button bars
 $button-transistion-duration: 0.2s;     // The transition duration
 $carousel-duration: 0.4s;     // The transition duration
 $hamburgerColor: transparent;
 $hamburgerBarColor: rgb(0, 0, 128);
 
 $sidebar-width: 220px;
+$header-mobile-height: 50px;
+$header-mobile-padding: 20px;
 
 * {
     -webkit-box-sizing: border-box;
@@ -51,9 +53,11 @@ p.clear {
     max-width: 150px;
     float: left;
     pointer-events: initial;
+    max-height: $header-mobile-height;
     
     @media (min-width: 768px) {
         max-width: 100%;
+        max-height: initial;
     }
 }
 
@@ -91,10 +95,12 @@ p.clear {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100%;
+    // height: 100%;
     opacity: 0;
     pointer-events: none;
     transition: opacity $button-transistion-duration ease-in-out;
+
+    top: $header-mobile-height + $header-mobile-padding;
 
     &.active {
         opacity: 1;
@@ -115,6 +121,8 @@ p.clear {
         
         .skidder-wrapper {
             height: inherit !important;
+            top: 0;
+            bottom: 0;
         }
 
         .skidder-pager {
@@ -124,6 +132,7 @@ p.clear {
 
     @media (min-width: 768px) {
         left: $sidebar-width; 
+        top: 0;
     }
 }
 .slideshow {
@@ -139,7 +148,7 @@ p.clear {
     perspective: 200px;
 
     @media (min-width : 768px) {
-        max-width: 75vw;; 
+        max-width: 75vw;
     }
     
 
@@ -157,7 +166,13 @@ p.clear {
         perspective: 200px;
         transform: translateY(-50%) translate3d(0, 0, 0) translateZ(-20px);
         transition: transform $carousel-duration ease-in-out, filter $carousel-duration ease-in-out;
-        padding: 50px 25px;
+        padding: 20px 0;
+        // padding-top: $header-mobile-height + $header-mobile-padding;
+
+        @media (min-width : 768px) {
+            padding: 50px 25px;
+        }
+
     }
 
     &.active {
@@ -250,6 +265,8 @@ p.clear {
         position: absolute;
         bottom: 10px;
         margin-left: 0;
+        left: 0;
+        right: 0;
         text-align: center;
 
         width: 100%;
@@ -262,6 +279,12 @@ p.clear {
         #contact-button {
             position: relative;
             top: -10px;
+        }
+
+        .social .fa {
+            padding-left: 8px;
+            font-size: 1.4em;
+            padding-right: 8px;
         }
     }
 
@@ -379,6 +402,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    position: relative;
     @media (min-width: 768px) {
         // overflow: hidden;
     }
@@ -400,7 +424,7 @@ body {
     background-color: #FAFAFA;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    overflow-x: hidden;
+    overflow: hidden; 
 }
 
 a {
@@ -588,17 +612,6 @@ pre code {
     color: inherit;
     background-color: transparent;
     border-radius: 0;
-}
-
-.fa {
-    margin-left: -2vw;
-    font-size: 1.5em;
-    margin-right: 6vw;
-    @media (min-width: 768px) {
-        font-size: 2vw;
-        margin-left: 0;
-        margin-right: 1.4vw;
-    }
 }
 
 img {
@@ -1151,16 +1164,6 @@ tbody tr:nth-child(odd) th {
     color: #009999
 }
 
-
-/* Literal.Number.Integer.Long */
-
-$button-width: 96px;                    // The width of the button area
-$button-height: 96px;                   // The height of the button area
-$bar-thickness: 8px;                    // The thickness of the button bars
-$button-pad: 18px;                      // The left/right padding between button area and bars.
-$button-bar-space: 12px;                // The spacing between button bars
-$button-transistion-duration: 0.3s;     // The transition duration
-
 /**
  * Toggle Switch Globals
  *
@@ -1239,7 +1242,7 @@ $button-transistion-duration: 0.3s;     // The transition duration
 
 /* active state, i.e. menu open */
 
-.c-hamburger--rot.is-active {
+.c-hamburger--rot.is-active { 
   background-color: darken(rgb(40,170,220), 20%);
 }
 

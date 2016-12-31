@@ -42,16 +42,18 @@
 
             <div class="contact">
                 <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
-                <br>&nbsp;
                 
-                <a type="button" href="http://facebook.com/m.c._photography_">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                 
-                <a type="button" href="https://www.instagram.com/m.c._photography_">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                
+                <div class="social">
+                    
+                    <a type="button" href="http://facebook.com/m.c._photography_">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                     
+                    <a type="button" href="https://www.instagram.com/m.c._photography_">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    
+                </div>
             </div>
         </div>
     </div>
@@ -134,7 +136,7 @@ $('.slideshow').each( function() {
   var $slideshow = $(this);
   $slideshow.imagesLoaded( function() {
     // $slideshow.skidder({animationType: 'css', maxWidth: 0, maxHeight: 0, scaleSlides: true});
-    $slideshow.skidder({animationType: 'css', scaleSlides: false, maxWidth: 0, maxHeight: 0});
+    $slideshow.skidder({animationType: 'css', scaleSlides: false, maxWidth: "100%", maxHeight: "100%", swiping: false});
   });
 });
 
@@ -173,10 +175,10 @@ $('.slideshow').each( function() {
       var slideshowWidth = $('.slideshow-wrapper').width();
       var dif =  $('.slide.active').offset().left - $('.slideshow-wrapper').offset().left + imgWidth/2 - slideshowWidth/2;
 
-      console.log('left: ', left);
-      console.log('img: ', imgWidth);
-      console.log('slideshow Left: ', $('.slideshow-wrapper').offset().left);
-      console.log('dif: ', dif);
+    //   console.log('left: ', left);
+    //   console.log('img: ', imgWidth);
+    //   console.log('slideshow Left: ', $('.slideshow-wrapper').offset().left);
+    //   console.log('dif: ', dif);
 
       $('.skidder-wrapper').css('margin-left', parseInt(left.replace('px', '')) - dif + 'px');
   }
