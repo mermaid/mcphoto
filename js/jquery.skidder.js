@@ -491,12 +491,12 @@ if ( typeof Object.create != 'function') {
           if (self.touchdevice || self.options.paging) {
             self.$pagerdots.on('click touchend', function(e){self.clickHandlerPaging(e)});
           }
-          // if (self.options.swiping && self.touchdevice) {
-          //   self.$touchwrapper.on('touchstart touchmove touchend', function(e){self.swipeHandler(e)});
-          // } else {
+          if (self.options.swiping && self.touchdevice) {
+            self.$touchwrapper.on('touchstart touchmove touchend', function(e){self.swipeHandler(e)});
+          } else {
             self.$clickwrappers.on('click', function(e){self.clickHandlerLeftRight(e)});
-            self.$clickwrappers.on('touchstart touchmove touchend', function(e){self.swipeHandler(e)});
-          // }
+            // self.$clickwrappers.on('touchstart touchmove touchend', function(e){self.swipeHandler(e)});
+          }
         }
       }
     },
