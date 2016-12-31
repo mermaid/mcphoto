@@ -202,8 +202,9 @@ $('.filter').click(function() {
     $('form#contact-form').validate({
     messages: { },
     submitHandler: function(form) {
+        var email = "{{site.email}}";
         $.ajax({
-        url: '//formspree.io/michellecgray1%40gmail%2Ecom',
+        url: '//formspree.io/' + email,
         method: 'POST',
         data: $(form).serialize(),
         dataType: 'json',
