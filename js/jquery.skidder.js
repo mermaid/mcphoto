@@ -93,7 +93,7 @@ if ( typeof Object.create != 'function') {
       if (('ontouchstart' in window) ||
         (navigator.maxTouchPoints > 0) ||
         (navigator.msMaxTouchPoints > 0)) {
-        self.touchdevice = true;
+        // self.touchdevice = true;
       }
 
       // store elements + create wrappers
