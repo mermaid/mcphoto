@@ -405,9 +405,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    @media (min-width: 768px) {
-        // overflow: hidden;
-    }
+    overflow: hidden;
     height: 100%;
 }
 
@@ -426,7 +424,6 @@ body {
     background-color: #FAFAFA;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    overflow: hidden; 
 }
 
 a {
