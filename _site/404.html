@@ -61,49 +61,49 @@
         </div>
     </div>-->
     <div id="adventure" class="slideshow-wrapper active">
-        <div class="slideshow" style="">
+        <div class="slideshow hidden" style="">
             <div class="slide"><img src="images/adventure/DakotaForest.jpg"></div>
             <div class="slide"><img src="images/adventure/DakotaTrainDesaturated.jpg"></div>
             <div class="slide"><img src="images/adventure/StarStruck.jpg"></div>
         </div>
     </div>
     <div id="landscape" class="slideshow-wrapper">
-        <div class="slideshow" style="">
-            <div class="slide"><img src="images/landscape/BryceCrack.jpg"></div>
-            <div class="slide"><img src="images/landscape/BryceThorsHammer.jpg"></div>
-            <div class="slide"><img src="images/landscape/BryceWall.jpg"></div>
-            <div class="slide"><img src="images/landscape/IMG_2751.jpg"></div>
-            <div class="slide"><img src="images/landscape/IMG_2772.jpg"></div>
-            <div class="slide"><img src="images/landscape/LavaPointEnteranceZion-3.jpg"></div>
-            <div class="slide"><img src="images/landscape/LavaPointEnteranceZion-4.jpg"></div>
-            <div class="slide"><img src="images/landscape/LookUpBryce.jpg"></div>
-            <div class="slide"><img src="images/landscape/MilkyWay.jpg"></div>
-            <div class="slide"><img src="images/landscape/TinyTree.jpg"></div>
-            <div class="slide"><img src="images/landscape/Tree.jpg"></div>            
+        <div class="slideshow hidden" style="">
+            <div class="slide"><img-preload src="images/landscape/BryceCrack.jpg"></div>
+            <div class="slide"><img-preload src="images/landscape/BryceThorsHammer.jpg"></div>
+            <div class="slide"><img-preload src="images/landscape/BryceWall.jpg"></div>
+            <div class="slide"><img-preload src="images/landscape/IMG_2751.jpg"></div>
+            <div class="slide"><img-preload src="images/landscape/IMG_2772.jpg"></div>
+            <div class="slide"><img-preload src="images/landscape/LavaPointEnteranceZion-3.jpg"></div>
+            <div class="slide"><img-preload src="images/landscape/LavaPointEnteranceZion-4.jpg"></div>
+            <div class="slide"><img-preload src="images/landscape/LookUpBryce.jpg"></div>
+            <div class="slide"><img-preload src="images/landscape/MilkyWay.jpg"></div>
+            <div class="slide"><img-preload src="images/landscape/TinyTree.jpg"></div>
+            <div class="slide"><img-preload src="images/landscape/Tree.jpg"></div>            
         </div>
     </div>
 
     <div id="portrait" class="slideshow-wrapper">
-        <div class="slideshow" style="">
-            <div class="slide"><img src="images/portrait/AllyTrain1.jpg"></div>
-            <div class="slide"><img src="images/portrait/AllyTrain2.jpg"></div>
-            <div class="slide"><img src="images/portrait/AllyUmbrella1.jpg"></div>
-            <div class="slide"><img src="images/portrait/AllyUmbrella2.jpg"></div>
-            <div class="slide"><img src="images/portrait/Desat.jpg"></div>
-            <div class="slide"><img src="images/portrait/Jon.jpg"></div>
-            <div class="slide"><img src="images/portrait/JosieKolob.jpg"></div>
+        <div class="slideshow hidden" style="">
+            <div class="slide"><img-preload src="images/portrait/AllyTrain1.jpg"></div>
+            <div class="slide"><img-preload src="images/portrait/AllyTrain2.jpg"></div>
+            <div class="slide"><img-preload src="images/portrait/AllyUmbrella1.jpg"></div>
+            <div class="slide"><img-preload src="images/portrait/AllyUmbrella2.jpg"></div>
+            <div class="slide"><img-preload src="images/portrait/Desat.jpg"></div>
+            <div class="slide"><img-preload src="images/portrait/Jon.jpg"></div>
+            <div class="slide"><img-preload src="images/portrait/JosieKolob.jpg"></div>
         </div>
     </div>
     <div id="underwater" class="slideshow-wrapper">
-        <div class="slideshow" style="">
-            <div class="slide"><img src="images/underwater/Beauty.jpg"></div>
-            <div class="slide"><img src="images/underwater/Freedom.jpg"></div>
-            <div class="slide"><img src="images/underwater/Happy.jpg"></div>
-            <div class="slide"><img src="images/underwater/Seastar.jpg"></div>
-            <div class="slide"><img src="images/underwater/Shell1.jpg"></div>
-            <div class="slide"><img src="images/underwater/Shell3.jpg"></div>
-            <div class="slide"><img src="images/underwater/Shell4.jpg"></div>
-            <div class="slide"><img src="images/underwater/Shell6.jpg"></div>
+        <div class="slideshow hidden" style="">
+            <div class="slide"><img-preload src="images/underwater/Beauty.jpg"></div>
+            <div class="slide"><img-preload src="images/underwater/Freedom.jpg"></div>
+            <div class="slide"><img-preload src="images/underwater/Happy.jpg"></div>
+            <div class="slide"><img-preload src="images/underwater/Seastar.jpg"></div>
+            <div class="slide"><img-preload src="images/underwater/Shell1.jpg"></div>
+            <div class="slide"><img-preload src="images/underwater/Shell3.jpg"></div>
+            <div class="slide"><img-preload src="images/underwater/Shell4.jpg"></div>
+            <div class="slide"><img-preload src="images/underwater/Shell6.jpg"></div>
         </div>
     </div>
     <div id="contact" class="slideshow-wrapper">
@@ -129,36 +129,37 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script>
 
-$('.slideshow').each( function() {
-  var $slideshow = $(this);
-  $slideshow.imagesLoaded( function() {
-    // $slideshow.skidder({animationType: 'css', maxWidth: 0, maxHeight: 0, scaleSlides: true});
-    $slideshow.skidder({animationType: 'css', scaleSlides: false, maxWidth: "100%", maxHeight: "100%", swiping: false});
-  });
-});
 
+$(document).ready(function() {
+    $('body').removeClass('preload');
+
+    function setupSlideshow(sl, cb) {
+        var $slideshow = $(sl);
+        $slideshow.find('img-preload').each(function() {
+            var src = this.getAttribute('src');
+            var $img = $(this);
+
+            $img.replaceWith($('<img/>').attr('src', src));
+        });
+        $slideshow.imagesLoaded( function() {
+            // $slideshow.skidder({animationType: 'css', maxWidth: 0, maxHeight: 0, scaleSlides: true});
+            $slideshow.skidder({animationType: 'css', scaleSlides: false, maxWidth: "100%", maxHeight: "100%", swiping: false});
+            $slideshow.removeClass('hidden');
+            if(typeof cb == 'function') {
+                cb();
+            }
+        });
+    }
+
+    $('.slideshow-wrapper.active .slideshow').each(function() {
+        setupSlideshow(this, function() {
+            $('.slideshow-wrapper:not(.active)').find('.slideshow').each(function() {
+                setupSlideshow(this);
+            })
+        })
+    });
 (function() {
   'use strict';
-    $('#menu-button').on('click', function(e) {
-        e.preventDefault();
-        if ($(this).hasClass('is-active')) {
-            hideProfile();
-        } else {
-            showProfile();
-        }
-    });
-
-  function hideProfile() {
-    $('#menu-button').removeClass('is-active');
-    $('#nav').addClass('mobile-hidden');
-    $('.profile').addClass('mobile-hidden');
-  }
-
-  function showProfile() {
-    $('#menu-button').addClass('is-active');
-    $('#nav').removeClass('mobile-hidden');
-    $('.profile').removeClass('mobile-hidden');
-  }
 
 
   $(window).on('resize', function() {
@@ -180,28 +181,54 @@ $('.slideshow').each( function() {
       $('.skidder-wrapper').css('margin-left', parseInt(left.replace('px', '')) - dif + 'px');
   }
 
+      $('#menu-button').on('click', function(e) {
+        e.preventDefault();
+        if ($(this).hasClass('is-active')) {
+            hideProfile();
+        } else {
+            showProfile();
+        }
+    });
 
 
-$('.filter').click(function() {
-    $('.gallery-nav ul li').removeClass('current');
-    $(this).closest('li').addClass('current');
+  function hideProfile() {
+    $('#menu-button').removeClass('is-active');
+    $('#nav').addClass('mobile-hidden');
+    $('.profile').addClass('mobile-hidden');
+  }
 
-    var cat = $(this).attr('data-cat');
+  function showProfile() {
+    $('#menu-button').addClass('is-active');
+    $('#nav').removeClass('mobile-hidden');
+    $('.profile').removeClass('mobile-hidden');
+  }
 
-    if (!$(this).hasClass('active')) {
-        $(this).addClass('active');
-        $('.filter').removeClass('active');
+    $('.filter').click(function() {
+        $('.gallery-nav ul li').removeClass('current');
+        $(this).closest('li').addClass('current');
 
-        $('.slideshow-wrapper').removeClass('active');
-        $('.slideshow-wrapper#' + cat).addClass('active');
+        var cat = $(this).attr('data-cat');
+
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $('.filter').removeClass('active');
+
+            $('.slideshow-wrapper').removeClass('active');
+            $('.slideshow-wrapper#' + cat).addClass('active');
 
 
-        $('#' + cat).addClass('active');
-    } 
-    hideProfile();
-});
+            $('#' + cat).addClass('active');
+        } 
+        hideProfile();
+    });
 
-    $('#submit').click(function() {
+    setupContact();
+
+    })();
+})
+
+function setupContact() {
+     $('#submit').click(function() {
         $('form#contact-form').submit();
     });
 
@@ -223,13 +250,7 @@ $('.filter').click(function() {
         return false;
     }
     });
+}
 
-})();
-</script>
-
-<script type="text/javascript">
-    window.onload = function(){
-        document.getElementsByTagName("BODY")[0].classList.remove("preload");
-    }
 </script>
 </html>
