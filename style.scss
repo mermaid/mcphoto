@@ -137,6 +137,9 @@ p.clear {
 }
 .slideshow {
     height: inherit !important;
+    &.hidden {
+        visibility: hidden;
+    }
 }
 .slide {
     display: inline-block;
