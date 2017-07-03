@@ -184,12 +184,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content/</guid>
 			</item>
@@ -373,12 +373,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy/</guid>
 			</item>
@@ -562,12 +562,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy-9/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy-9/</guid>
 			</item>
@@ -751,12 +751,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy-8/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy-8/</guid>
 			</item>
@@ -940,12 +940,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy-7/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy-7/</guid>
 			</item>
@@ -1129,12 +1129,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy-6/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy-6/</guid>
 			</item>
@@ -1318,12 +1318,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy-5/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy-5/</guid>
 			</item>
@@ -1507,12 +1507,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy-4/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy-4/</guid>
 			</item>
@@ -1696,12 +1696,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy-3/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy-3/</guid>
 			</item>
@@ -1885,12 +1885,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy-2/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy-2/</guid>
 			</item>
@@ -2074,12 +2074,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy-11/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy-11/</guid>
 			</item>
@@ -2263,12 +2263,12 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Footnote text goes here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-				<pubDate>Wed, 08 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Wed, 08 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/08/example-content-copy-10/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/08/example-content-copy-10/</guid>
 			</item>
@@ -2285,7 +2285,7 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 
 &lt;p&gt;It’s an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
-				<pubDate>Tue, 07 Jun 2016 00:00:00 -0600</pubDate>
+				<pubDate>Tue, 07 Jun 2016 00:00:00 -0700</pubDate>
 				<link>http://localhost:4000/2016/06/07/whats-jekyll/</link>
 				<guid isPermaLink="true">http://localhost:4000/2016/06/07/whats-jekyll/</guid>
 			</item>
