@@ -166,7 +166,7 @@ p.clear {
 
         position: relative;
         top: 50%;
-        perspective: 200px;
+        // perspective: 200px;
         transform: translateY(-50%) translate3d(0, 0, 0) translateZ(-20px);
         transition: transform $carousel-duration ease-in-out, filter $carousel-duration ease-in-out;
         padding: 20px 0;
