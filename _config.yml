@@ -6,6 +6,55 @@ author:             "mermaid"
 email:              "michellecgray1%40gmail%2Ecom"
 instagram:          "m.c._photography_"
 
+initial-portfolio: adventure
+portfolio: 
+  - 
+    id: "adventure"
+    name: "Adventure"
+    images: 
+    - images/adventure/DakotaForest.jpg
+    - images/adventure/DakotaTrainDesaturated.jpg
+    - images/adventure/StarStruck.jpg
+  -
+    id: "landscape"
+    name: "Landscape"
+    images: 
+    - images/landscape/BryceCrack.jpg
+    - images/landscape/BryceThorsHammer.jpg
+    - images/landscape/BryceWall.jpg
+    - images/landscape/IMG_2751.jpg
+    - images/landscape/IMG_2772.jpg
+    - images/landscape/LavaPointEnteranceZion-3.jpg
+    - images/landscape/LavaPointEnteranceZion-4.jpg
+    - images/landscape/LookUpBryce.jpg
+    - images/landscape/MilkyWay.jpg
+    - images/landscape/TinyTree.jpg
+    - images/landscape/Tree.jpg
+  -
+    id: "portrait"
+    name: "Portrait"
+    images: 
+    - images/portrait/AllyTrain1.jpg
+    - images/portrait/AllyTrain2.jpg
+    - images/portrait/AllyUmbrella1.jpg
+    - images/portrait/AllyUmbrella2.jpg
+    - images/portrait/Desat.jpg
+    - images/portrait/Jon.jpg
+    - images/portrait/JosieKolob.jpg
+  -
+    id: "wedding"
+    name: "Wedding"
+    images: 
+    - images/wedding/Perez Wedding-346.jpg
+    - images/wedding/Perez Wedding-323.jpg
+    - images/wedding/Perez Wedding-312.jpg
+    - images/wedding/Perez Wedding-272.jpg
+    - images/wedding/Perez Wedding-270.jpg
+    - images/wedding/Perez Wedding-236.jpg
+    - images/wedding/Perez Wedding-210.jpg
+    - images/wedding/Perez Wedding-154.jpg
+    - images/wedding/Perez Wedding-17.jpg
+        
 background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
 
 paginate:           5
