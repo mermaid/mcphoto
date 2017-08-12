@@ -23,7 +23,6 @@
 
             <div class="contact">
                 <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
-                
                 <div class="social">
                     {% if site.facebook %}
                     <a type="button" href="http://facebook.com/{{ site.facebook }}">
@@ -38,16 +37,9 @@
             </div>
         </div>
     </div>
-    <!--<div class="gallery-wrapper">
-        <div class="gallery">
-            <div class="img-container" style="/*background: url() no-repeat center center; background-size: cover; text-align: center;*/"><img src="DakotaForest.jpg"></img></div>
-            <div class="img-container" style="/*background: url(BryceCrack.jpg) no-repeat center center; background-size: cover; text-align: center;*/"><img src="BryceCrack.jpg"></img></div>
-        </div>
-    </div>-->
-
     {% for category in site.portfolio %}
-    <div id="{{category.id}}" class="slideshow-wrapper {% if site.initial-portfolio == category.id %} active {% endif %}">
-        <div class="slideshow hidden" style="">
+    <div id="{{category.id}}" class="slideshow-wrapper {% if site.initial-portfolio == category.id %}active {% endif %}">
+        <div class="slideshow hidden">
             {% assign tag = 'img-preload' %}
             {% if site.initial-portfolio == category.id %}
                 {% assign tag = 'img' %}
@@ -58,66 +50,6 @@
         </div>
     </div>
     {% endfor %}
-
-    <!--<div id="adventure" class="slideshow-wrapper active">
-        <div class="slideshow hidden" style="">
-            <div class="slide"><img src="images/adventure/DakotaForest.jpg"></div>
-            <div class="slide"><img src="images/adventure/DakotaTrainDesaturated.jpg"></div>
-            <div class="slide"><img src="images/adventure/StarStruck.jpg"></div>
-        </div>
-    </div>
-    <div id="landscape" class="slideshow-wrapper">
-        <div class="slideshow hidden" style="">
-            <div class="slide"><img-preload src="images/landscape/BryceCrack.jpg"></div>
-            <div class="slide"><img-preload src="images/landscape/BryceThorsHammer.jpg"></div>
-            <div class="slide"><img-preload src="images/landscape/BryceWall.jpg"></div>
-            <div class="slide"><img-preload src="images/landscape/IMG_2751.jpg"></div>
-            <div class="slide"><img-preload src="images/landscape/IMG_2772.jpg"></div>
-            <div class="slide"><img-preload src="images/landscape/LavaPointEnteranceZion-3.jpg"></div>
-            <div class="slide"><img-preload src="images/landscape/LavaPointEnteranceZion-4.jpg"></div>
-            <div class="slide"><img-preload src="images/landscape/LookUpBryce.jpg"></div>
-            <div class="slide"><img-preload src="images/landscape/MilkyWay.jpg"></div>
-            <div class="slide"><img-preload src="images/landscape/TinyTree.jpg"></div>
-            <div class="slide"><img-preload src="images/landscape/Tree.jpg"></div>
-        </div>
-    </div>
-
-    <div id="portrait" class="slideshow-wrapper">
-        <div class="slideshow hidden" style="">
-            <div class="slide"><img-preload src="images/portrait/AllyTrain1.jpg"></div>
-            <div class="slide"><img-preload src="images/portrait/AllyTrain2.jpg"></div>
-            <div class="slide"><img-preload src="images/portrait/AllyUmbrella1.jpg"></div>
-            <div class="slide"><img-preload src="images/portrait/AllyUmbrella2.jpg"></div>
-            <div class="slide"><img-preload src="images/portrait/Desat.jpg"></div>
-            <div class="slide"><img-preload src="images/portrait/Jon.jpg"></div>
-            <div class="slide"><img-preload src="images/portrait/JosieKolob.jpg"></div>
-        </div>
-    </div>
-    <div id="wedding" class="slideshow-wrapper">
-        <div class="slideshow hidden" style="">
-            <div class="slide"><img-preload src="images/wedding/Perez Wedding-346.jpg"></div>
-            <div class="slide"><img-preload src="images/wedding/Perez Wedding-323.jpg"></div>
-            <div class="slide"><img-preload src="images/wedding/Perez Wedding-312.jpg"></div>
-            <div class="slide"><img-preload src="images/wedding/Perez Wedding-272.jpg"></div>
-            <div class="slide"><img-preload src="images/wedding/Perez Wedding-270.jpg"></div>
-            <div class="slide"><img-preload src="images/wedding/Perez Wedding-236.jpg"></div>
-            <div class="slide"><img-preload src="images/wedding/Perez Wedding-210.jpg"></div>
-            <div class="slide"><img-preload src="images/wedding/Perez Wedding-154.jpg"></div>
-            <div class="slide"><img-preload src="images/wedding/Perez Wedding-17.jpg"></div>
-        </div>
-    </div>-->
-    <!--<div id="underwater" class="slideshow-wrapper">
-        <div class="slideshow hidden" style="">
-            <div class="slide"><img-preload src="images/underwater/Beauty.jpg"></div>
-            <div class="slide"><img-preload src="images/underwater/Freedom.jpg"></div>
-            <div class="slide"><img-preload src="images/underwater/Happy.jpg"></div>
-            <div class="slide"><img-preload src="images/underwater/Seastar.jpg"></div>
-            <div class="slide"><img-preload src="images/underwater/Shell1.jpg"></div>
-            <div class="slide"><img-preload src="images/underwater/Shell3.jpg"></div>
-            <div class="slide"><img-preload src="images/underwater/Shell4.jpg"></div>
-            <div class="slide"><img-preload src="images/underwater/Shell6.jpg"></div>
-        </div>
-    </div>-->
     
     <div id="contact" class="slideshow-wrapper">
         <form id="contact-form" method="POST">
