@@ -34,13 +34,16 @@ portfolio:
     id: "portrait"
     name: "Portrait"
     images: 
-    - images/portrait/AllyTrain1.jpg
-    - images/portrait/AllyTrain2.jpg
-    - images/portrait/AllyUmbrella1.jpg
-    - images/portrait/AllyUmbrella2.jpg
-    - images/portrait/Desat.jpg
-    - images/portrait/Jon.jpg
-    - images/portrait/JosieKolob.jpg
+    - images/portrait/Bailey 2.jpg
+    - images/portrait/Bailey 5.jpg
+    - images/portrait/Bailey 6.jpg
+    - images/portrait/IMG_9526.jpg
+    - images/portrait/IMG_9533.jpg
+    - images/portrait/IMG_9536.jpg
+    - images/portrait/Marina-1.jpg
+    - images/portrait/Marina-2.jpg
+    - images/portrait/Marina-6.jpg
+    
   -
     id: "wedding"
     name: "Wedding"
