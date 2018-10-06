@@ -14,7 +14,7 @@
             <div class="gallery-nav">
                 <ul>
                     {% for category in site.portfolio %}
-                    <li class="{% if site.initial-portfolio == category.id %}current{% endif %}">
+                    <li id="menu-{{category.id}}" class="loading {% if site.initial-portfolio == category.id %}current{% endif %}">
                         <a data-cat="{{category.id}}" class="filter{% if site.initial-portfolio == category.id %} active{% endif %}" href="#">{{category.name}}</a>
                     </li>
                     {% endfor %}
@@ -87,16 +87,17 @@ $(document).ready(function() {
 
                 $img.replaceWith($('<img/>').attr('src', src));
             });
+
+            var category = $slideshow.parent()[0].id;
             $slideshow.imagesLoaded( function() {
                 // $slideshow.skidder({animationType: 'css', maxWidth: 0, maxHeight: 0, scaleSlides: true});
                 $slideshow.skidder({animationType: 'css', scaleSlides: false, maxWidth: "100%", maxHeight: "100%", swiping: false});
                 $slideshow.removeClass('hidden');
+                $('#menu-' + category).removeClass('loading');
                 if(typeof cb == 'function') {
                     cb();
                 }
             });
-        // }, 0);
-        
     }
 
     $('.slideshow-wrapper.active .slideshow').each(function() {
