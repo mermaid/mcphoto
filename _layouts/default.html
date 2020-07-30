@@ -45,7 +45,7 @@
                 {% assign tag = 'img' %}
             {% endif %}
             {% for image in category.images %}
-            <div class="slide"><{{tag}} src="{{image}}"></div>
+            <div class="slide"><{{tag}} src="{{image}}-small.jpg" srcset="{{image}}-small.jpg 1x, {{image}}.jpg 2x"></div>
             {% endfor %}
         </div>
     </div>
@@ -71,6 +71,7 @@
 <script src="{{ site.baseurl }}/js/jquery.js"></script>
 <script src="{{ site.baseurl }}/js/imagesloaded.pkgd.min.js"></script>
 <script src="{{ site.baseurl }}/js/jquery.skidder.js"></script>
+<!-- <script src="{{ site.baseurl }}/js/flickity.pkgd.min.jss"></script> -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script>
 
@@ -85,7 +86,7 @@ $(document).ready(function() {
                 var src = this.getAttribute('src');
                 var $img = $(this);
 
-                $img.replaceWith($('<img/>').attr('src', src));
+                $img.replaceWith($('<img/>').attr('src', src).attr('srcset', src + ' 1x, ' + src.replace('-small', '') + ' 2x'));
             });
 
             var category = $slideshow.parent()[0].id;
