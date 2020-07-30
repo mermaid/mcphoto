@@ -9,14 +9,17 @@ Ink is a minmal two-column theme for [Jekyll](http://jekyllrb.com)
 ##### Setup on your local machine
  * Clone or download the repository
  * You should have [ruby](https://www.ruby-lang.org/en/) installed in your system
- * Install bundler which helps in specifying and installing dependencies of any Ruby project ```gem install bundler```
+ * Install ruby using `rbenv` and homebrew
+   * `brew install rbenv ruby-build`
+   * `rbenv install 2.6.3`
+   * `rbenv global 2.6.3`
+ * Install bundler & jekyll which helps in specifying and installing dependencies of any Ruby project ```gem install bundler jekyl```
  * Go to the root of the repo and run this - ```bundle install```
  * Then - ```bundle exec jekyll serve```
 
-##### Make it your own
- * Fork the repository
- * Follow the configuration step
- * Host your site/blog with **Ink**
+##### Useful Commands
+ * Resize images based on the long side
+   * `sips -Z 640 *.jpg`
 
 # Configuration 
  * Change the following in ```_config.yml```
