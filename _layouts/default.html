@@ -165,16 +165,9 @@ $(document).ready(function() {
                         var x = ( slide.target + flkty.x ) * -1/3;
                         if (flkty.options.wrapAround) {
                             if (flkty.selectedIndex === 0 && i == flkty.slides.length - 1) {
-                                // debugger
-                                x = flkty.x * -1/3
                                 x = (flkty.x - slide.target + slide.x) * -1/3
-                                console.log('9: ', x);
                             } else if (flkty.selectedIndex === flkty.slides.length -1 && i === 0) {
-                                // debugger
-                                x =  (flkty.x + flkty.slideableWidth) * -1/3;
-                                x = (flkty.slidesWidth + flkty.x) * -1/3;
                                 x = (flkty.slideableWidth + flkty.x + slide.target) * -1/3;
-                                console.log('0: ', x);
                             }
                         }
 
