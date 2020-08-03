@@ -424,40 +424,6 @@
     </div>
     
     
-    <style>
-.flickity-viewport {
-    min-height: 100%;
-}
-.flickity-slider {
-    height: 100%;
-}
-
-.center-helper {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.carousel {
-  /* background: #EEE; */
-  width: 100%;
-  height: calc(100% - 35px);
-}
-
-.carousel-cell {
-    display: inline-block;
-  margin-right: 20px;
-  height: 100%;
-  overflow: hidden;
-}
-
-.carousel-cell img {
-  max-width: calc(100vw - 220px - 100px);
-  max-height: 100vh;
-}
-
-
-    </style>
     <div id="contact" class="slideshow-wrapper">
         <form id="contact-form" method="POST">
             <p id="thanks" style="display: none;">
@@ -504,6 +470,8 @@ $(document).ready(function() {
                     imagesLoaded: true,
                     // percentPosition: false,
                     // adaptiveHeight: true,
+                    fullscreen: true,
+                    autoPlay: 8000,
                     setGallerySize: true,
                     wrapAround: true,
                 });
