@@ -39,28 +39,13 @@
     </div>
     {% for category in site.portfolio %}
     <div id="{{category.id}}" class="slideshow-wrapper {% if site.initial-portfolio == category.id %}active {% endif %}">
-        <!-- <div class="slideshow hidden">
-            {% assign tag = 'img-preload' %}
-            {% if site.initial-portfolio == category.id %}
-                {% assign tag = 'img' %}
-            {% endif %}
-            {% for image in category.images %}
-            <div class="slide"><{{tag}} src="{{image}}-small.jpg" srcset="{{image}}-small.jpg 1x, {{image}}.jpg 2x"></div>
-            {% endfor %}
-        </div> -->
-
         <div class="carousel">
-            {% assign tag = 'img' %}
-            {% if site.initial-portfolio == category.id %}
-                {% assign tag = 'img' %}
-            {% endif %}
             {% for image in category.images %}
             <div class="carousel-cell">
                 <div class="center-helper">
-                    <{{tag}} src="{{image}}-small.jpg" srcset="{{image}}-small.jpg 1x, {{image}}.jpg 2x">
+                    <img src="{{image}}-small.jpg" srcset="{{image}}-small.jpg 1x, {{image}}.jpg 2x">
                 </div>
             </div>
-                
             {% endfor %}
         </div>
     </div>
@@ -95,23 +80,22 @@ $(document).ready(function() {
     $('body').removeClass('preload');
 
     function setupSlideshow(sl, cb) {
-        // setTimeout(function() {
+        setTimeout(function() {
             var $slideshow = $(sl);
-            $slideshow.find('img-preload').each(function() {
-                var src = this.getAttribute('src');
-                var $img = $(this);
+            // $slideshow.find('img-preload').each(function() {
+            //     var src = this.getAttribute('src');
+            //     var $img = $(this);
 
-                $img.replaceWith($('<img/>').attr('src', src).attr('srcset', src + ' 1x, ' + src.replace('-small', '') + ' 2x'));
-            });
+            //     $img.replaceWith($('<img/>').attr('src', src).attr('srcset', src + ' 1x, ' + src.replace('-small', '') + ' 2x'));
+            // });
 
             var category = $slideshow.parent()[0].id;
-            $slideshow.imagesLoaded( function() {
+            // $slideshow.imagesLoaded( function() {
                 // $slideshow.skidder({animationType: 'css', maxWidth: 0, maxHeight: 0, scaleSlides: true});
                 // $slideshow.skidder({animationType: 'css', scaleSlides: false, maxWidth: "100%", maxHeight: "100%", swiping: false});
                 $slideshow.flickity({
                     imagesLoaded: true,
-                    // percentPosition: false,
-                    // adaptiveHeight: true,
+                    lazyLoad: 2,
                     fullscreen: true,
                     autoPlay: 8000,
                     setGallerySize: true,
@@ -147,11 +131,10 @@ $(document).ready(function() {
                 if(typeof cb == 'function') {
                     cb();
                 }
-            });
+        });
     }
 
     $('.slideshow-wrapper.active .carousel').each(function() {
-
         setupSlideshow(this, function() {
             $('.slideshow-wrapper:not(.active)').find('.carousel').each(function() {
                 setupSlideshow(this);
@@ -162,12 +145,12 @@ $(document).ready(function() {
   'use strict';
 
 
-  $(window).on('resize', function() {
-      $('.slideshow').skidder('resize');
-      centerSlides();
-  });
+//   $(window).on('resize', function() {
+    //   $('.slideshow').skidder('resize');
+    //   centerSlides();
+//   });
 
-  function centerSlides() {
+//   function centerSlides() {
     //   $('.slideshow-wrapper').each(function() {
     //     var $slideshow = $(this);
     //     var $slide = $slideshow.find('.slide.active');
@@ -185,7 +168,7 @@ $(document).ready(function() {
 
     //     $skidder.css('margin-left', parseInt(left.replace('px', '')) - dif + 'px');
     //   });
-  }
+//   }
 
       $('#menu-button').on('click', function(e) {
         e.preventDefault();
