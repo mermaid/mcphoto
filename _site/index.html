@@ -379,18 +379,13 @@ $(document).ready(function() {
                 if (window.ResizeObserver) {
                     $slideshow.find('img').foreach
                     let observer = new ResizeObserver(function() { 
-                        $slideshow.flickity('reposition');
+                        $slideshow.flickity('positionCells')
                     });
 
                     $slideshow.find('img').each(function() {
                         observer.observe(this)
                     })
                 }
-                
-                $slideshow.on('lazyLoad.flickity', function() {
-                    $slideshow.flickity('resize');
-                    $slideshow.flickity('reposition');
-                })
 
                 $('#menu-' + category).removeClass('loading');
                 if(typeof cb == 'function') {
