@@ -305,7 +305,7 @@
             </p>
             <div class="medium-12 columns">
                 <input class="required" name="name" placeholder="name" type="text">
-                <input class="required email" name="email" placeholder="email" type="text">
+                <input class="required email" name="_reply " placeholder="email" type="text">
                 <input class="required" name="subject" placeholder="subject" type="text">
                 <textarea class="required" name="message" placeholder="message"></textarea>
                 <input type="text" name="_gotcha" style="display:none" />
@@ -376,16 +376,28 @@ $(document).ready(function() {
                     });
                 });
 
-                if (window.ResizeObserver) {
-                    $slideshow.find('img').foreach
-                    let observer = new ResizeObserver(function() { 
-                        $slideshow.flickity('positionCells')
-                    });
+                let changing = false
 
-                    $slideshow.find('img').each(function() {
-                        observer.observe(this)
-                    })
-                }
+                $slideshow.on('changing.flickity', function() {
+                    changing = true
+                });
+
+                $slideshow.on('settle.flickity', function() {
+                    changing = false
+                });
+
+                // if (window.ResizeObserver) {
+                //     $slideshow.find('img').foreach
+                //     let observer = new ResizeObserver(function() { 
+                //         if (!changing) {
+                //             // $slideshow.flickity('positionCells')
+                //         }
+                //     });
+
+                //     $slideshow.find('img').each(function() {
+                //         observer.observe(this)
+                //     })
+                // }
 
                 $('#menu-' + category).removeClass('loading');
                 if(typeof cb == 'function') {
@@ -485,7 +497,7 @@ function setupContact() {
     $('form#contact-form').validate({
     messages: { },
     submitHandler: function(form) {
-        var email = "michellecholiman%40gmail%2Ecom";
+        var email = "michellecholiman@gmail.com";
         $.ajax({
         url: '//formspree.io/' + email,
         method: 'POST',
