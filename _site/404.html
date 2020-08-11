@@ -305,7 +305,7 @@
             </p>
             <div class="medium-12 columns">
                 <input class="required" name="name" placeholder="name" type="text">
-                <input class="required email" name="email" placeholder="email" type="text">
+                <input class="required email" name="_reply " placeholder="email" type="text">
                 <input class="required" name="subject" placeholder="subject" type="text">
                 <textarea class="required" name="message" placeholder="message"></textarea>
                 <input type="text" name="_gotcha" style="display:none" />
@@ -485,7 +485,7 @@ function setupContact() {
     $('form#contact-form').validate({
     messages: { },
     submitHandler: function(form) {
-        var email = "michellecholiman%40gmail%2Ecom";
+        var email = "michellecholiman@gmail.com";
         $.ajax({
         url: '//formspree.io/' + email,
         method: 'POST',
