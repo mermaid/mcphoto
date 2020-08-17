@@ -3,7 +3,7 @@ description:        "Photographer"
 
 url:                ""
 author:             "mermaid"
-email:              "michellecholiman%40gmail%2Ecom"
+email:              "michellecholiman@gmail.com"
 instagram:          "m.c._photography_"
 facebook:           "PhotoMichelleChristine"
 
@@ -41,27 +41,6 @@ portfolio:
     - images/people/people-10
     - images/people/people-11
     - images/people/people-12
-  # -
-  #   id: "wedding"
-  #   name: "Wedding"
-  #   images: 
-  #   - images/wedding/Perez Wedding-346.jpg
-  #   - images/wedding/Perez Wedding-323.jpg
-  #   - images/wedding/Perez Wedding-312.jpg
-  #   - images/wedding/Perez Wedding-272.jpg
-  #   - images/wedding/Perez Wedding-270.jpg
-  #   - images/wedding/Perez Wedding-236.jpg
-  #   - images/wedding/Perez Wedding-210.jpg
-  #   - images/wedding/Perez Wedding-154.jpg
-  #   - images/wedding/Perez Wedding-17.jpg
-  #   - images/wedding/web-1.jpg
-  #   - images/wedding/web-2.jpg
-  #   - images/wedding/web-3.jpg
-  #   - images/wedding/web-4.jpg
-  #   - images/wedding/web-5.jpg
-  #   - images/wedding/web-6.jpg
-  #   - images/wedding/web-7.jpg
-  #   - images/wedding/web-8.jpg
   -
     id: "wildlife"
     name: "Wildlife"

@@ -376,16 +376,28 @@ $(document).ready(function() {
                     });
                 });
 
-                if (window.ResizeObserver) {
-                    $slideshow.find('img').foreach
-                    let observer = new ResizeObserver(function() { 
-                        $slideshow.flickity('positionCells')
-                    });
+                let changing = false
 
-                    $slideshow.find('img').each(function() {
-                        observer.observe(this)
-                    })
-                }
+                $slideshow.on('changing.flickity', function() {
+                    changing = true
+                });
+
+                $slideshow.on('settle.flickity', function() {
+                    changing = false
+                });
+
+                // if (window.ResizeObserver) {
+                //     $slideshow.find('img').foreach
+                //     let observer = new ResizeObserver(function() { 
+                //         if (!changing) {
+                //             // $slideshow.flickity('positionCells')
+                //         }
+                //     });
+
+                //     $slideshow.find('img').each(function() {
+                //         observer.observe(this)
+                //     })
+                // }
 
                 $('#menu-' + category).removeClass('loading');
                 if(typeof cb == 'function') {
