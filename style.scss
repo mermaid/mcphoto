@@ -50,16 +50,33 @@ p.clear {
 }
 
 #logo {
+    display: none;
+    @media (min-width: $modile-width) {
+        display: block;
+        z-index: 10;
+        position: relative;
+        max-width: 150px;
+        float: left;
+        pointer-events: initial;
+        max-height: $header-mobile-height;
+        max-width: 100%;
+        max-height: initial;
+        padding: 20px;
+    }
+}
+
+
+#logo-mobile {
+    display: block;
     z-index: 10;
     position: relative;
     max-width: 150px;
     float: left;
     pointer-events: initial;
     max-height: $header-mobile-height;
-    
+
     @media (min-width: $modile-width) {
-        max-width: 100%;
-        max-height: initial;
+        display: none;
     }
 }
 
@@ -517,7 +534,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 h4,
