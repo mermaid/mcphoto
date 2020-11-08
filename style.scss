@@ -108,6 +108,15 @@ p.clear {
     }
 }
 
+.big-link {
+    color: #555;
+
+    &:hover {
+        color: #111;
+    }
+    transition: .2s all;
+}
+
 .slideshow-wrapper {
     position: absolute;
     top: 0;
@@ -405,31 +414,95 @@ p.clear {
     pointer-events: none;
     cursor: default;
 }
-.gallery-nav {
-  margin: 0 auto 30px;
-  text-align: center;
-  display: table;
-  border-spacing: 8px;
-  
-    li {
-        float: none;
-        display: table-row;
-        
-        padding: 5px 10px;
 
-        >a {
-            display: table-cell;
-            // border: 1px solid #bbb;
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-        &.current a {
-            // border: 1px solid rgb(0,0,128);
-            color: rgb(0,0,128);
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .about-text {
+        padding: 20px;
+    }
+
+    .about-image {
+        padding-left: 20px;
+        
+        img {
+            height: 500px;
+            max-height: 80vh;
+            object-fit: contain;
+            
+            @media (min-width: $modile-width) {
+                max-width: 30vw;
+            }
         }
     }
-    
+
+    @media (min-width: $modile-width) {
+        flex-direction: row;
+    }
 }
+
+.portfolio-link {
+
+    .big-link {
+        padding-top: 50px;
+        color: #555;
+    }
+
+    .gallery-nav {
+        margin: 0 auto 30px;
+        text-align: center;
+        // display: table;
+        border-spacing: 8px;
+        overflow: hidden;
+        
+        max-height: 150px;
+        opacity: 1;
+        
+          li {
+              float: none;
+              display: table-row;
+              
+              padding: 5px 10px;
+      
+              >a {
+                  display: table-cell;
+                  // border: 1px solid #bbb;
+                  padding-left: 16px;
+                  padding-right: 16px;
+              }
+              &.current a {
+                  // border: 1px solid rgb(0,0,128);
+                  color: rgb(0,0,128);
+              }
+          }
+      
+          &.hidden {
+              max-height: 0px;
+              opacity: 0;
+          }
+      
+          transition: .2s all;
+      }
+
+    &:hover {
+        .gallery-nav.hidden {
+            max-height: 150px;
+            opacity: 1;
+        }
+
+        .big-link {
+            color: #111;
+        }
+    }
+    &.open {
+        .big-link {
+            color: #111;
+        }
+    }
+}
+
 // ::-webkit-scrollbar {
 //     -webkit-appearance: none;
 //     width: 7px;
@@ -797,6 +870,10 @@ tbody tr:nth-child(odd) th {
             }
         }
     }
+}
+
+.cell {
+    display: table-
 }
 
 .post-list {
