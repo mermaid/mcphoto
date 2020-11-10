@@ -257,6 +257,13 @@ p.clear {
     }
 }
 
+#splash {
+    background: url('images/splash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #contact {
     text-align: center;
     top: 50%;
