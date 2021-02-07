@@ -62,6 +62,22 @@ portfolio:
     - images/wildlife/wildlife-10
     - images/wildlife/wildlife-11
     - images/wildlife/wildlife-12
+  -
+    id: "studio"
+    name: "Studio"
+    images:
+    - images/studio/studio-1
+    - images/studio/studio-2
+    - images/studio/studio-3
+    - images/studio/studio-4
+    - images/studio/studio-5
+    - images/studio/studio-6
+    - images/studio/studio-7
+    - images/studio/studio-8
+    - images/studio/studio-9
+    - images/studio/studio-10
+    - images/studio/studio-11
+    - images/studio/studio-12
 
 
 background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
