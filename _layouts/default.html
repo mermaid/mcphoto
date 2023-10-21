@@ -3,53 +3,13 @@
 {% include head.html %}
 
 <body class="preload">
-    <div class="profile mobile-hidden">
-        <img id="logo" src="images/logo.svg" />
-        <img id="logo-mobile" src="images/logo-mobile.svg" />
-        <button id="menu-button" class="c-hamburger c-hamburger--htx">
-        <span>toggle menu</span>
-        </button>
-        <!-- <p class="clear"></p> -->
-        <div id="nav" class="mobile-hidden">
-            <div class="portfolio-link">
-                <h3 class="big-link">Portfolio</h3>
-                <div class="gallery-nav hidden">
-                    <ul>
-                        {% for category in site.portfolio %}
-                        <li id="menu-{{category.id}}" class="loading {% if site.initial-portfolio == category.id %}current{% endif %}">
-                            <a data-cat="{{category.id}}" class="filter{% if site.initial-portfolio == category.id %} active{% endif %}" href="#">{{category.name}}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+   
+    {% include sidebar.html %}
 
-            <h3><a href="https://michelleholiman.square.site/" class="big-link">Store</a></h3>
-
-            <br/>
-            <h3><a data-cat="about" class="big-link filter" href="#">About</a></h3>
-
-            <div class="contact">
-                <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
-                <div class="social">
-                    {% if site.facebook %}
-                    <a type="button" href="http://facebook.com/{{ site.facebook }}">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    {% endif %} {% if site.instagram %}
-                    <a type="button" href="https://www.instagram.com/{{ site.instagram }}">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="splash" class="slideshow-wrapper active"></div>
+    <div id="splash" class="content slideshow-wrapper active"></div>
 
     {% for category in site.portfolio %}
-    <div id="{{category.id}}" class="slideshow-wrapper {% if site.initial-portfolio == category.id %}active {% endif %}">
+    <div id="{{category.id}}" class="content slideshow-wrapper {% if site.initial-portfolio == category.id %}active {% endif %}">
         <div class="carousel">
             <!-- {% assign tag = 'img' %}
             {% if site.initial-portfolio == category.id %}
@@ -66,7 +26,7 @@
     </div>
     {% endfor %}
 
-    <div id="about" class="slideshow-wrapper">
+    <div id="about" class="content slideshow-wrapper">
         <div class="about-image">
             <img src="images/about.jpg"></img>
         </div>
@@ -76,7 +36,7 @@
         </div>
     </div>
     
-    <div id="contact" class="slideshow-wrapper">
+    <div id="contact" class="content slideshow-wrapper">
         <form id="contact-form" method="POST">
             <p id="thanks" style="display: none;">
                 Thanks for contacting! I'll be in touch soon!
@@ -194,32 +154,6 @@ $(document).ready(function() {
     }
 (function() {
   'use strict';
-
-
-//   $(window).on('resize', function() {
-    //   $('.slideshow').skidder('resize');
-    //   centerSlides();
-//   });
-
-//   function centerSlides() {
-    //   $('.slideshow-wrapper').each(function() {
-    //     var $slideshow = $(this);
-    //     var $slide = $slideshow.find('.slide.active');
-    //     var $skidder = $slideshow.find('.skidder-wrapper')
-
-    //     var left = $skidder.css('margin-left');
-    //     var imgWidth = $slide.width();
-    //     var slideshowWidth = $slideshow.width();
-    //     var dif =  $slide.offset().left - $slideshow.offset().left + imgWidth/2 - slideshowWidth/2;
-
-    //     // console.log('left: ', left);
-    //     // console.log('img: ', imgWidth);
-    //     // console.log('slideshow Left: ', $slideshow.offset().left);
-    //     // console.log('dif: ', dif);
-
-    //     $skidder.css('margin-left', parseInt(left.replace('px', '')) - dif + 'px');
-    //   });
-//   }
 
       $('#menu-button').on('click', function(e) {
         e.preventDefault();

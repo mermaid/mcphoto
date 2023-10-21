@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+    <base href="/">
     <!--<meta name="viewport" content="height=device-height, initial-scale=1.0" />-->
     <title>Looks like you're lost!</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/css/jquery.skidder.css">
     <link rel="stylesheet" href="/css/flickity.css">
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106539496-2"></script>
@@ -25,65 +27,69 @@
 
 
 <body class="preload">
+   
     <div class="profile mobile-hidden">
-        <img id="logo" src="images/logo.svg" />
-        <img id="logo-mobile" src="images/logo-mobile.svg" />
-        <button id="menu-button" class="c-hamburger c-hamburger--htx">
-        <span>toggle menu</span>
-        </button>
-        <!-- <p class="clear"></p> -->
-        <div id="nav" class="mobile-hidden">
-            <div class="portfolio-link">
-                <h3 class="big-link">Portfolio</h3>
-                <div class="gallery-nav hidden">
-                    <ul>
-                        
-                        <li id="menu-adventure" class="loading ">
-                            <a data-cat="adventure" class="filter" href="#">Adventure</a>
-                        </li>
-                        
-                        <li id="menu-people" class="loading ">
-                            <a data-cat="people" class="filter" href="#">People</a>
-                        </li>
-                        
-                        <li id="menu-wildlife" class="loading ">
-                            <a data-cat="wildlife" class="filter" href="#">Wildlife</a>
-                        </li>
-                        
-                        <li id="menu-studio" class="loading ">
-                            <a data-cat="studio" class="filter" href="#">Studio</a>
-                        </li>
-                        
-                    </ul>
-                </div>
+    <img id="logo" src="images/logo.svg" />
+    <img id="logo-mobile" src="images/logo-mobile.svg" />
+    <button id="menu-button" class="c-hamburger c-hamburger--htx">
+    <span>toggle menu</span>
+    </button>
+    <!-- <p class="clear"></p> -->
+    <div id="nav" class="mobile-hidden">
+        <div class="portfolio-link">
+            <h3 class="big-link">Portfolio</h3>
+            <div class="gallery-nav hidden">
+                <ul>
+                    
+                    <li id="menu-adventure" class="loading ">
+                        <a data-cat="adventure" class="filter" href="#">Adventure</a>
+                    </li>
+                    
+                    <li id="menu-people" class="loading ">
+                        <a data-cat="people" class="filter" href="#">People</a>
+                    </li>
+                    
+                    <li id="menu-wildlife" class="loading ">
+                        <a data-cat="wildlife" class="filter" href="#">Wildlife</a>
+                    </li>
+                    
+                    <li id="menu-studio" class="loading ">
+                        <a data-cat="studio" class="filter" href="#">Studio</a>
+                    </li>
+                    
+                </ul>
             </div>
+        </div>
 
-            <h3><a href="https://michelleholiman.square.site/" class="big-link">Store</a></h3>
+        <h3><a href="https://michelleholiman.square.site/" class="big-link">Store</a></h3>
 
-            <br/>
-            <h3><a data-cat="about" class="big-link filter" href="#">About</a></h3>
+        <br/>
+        <h3><a data-cat="about" class="big-link filter" href="#">About</a></h3>
 
-            <div class="contact">
-                <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
-                <div class="social">
-                    
-                    <a type="button" href="http://facebook.com/michellecholiman">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                     
-                    <a type="button" href="https://www.instagram.com/michellecholiman">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    
-                </div>
+        <br/>
+        <!-- <h3><a data-cat="blog" class="big-link filter" href="/blog">Blog</a></h3> -->
+
+        <div class="contact">
+            <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
+            <div class="social">
+                
+                <a type="button" href="http://facebook.com/michellecholiman">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                 
+                <a type="button" href="https://www.instagram.com/michellecholiman">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                
             </div>
         </div>
     </div>
+</div>
 
-    <div id="splash" class="slideshow-wrapper active"></div>
+    <div id="splash" class="content slideshow-wrapper active"></div>
 
     
-    <div id="adventure" class="slideshow-wrapper ">
+    <div id="adventure" class="content slideshow-wrapper ">
         <div class="carousel">
             <!-- 
              -->
@@ -175,7 +181,7 @@
         </div>
     </div>
     
-    <div id="people" class="slideshow-wrapper ">
+    <div id="people" class="content slideshow-wrapper ">
         <div class="carousel">
             <!-- 
              -->
@@ -255,7 +261,7 @@
         </div>
     </div>
     
-    <div id="wildlife" class="slideshow-wrapper ">
+    <div id="wildlife" class="content slideshow-wrapper ">
         <div class="carousel">
             <!-- 
              -->
@@ -335,7 +341,7 @@
         </div>
     </div>
     
-    <div id="studio" class="slideshow-wrapper ">
+    <div id="studio" class="content slideshow-wrapper ">
         <div class="carousel">
             <!-- 
              -->
@@ -416,7 +422,7 @@
     </div>
     
 
-    <div id="about" class="slideshow-wrapper">
+    <div id="about" class="content slideshow-wrapper">
         <div class="about-image">
             <img src="images/about.jpg"></img>
         </div>
@@ -426,7 +432,7 @@
         </div>
     </div>
     
-    <div id="contact" class="slideshow-wrapper">
+    <div id="contact" class="content slideshow-wrapper">
         <form id="contact-form" method="POST">
             <p id="thanks" style="display: none;">
                 Thanks for contacting! I'll be in touch soon!
@@ -544,32 +550,6 @@ $(document).ready(function() {
     }
 (function() {
   'use strict';
-
-
-//   $(window).on('resize', function() {
-    //   $('.slideshow').skidder('resize');
-    //   centerSlides();
-//   });
-
-//   function centerSlides() {
-    //   $('.slideshow-wrapper').each(function() {
-    //     var $slideshow = $(this);
-    //     var $slide = $slideshow.find('.slide.active');
-    //     var $skidder = $slideshow.find('.skidder-wrapper')
-
-    //     var left = $skidder.css('margin-left');
-    //     var imgWidth = $slide.width();
-    //     var slideshowWidth = $slideshow.width();
-    //     var dif =  $slide.offset().left - $slideshow.offset().left + imgWidth/2 - slideshowWidth/2;
-
-    //     // console.log('left: ', left);
-    //     // console.log('img: ', imgWidth);
-    //     // console.log('slideshow Left: ', $slideshow.offset().left);
-    //     // console.log('dif: ', dif);
-
-    //     $skidder.css('margin-left', parseInt(left.replace('px', '')) - dif + 'px');
-    //   });
-//   }
 
       $('#menu-button').on('click', function(e) {
         e.preventDefault();
