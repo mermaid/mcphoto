@@ -5,5 +5,31 @@
 		<link>http://0.0.0.0:4000</link>
 		<atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml" />
 		
+			<item>
+				<title>Welcome to Jekyll!</title>
+        <description>&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog post.&lt;/p&gt;
+
+&lt;p&gt;I hope you like it!&lt;/p&gt;
+</description>
+				<pubDate>Tue, 12 Sep 2023 00:00:00 -0500</pubDate>
+				<link>http://0.0.0.0:4000/2023/09/12/how-to-write-a-blog/</link>
+				<guid isPermaLink="true">http://0.0.0.0:4000/2023/09/12/how-to-write-a-blog/</guid>
+			</item>
+		
+			<item>
+				<title>How to write another blog</title>
+        <description>&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog post.&lt;/p&gt;
+
+&lt;p&gt;I hope you like it!&lt;/p&gt;
+</description>
+				<pubDate>Wed, 12 Sep 2012 00:00:00 -0500</pubDate>
+				<link>http://0.0.0.0:4000/2012/09/12/how-to-write-another-blog/</link>
+				<guid isPermaLink="true">http://0.0.0.0:4000/2012/09/12/how-to-write-another-blog/</guid>
+			</item>
+		
 	</channel>
 </rss>
