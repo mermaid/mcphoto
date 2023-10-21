@@ -117,27 +117,36 @@ p.clear {
     transition: .2s all;
 }
 
-.slideshow-wrapper {
+.content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    // height: 100%;
+
+    top: $header-mobile-height + $header-mobile-padding;
+
+    @media (min-width: $modile-width) {
+        left: $sidebar-width; 
+        top: 0;
+    }
+
+    &.blog,
+    &.post {
+        padding: 20px;
+    }
+
+}
+
+.slideshow-wrapper {
     opacity: 0;
     pointer-events: none;
     transition: opacity $button-transistion-duration ease-in-out;
-
-    top: $header-mobile-height + $header-mobile-padding;
 
     &.active {
         opacity: 1;
         pointer-events: initial;
     }
-
-    // .skidder-clickwrapper {
-    //     display: none;
-    // }
 
     .skidder-viewport {
         position: absolute;
@@ -158,10 +167,6 @@ p.clear {
         }
     }
 
-    @media (min-width: $modile-width) {
-        left: $sidebar-width; 
-        top: 0;
-    }
 }
 .slideshow {
     height: inherit !important;
