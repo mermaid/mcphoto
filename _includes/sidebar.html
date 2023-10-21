@@ -1,0 +1,45 @@
+<div class="profile mobile-hidden">
+    <img id="logo" src="images/logo.svg" />
+    <img id="logo-mobile" src="images/logo-mobile.svg" />
+    <button id="menu-button" class="c-hamburger c-hamburger--htx">
+    <span>toggle menu</span>
+    </button>
+    <!-- <p class="clear"></p> -->
+    <div id="nav" class="mobile-hidden">
+        <div class="portfolio-link">
+            <h3 class="big-link">Portfolio</h3>
+            <div class="gallery-nav hidden">
+                <ul>
+                    {% for category in site.portfolio %}
+                    <li id="menu-{{category.id}}" class="loading {% if site.initial-portfolio == category.id %}current{% endif %}">
+                        <a data-cat="{{category.id}}" class="filter{% if site.initial-portfolio == category.id %} active{% endif %}" href="#">{{category.name}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <h3><a href="https://michelleholiman.square.site/" class="big-link">Store</a></h3>
+
+        <br/>
+        <h3><a data-cat="about" class="big-link filter" href="#">About</a></h3>
+
+        <br/>
+        <h3><a data-cat="blog" class="big-link filter" href="/blog">Blog</a></h3>
+
+        <div class="contact">
+            <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
+            <div class="social">
+                {% if site.facebook %}
+                <a type="button" href="http://facebook.com/{{ site.facebook }}">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                {% endif %} {% if site.instagram %}
+                <a type="button" href="https://www.instagram.com/{{ site.instagram }}">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
