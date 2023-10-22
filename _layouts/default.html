@@ -6,7 +6,7 @@
    
     {% include sidebar.html %}
 
-    <div id="splash" class="content slideshow-wrapper active"></div>
+    <div id="splash" class="content slideshow-wrapper"></div>
 
     {% for category in categories %}
         {% assign images = '' | split: '' %}
@@ -60,33 +60,26 @@
         </form>
     </div>
 </body>
-
-<script src="{{ site.baseurl }}/js/jquery.js"></script>
 <script src="{{ site.baseurl }}/js/imagesloaded.pkgd.min.js"></script>
 <script src="{{ site.baseurl }}/js/jquery.skidder.js"></script>
 <script src="{{ site.baseurl }}/js/flickity.pkgd.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script>
-
+    
+const idToHash = Array.from(document.querySelectorAll('a[data-cat]')).reduce((accl, el) => {
+    accl[el.getAttribute('data-cat')] = el.getAttribute('href');
+    return accl
+}, {});
 
 $(document).ready(function() {
     $('body').removeClass('preload');
-
-     $('.gallery-nav').hover(function() {
-        $('.gallery-nav').removeClass('hidden');
-        $('.portfolio-link').addClass('open');
-     }, undefined);
-
-     $('.profile').hover(undefined, function() {
-        $('.gallery-nav').addClass('hidden');
-        $('.portfolio-link').removeClass('open');
-     });
 
     function setupSlideshow(sl, cb) {
         setTimeout(function() {
             var $slideshow = $(sl);
 
             var category = $slideshow.parent()[0].id;
+            $('#menu-' + category).addClass('loading');
 
             $slideshow.flickity({
                 imagesLoaded: true,
@@ -160,10 +153,12 @@ $(document).ready(function() {
             setupSlideshow(this);
         })
     }
-(function() {
-  'use strict';
+});
 
-      $('#menu-button').on('click', function(e) {
+(function() {
+    'use strict';
+
+    $('#menu-button').on('click', function(e) {
         e.preventDefault();
         if ($(this).hasClass('is-active')) {
             hideProfile();
@@ -172,42 +167,58 @@ $(document).ready(function() {
         }
     });
 
+    function hideProfile() {
+        $('#menu-button').removeClass('is-active');
+        $('#nav').addClass('mobile-hidden');
+        $('.profile').addClass('mobile-hidden');
+    }
 
-  function hideProfile() {
-    $('#menu-button').removeClass('is-active');
-    $('#nav').addClass('mobile-hidden');
-    $('.profile').addClass('mobile-hidden');
-  }
+    function showProfile() {
+        $('#menu-button').addClass('is-active');
+        $('#nav').removeClass('mobile-hidden');
+        $('.profile').removeClass('mobile-hidden');
+    }
 
-  function showProfile() {
-    $('#menu-button').addClass('is-active');
-    $('#nav').removeClass('mobile-hidden');
-    $('.profile').removeClass('mobile-hidden');
-  }
-
-    $('.filter').click(function() {
-        $('.gallery-nav ul li').removeClass('current');
-        $(this).closest('li').addClass('current');
-
-        var cat = $(this).attr('data-cat');
+    function navigateTo(id) {
+        $('.gallery-nav ul li a').removeClass('current');
+        $(`.gallery-nav ul li a[data-cat="${id}"]`).addClass('current');
 
         if (!$(this).hasClass('active')) {
             $(this).addClass('active');
             $('.filter').removeClass('active');
 
             $('.slideshow-wrapper').removeClass('active');
-            $('.slideshow-wrapper#' + cat).addClass('active');
+            $('.slideshow-wrapper#' + id).addClass('active');
 
 
-            $('#' + cat).addClass('active');
+            $('#' + id).addClass('active');
+            window.location.hash = idToHash[id]
         } 
         hideProfile();
+    }
+
+    $('.filter').click(function() {
+        var cat = $(this).attr('data-cat');
+
+        navigateTo(cat)
     });
 
     setupContact();
 
-    })();
-})
+    let showSplash = true;
+
+    for (let [id, hash] of Object.entries(idToHash)) {
+        if (window.location.hash.startsWith(hash)) {
+            navigateTo(id)
+            showSplash = false
+            break;
+        }
+    }
+
+    if (showSplash) {
+        $('#splash').addClass('active')
+    }
+})();
 
 function setupContact() {
      $('#submit').click(function() {

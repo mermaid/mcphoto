@@ -14,8 +14,8 @@
             <div class="gallery-nav hidden">
                 <ul>
                     {% for category in categories %}
-                    <li id="menu-{{category | downcase}}" class="loading">
-                        <a data-cat="{{category | downcase}}" class="filter" href="#">{{category | split: '-' | last}}</a>
+                    <li id="menu-{{category | downcase}}" >
+                        <a data-cat="{{category | downcase}}" class="filter" href="#/portfolio/{{category | downcase | split: '-' | last }}">{{category | split: '-' | last}}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -25,13 +25,15 @@
         <h3><a href="https://michelleholiman.square.site/" class="big-link">Store</a></h3>
 
         <br/>
-        <h3><a data-cat="about" class="big-link filter" href="#">About</a></h3>
+        <h3><a data-cat="about" class="big-link filter" href="#/about">About</a></h3>
 
         <br/>
         <!-- <h3><a data-cat="blog" class="big-link filter" href="/blog">Blog</a></h3> -->
 
+        <h3><a data-cat="field-guide" class="big-link filter" href="#/field-guide">Field Guide</a></h3>
+
         <div class="contact">
-            <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
+            <a id="contact-button" data-cat="contact" class="filter" href="#/contact">Contact</a> 
             <div class="social">
                 {% if site.facebook %}
                 <a type="button" href="http://facebook.com/{{ site.facebook }}">
@@ -46,3 +48,17 @@
         </div>
     </div>
 </div>
+<script src="{{ site.baseurl }}/js/jquery.js"></script>
+<script>
+$(document).ready(function() {
+     $('.gallery-nav').hover(function() {
+        $('.gallery-nav').removeClass('hidden');
+        $('.portfolio-link').addClass('open');
+     }, undefined);
+
+     $('.profile').hover(undefined, function() {
+        $('.gallery-nav').addClass('hidden');
+        $('.portfolio-link').removeClass('open');
+     });
+});
+</script>

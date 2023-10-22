@@ -472,7 +472,7 @@ p.clear {
         border-spacing: 8px;
         overflow: hidden;
         
-        max-height: 150px;
+        max-height: 200px;
         opacity: 1;
         
           li {
@@ -487,9 +487,14 @@ p.clear {
                   padding-left: 16px;
                   padding-right: 16px;
               }
-              &.current a {
-                  // border: 1px solid rgb(0,0,128);
-                  color: rgb(0,0,128);
+              
+              & a.current {
+                // border: 1px solid rgb(0,0,128);
+                color: rgb(0,0,128);
+            }
+
+              &:last-child {
+                margin-bottom: 0;
               }
           }
       
@@ -503,7 +508,7 @@ p.clear {
 
     &:hover {
         .gallery-nav.hidden {
-            max-height: 150px;
+            max-height: 200px;
             opacity: 1;
         }
 
