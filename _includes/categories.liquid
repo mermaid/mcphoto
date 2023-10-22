@@ -1,0 +1,13 @@
+{% assign categories = '' | split: '' %}
+{% assign portfolio_path = '/images/portfolio/' %}
+
+{% assign image_files = site.static_files %}
+
+{% for image in image_files %}
+  {% if image.path contains portfolio_path %}
+    {% assign i = image.path | remove_first: portfolio_path | split: '/' %}
+    {% assign categories = categories | push: i.first %}
+  {% endif %}
+{% endfor %}
+
+{% assign categories = categories | uniq %}

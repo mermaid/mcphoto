@@ -8,22 +8,30 @@
 
     <div id="splash" class="content slideshow-wrapper active"></div>
 
-    {% for category in site.portfolio %}
-    <div id="{{category.id}}" class="content slideshow-wrapper {% if site.initial-portfolio == category.id %}active {% endif %}">
-        <div class="carousel">
-            <!-- {% assign tag = 'img' %}
-            {% if site.initial-portfolio == category.id %}
-                {% assign tag = 'img' %}
-            {% endif %} -->
-            {% for image in category.images %}
-            <div class="carousel-cell">
-                <div class="center-helper">
-                    <img data-flickity-lazyload-src="{{image}}-small.jpg" data-flickity-lazyload-srcset="{{image}}-small.jpg 1x, {{image}}.jpg 2x">
+    {% for category in categories %}
+        {% assign images = '' | split: '' %}
+        {% for image in image_files %}
+            {% assign category_path = portfolio_path | append: category %}
+            {% if image.path contains category_path %}
+                {% assign i = image.path | remove: '-small' %}
+                {% assign images = images | push: i %}
+            {% endif %}
+        {% endfor %}
+        {% assign images = images | uniq %}
+
+        <div id="{{category | downcase }}" class="content slideshow-wrapper ">
+            <div class="carousel">
+                {% for image in images %}
+                {% assign image_parts = image | split: '.' %}
+
+                <div class="carousel-cell">
+                    <div class="center-helper">
+                        <img data-flickity-lazyload-src="{{image_parts.first}}-small.{{image_parts.last}}" data-flickity-lazyload-srcset="{{image_parts.first}}-small.{{image_parts.last}} 1x, {{image_parts.first}}.{{image_parts.last}} 2x">
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
-    </div>
     {% endfor %}
 
     <div id="about" class="content slideshow-wrapper">

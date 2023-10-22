@@ -6,16 +6,45 @@
 		<atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Welcome to Jekyll!</title>
-        <description>&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+				<title>Testig another post???</title>
+        <description>&lt;p&gt;Cool cool post, I’m testing the things&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog post.&lt;/p&gt;
+&lt;p&gt;The&lt;/p&gt;
 
-&lt;p&gt;I hope you like it!&lt;/p&gt;
+&lt;h1 id=&quot;headings&quot;&gt;Headings&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;And quotes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;lists&lt;/li&gt;
+  &lt;li&gt;two
+    &lt;ol&gt;
+      &lt;li&gt;sub&lt;/li&gt;
+      &lt;li&gt;sub 2&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Code blocks &amp;lt;scripts&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Bold and Italics&lt;/p&gt;
 </description>
-				<pubDate>Tue, 12 Sep 2023 00:00:00 -0500</pubDate>
-				<link>http://0.0.0.0:4000/blog/2023/09/12/how-to-write-a-blog/</link>
-				<guid isPermaLink="true">http://0.0.0.0:4000/blog/2023/09/12/how-to-write-a-blog/</guid>
+				<pubDate>Sat, 21 Oct 2023 01:00:00 -0500</pubDate>
+				<link>http://0.0.0.0:4000/blog/2023/10/21/testig-another-post/</link>
+				<guid isPermaLink="true">http://0.0.0.0:4000/blog/2023/10/21/testig-another-post/</guid>
+			</item>
+		
+			<item>
+				<title>How to spend 2 adventurous weeks in japan</title>
+        <description>&lt;p&gt;Has Japan been on your bucket list for a while now?&lt;/p&gt;
+</description>
+				<pubDate>Sat, 21 Oct 2023 01:00:00 -0500</pubDate>
+				<link>http://0.0.0.0:4000/blog/2023/10/21/2-weeks-in-japan/</link>
+				<guid isPermaLink="true">http://0.0.0.0:4000/blog/2023/10/21/2-weeks-in-japan/</guid>
 			</item>
 		
 			<item>

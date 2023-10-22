@@ -10,76 +10,6 @@ about: "<p>Michelle Holiman is an avid hiker, scuba diver, and lover of the natu
 <p>Michelle uses her creative eye to capture the outdoor scenes she so loves. She focuses on communicating the wonder and story of the spaces she explores.</p>
 <p>She is most happy traveling with her spouse Cameron, eating good food, and snuggling her two cats.</p>"
 
-initial-portfolio: ''
-portfolio: 
-  - 
-    id: "adventure"
-    name: "Adventure"
-    images: 
-    - images/adventure/adventure-1
-    - images/adventure/adventure-2
-    - images/adventure/adventure-3
-    - images/adventure/adventure-4
-    - images/adventure/adventure-5
-    - images/adventure/adventure-6
-    - images/adventure/adventure-7
-    - images/adventure/adventure-8
-    - images/adventure/adventure-9
-    - images/adventure/adventure-10
-    - images/adventure/adventure-11
-    - images/adventure/adventure-12
-    - images/adventure/adventure-13
-    - images/adventure/adventure-14
-  -
-    id: "people"
-    name: "People"
-    images:
-    - images/people/people-1
-    - images/people/people-2
-    - images/people/people-3
-    - images/people/people-4
-    - images/people/people-5
-    - images/people/people-6
-    - images/people/people-7
-    - images/people/people-8
-    - images/people/people-9
-    - images/people/people-10
-    - images/people/people-11
-    - images/people/people-12
-  -
-    id: "wildlife"
-    name: "Wildlife"
-    images:
-    - images/wildlife/wildlife-1
-    - images/wildlife/wildlife-2
-    - images/wildlife/wildlife-3
-    - images/wildlife/wildlife-4
-    - images/wildlife/wildlife-5
-    - images/wildlife/wildlife-6
-    - images/wildlife/wildlife-7
-    - images/wildlife/wildlife-8
-    - images/wildlife/wildlife-9
-    - images/wildlife/wildlife-10
-    - images/wildlife/wildlife-11
-    - images/wildlife/wildlife-12
-  -
-    id: "studio"
-    name: "Studio"
-    images:
-    - images/studio/studio-1
-    - images/studio/studio-2
-    - images/studio/studio-3
-    - images/studio/studio-4
-    - images/studio/studio-5
-    - images/studio/studio-6
-    - images/studio/studio-7
-    - images/studio/studio-8
-    - images/studio/studio-9
-    - images/studio/studio-10
-    - images/studio/studio-11
-    - images/studio/studio-12
-
-
 background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
 
 paginate:           5
@@ -106,3 +36,7 @@ defaults:
       type:         "posts"
     values:
       layout:       "post"
+  - scope:
+      path: "images/portfolio"
+    values:
+      image: true

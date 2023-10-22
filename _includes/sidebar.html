@@ -4,15 +4,18 @@
     <button id="menu-button" class="c-hamburger c-hamburger--htx">
     <span>toggle menu</span>
     </button>
+    
+    {% include categories.liquid %}
+
     <!-- <p class="clear"></p> -->
     <div id="nav" class="mobile-hidden">
         <div class="portfolio-link">
             <h3 class="big-link">Portfolio</h3>
             <div class="gallery-nav hidden">
                 <ul>
-                    {% for category in site.portfolio %}
-                    <li id="menu-{{category.id}}" class="loading {% if site.initial-portfolio == category.id %}current{% endif %}">
-                        <a data-cat="{{category.id}}" class="filter{% if site.initial-portfolio == category.id %} active{% endif %}" href="#">{{category.name}}</a>
+                    {% for category in categories %}
+                    <li id="menu-{{category | downcase}}" class="loading">
+                        <a data-cat="{{category | downcase}}" class="filter" href="#">{{category | split: '-' | last}}</a>
                     </li>
                     {% endfor %}
                 </ul>
