@@ -35,13 +35,14 @@
         <div class="contact">
             <a id="contact-button" data-cat="contact" class="filter" href="#/contact">Contact</a> 
             <div class="social">
+                {% if site.instagram %}
+                <a type="button" href="https://www.instagram.com/{{ site.instagram }}">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                {% endif %}
                 {% if site.facebook %}
                 <a type="button" href="http://facebook.com/{{ site.facebook }}">
                     <i class="fa fa-facebook"></i>
-                </a>
-                {% endif %} {% if site.instagram %}
-                <a type="button" href="https://www.instagram.com/{{ site.instagram }}">
-                    <i class="fa fa-instagram"></i>
                 </a>
                 {% endif %}
             </div>
