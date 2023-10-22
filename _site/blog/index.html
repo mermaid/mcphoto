@@ -50,20 +50,24 @@
             <div class="gallery-nav hidden">
                 <ul>
                     
-                    <li id="menu-1-adventure" class="loading">
-                        <a data-cat="1-adventure" class="filter" href="#">Adventure</a>
+                    <li id="menu-1-adventure" >
+                        <a data-cat="1-adventure" class="filter" href="#/portfolio/adventure">Adventure</a>
                     </li>
                     
-                    <li id="menu-2-people" class="loading">
-                        <a data-cat="2-people" class="filter" href="#">People</a>
+                    <li id="menu-2-people" >
+                        <a data-cat="2-people" class="filter" href="#/portfolio/people">People</a>
                     </li>
                     
-                    <li id="menu-3-wildlife" class="loading">
-                        <a data-cat="3-wildlife" class="filter" href="#">Wildlife</a>
+                    <li id="menu-3-wildlife" >
+                        <a data-cat="3-wildlife" class="filter" href="#/portfolio/wildlife">Wildlife</a>
                     </li>
                     
-                    <li id="menu-4-studio" class="loading">
-                        <a data-cat="4-studio" class="filter" href="#">Studio</a>
+                    <li id="menu-4-studio" >
+                        <a data-cat="4-studio" class="filter" href="#/portfolio/studio">Studio</a>
+                    </li>
+                    
+                    <li id="menu-5-cool" >
+                        <a data-cat="5-cool" class="filter" href="#/portfolio/cool">Cool</a>
                     </li>
                     
                 </ul>
@@ -73,13 +77,15 @@
         <h3><a href="https://michelleholiman.square.site/" class="big-link">Store</a></h3>
 
         <br/>
-        <h3><a data-cat="about" class="big-link filter" href="#">About</a></h3>
+        <h3><a data-cat="about" class="big-link filter" href="#/about">About</a></h3>
 
         <br/>
         <!-- <h3><a data-cat="blog" class="big-link filter" href="/blog">Blog</a></h3> -->
 
+        <h3><a data-cat="field-guide" class="big-link filter" href="#/field-guide">Field Guide</a></h3>
+
         <div class="contact">
-            <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
+            <a id="contact-button" data-cat="contact" class="filter" href="#/contact">Contact</a> 
             <div class="social">
                 
                 <a type="button" href="http://facebook.com/michellecholiman">
@@ -94,6 +100,20 @@
         </div>
     </div>
 </div>
+<script src="/js/jquery.js"></script>
+<script>
+$(document).ready(function() {
+     $('.gallery-nav').hover(function() {
+        $('.gallery-nav').removeClass('hidden');
+        $('.portfolio-link').addClass('open');
+     }, undefined);
+
+     $('.profile').hover(undefined, function() {
+        $('.gallery-nav').addClass('hidden');
+        $('.portfolio-link').removeClass('open');
+     });
+});
+</script>
 
     <div class="content blog">
         

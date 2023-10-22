@@ -51,20 +51,24 @@
             <div class="gallery-nav hidden">
                 <ul>
                     
-                    <li id="menu-1-adventure" class="loading">
-                        <a data-cat="1-adventure" class="filter" href="#">Adventure</a>
+                    <li id="menu-1-adventure" >
+                        <a data-cat="1-adventure" class="filter" href="#/portfolio/adventure">Adventure</a>
                     </li>
                     
-                    <li id="menu-2-people" class="loading">
-                        <a data-cat="2-people" class="filter" href="#">People</a>
+                    <li id="menu-2-people" >
+                        <a data-cat="2-people" class="filter" href="#/portfolio/people">People</a>
                     </li>
                     
-                    <li id="menu-3-wildlife" class="loading">
-                        <a data-cat="3-wildlife" class="filter" href="#">Wildlife</a>
+                    <li id="menu-3-wildlife" >
+                        <a data-cat="3-wildlife" class="filter" href="#/portfolio/wildlife">Wildlife</a>
                     </li>
                     
-                    <li id="menu-4-studio" class="loading">
-                        <a data-cat="4-studio" class="filter" href="#">Studio</a>
+                    <li id="menu-4-studio" >
+                        <a data-cat="4-studio" class="filter" href="#/portfolio/studio">Studio</a>
+                    </li>
+                    
+                    <li id="menu-5-cool" >
+                        <a data-cat="5-cool" class="filter" href="#/portfolio/cool">Cool</a>
                     </li>
                     
                 </ul>
@@ -74,13 +78,15 @@
         <h3><a href="https://michelleholiman.square.site/" class="big-link">Store</a></h3>
 
         <br/>
-        <h3><a data-cat="about" class="big-link filter" href="#">About</a></h3>
+        <h3><a data-cat="about" class="big-link filter" href="#/about">About</a></h3>
 
         <br/>
         <!-- <h3><a data-cat="blog" class="big-link filter" href="/blog">Blog</a></h3> -->
 
+        <h3><a data-cat="field-guide" class="big-link filter" href="#/field-guide">Field Guide</a></h3>
+
         <div class="contact">
-            <a id="contact-button" data-cat="contact" class="filter" href="#">Contact</a> 
+            <a id="contact-button" data-cat="contact" class="filter" href="#/contact">Contact</a> 
             <div class="social">
                 
                 <a type="button" href="http://facebook.com/michellecholiman">
@@ -95,8 +101,22 @@
         </div>
     </div>
 </div>
+<script src="/js/jquery.js"></script>
+<script>
+$(document).ready(function() {
+     $('.gallery-nav').hover(function() {
+        $('.gallery-nav').removeClass('hidden');
+        $('.portfolio-link').addClass('open');
+     }, undefined);
 
-    <div id="splash" class="content slideshow-wrapper active"></div>
+     $('.profile').hover(undefined, function() {
+        $('.gallery-nav').addClass('hidden');
+        $('.portfolio-link').removeClass('open');
+     });
+});
+</script>
+
+    <div id="splash" class="content slideshow-wrapper"></div>
 
     
         
@@ -539,6 +559,24 @@
             </div>
         </div>
     
+        
+        
+        
+
+        <div id="5-cool" class="content slideshow-wrapper ">
+            <div class="carousel">
+                
+                
+
+                <div class="carousel-cell">
+                    <div class="center-helper">
+                        <img data-flickity-lazyload-src="/images/portfolio/5-Cool/Supper-small.jpeg" data-flickity-lazyload-srcset="/images/portfolio/5-Cool/Supper-small.jpeg 1x, /images/portfolio/5-Cool/Supper.jpeg 2x">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
 
     <div id="about" class="content slideshow-wrapper">
         <div class="about-image">
@@ -566,33 +604,26 @@
         </form>
     </div>
 </body>
-
-<script src="/js/jquery.js"></script>
 <script src="/js/imagesloaded.pkgd.min.js"></script>
 <script src="/js/jquery.skidder.js"></script>
 <script src="/js/flickity.pkgd.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script>
-
+    
+const idToHash = Array.from(document.querySelectorAll('a[data-cat]')).reduce((accl, el) => {
+    accl[el.getAttribute('data-cat')] = el.getAttribute('href');
+    return accl
+}, {});
 
 $(document).ready(function() {
     $('body').removeClass('preload');
-
-     $('.gallery-nav').hover(function() {
-        $('.gallery-nav').removeClass('hidden');
-        $('.portfolio-link').addClass('open');
-     }, undefined);
-
-     $('.profile').hover(undefined, function() {
-        $('.gallery-nav').addClass('hidden');
-        $('.portfolio-link').removeClass('open');
-     });
 
     function setupSlideshow(sl, cb) {
         setTimeout(function() {
             var $slideshow = $(sl);
 
             var category = $slideshow.parent()[0].id;
+            $('#menu-' + category).addClass('loading');
 
             $slideshow.flickity({
                 imagesLoaded: true,
@@ -666,10 +697,12 @@ $(document).ready(function() {
             setupSlideshow(this);
         })
     }
-(function() {
-  'use strict';
+});
 
-      $('#menu-button').on('click', function(e) {
+(function() {
+    'use strict';
+
+    $('#menu-button').on('click', function(e) {
         e.preventDefault();
         if ($(this).hasClass('is-active')) {
             hideProfile();
@@ -678,42 +711,58 @@ $(document).ready(function() {
         }
     });
 
+    function hideProfile() {
+        $('#menu-button').removeClass('is-active');
+        $('#nav').addClass('mobile-hidden');
+        $('.profile').addClass('mobile-hidden');
+    }
 
-  function hideProfile() {
-    $('#menu-button').removeClass('is-active');
-    $('#nav').addClass('mobile-hidden');
-    $('.profile').addClass('mobile-hidden');
-  }
+    function showProfile() {
+        $('#menu-button').addClass('is-active');
+        $('#nav').removeClass('mobile-hidden');
+        $('.profile').removeClass('mobile-hidden');
+    }
 
-  function showProfile() {
-    $('#menu-button').addClass('is-active');
-    $('#nav').removeClass('mobile-hidden');
-    $('.profile').removeClass('mobile-hidden');
-  }
-
-    $('.filter').click(function() {
-        $('.gallery-nav ul li').removeClass('current');
-        $(this).closest('li').addClass('current');
-
-        var cat = $(this).attr('data-cat');
+    function navigateTo(id) {
+        $('.gallery-nav ul li a').removeClass('current');
+        $(`.gallery-nav ul li a[data-cat="${id}"]`).addClass('current');
 
         if (!$(this).hasClass('active')) {
             $(this).addClass('active');
             $('.filter').removeClass('active');
 
             $('.slideshow-wrapper').removeClass('active');
-            $('.slideshow-wrapper#' + cat).addClass('active');
+            $('.slideshow-wrapper#' + id).addClass('active');
 
 
-            $('#' + cat).addClass('active');
+            $('#' + id).addClass('active');
+            window.location.hash = idToHash[id]
         } 
         hideProfile();
+    }
+
+    $('.filter').click(function() {
+        var cat = $(this).attr('data-cat');
+
+        navigateTo(cat)
     });
 
     setupContact();
 
-    })();
-})
+    let showSplash = true;
+
+    for (let [id, hash] of Object.entries(idToHash)) {
+        if (window.location.hash.startsWith(hash)) {
+            navigateTo(id)
+            showSplash = false
+            break;
+        }
+    }
+
+    if (showSplash) {
+        $('#splash').addClass('active')
+    }
+})();
 
 function setupContact() {
      $('#submit').click(function() {
