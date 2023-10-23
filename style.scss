@@ -533,6 +533,10 @@ p.clear {
         
         max-height: 200px;
         opacity: 1;
+
+        @media (max-width: $modile-width) {
+            font-size: 24px;
+        }
         
           li {
               float: none;
