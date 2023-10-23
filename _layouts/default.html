@@ -8,6 +8,10 @@
 
     <div id="splash" class="content slideshow-wrapper"></div>
 
+    <div id="field-guide" class="content slideshow-wrapper">
+        {% include field-guide.html %}
+    </div>
+
     {% for category in categories %}
         {% assign images = '' | split: '' %}
         {% for image in image_files %}
@@ -35,29 +39,11 @@
     {% endfor %}
 
     <div id="about" class="content slideshow-wrapper">
-        <div class="about-image">
-            <img src="images/about.jpg"></img>
-        </div>
-        
-        <div class="about-text">
-            {{ site.about }}
-        </div>
+        {% include about.html %}
     </div>
     
     <div id="contact" class="content slideshow-wrapper">
-        <form id="contact-form" method="POST">
-            <p id="thanks" style="display: none;">
-                Thanks for contacting! I'll be in touch soon!
-            </p>
-            <div class="medium-12 columns">
-                <input class="required" name="name" placeholder="name" type="text">
-                <input class="required email" name="_reply " placeholder="email" type="text">
-                <input class="required" name="subject" placeholder="subject" type="text">
-                <textarea class="required" name="message" placeholder="message"></textarea>
-                <input type="text" name="_gotcha" style="display:none" />
-                <a id="submit" href="#">Submit</a>
-            </div>
-        </form>
+        {% include contact.html %}
     </div>
 </body>
 <script src="{{ site.baseurl }}/js/imagesloaded.pkgd.min.js"></script>
@@ -230,7 +216,7 @@ function setupContact() {
     submitHandler: function(form) {
         var email = "{{site.email}}";
         $.ajax({
-        url: '//formspree.io/' + email,
+        url: '//formspree.io/f/' + email,
         method: 'POST',
         data: $(form).serialize(),
         dataType: 'json',
