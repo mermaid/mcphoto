@@ -6,6 +6,10 @@ Ink is a minmal two-column theme for [Jekyll](http://jekyllrb.com)
 
 # Installation 
 
+## run
+`docker-compose up` to run the jekyll build
+`yarn tinacms build && docker-compose up` to run the tinacms & jekyll build
+
 ##### Setup on your local machine
  * Clone or download the repository
  * You should have [ruby](https://www.ruby-lang.org/en/) installed in your system
