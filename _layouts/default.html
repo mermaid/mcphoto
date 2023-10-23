@@ -214,9 +214,8 @@ function setupContact() {
     $('form#contact-form').validate({
     messages: { },
     submitHandler: function(form) {
-        var email = "{{site.email}}";
         $.ajax({
-        url: '//formspree.io/f/' + email,
+        url: 'https://formspree.io/f/xjvqlyvy',
         method: 'POST',
         data: $(form).serialize(),
         dataType: 'json',
