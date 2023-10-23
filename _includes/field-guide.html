@@ -4,38 +4,41 @@
     </h1>
     <img class="field-guide-image" src="images/field-guide.jpg"></img>
     <br />
+    <h3 style="margin-top: 0">Congratulations on starting your photographic journey!</h3>
     <div class="field-guide-text">
-        <p>Michelle Holiman is an avid hiker, scuba diver, and lover of the natural world. She has a BFA in Photography from Southern Utah University and has been using that degree to create art that has been displayed in the Southern Utah Museum of Art and the Hogle Zoo. She has also been published in news articles, on many professional websites, and in calendars and books.</p>
-        <p>Michelle uses her creative eye to capture the outdoor scenes she so loves. She focuses on communicating the wonder and story of the spaces she explores.</p>
-        <p>She is most happy traveling with her spouse Cameron, eating good food, and snuggling her two cats.</p>
+        <p>Use this guide to equip yourself with the knowledge you need to start shooting in manual mode. I highly recommend printing it out and going on a photo adventure, learning “in the field” each of the skills within this manual. It is a great big world out there, and there are so many things to photograph, so enjoy the journey! Now go and take some photos!</p>
     </div>
     <br />
-    <div class="button full">
+    <div id="download-button" class="button full">
         <a
             download
             target="_blank"
             href="/assets/Intro to Photo Field Guide.pdf"
         >
-            Download the Field Guide
+            — Click Here to Download the Full Guide —
         </a>
     </div>
     <br />
     <div>
         <div>
             <div>
-                <div class="button" >
+                <div id="donate-button" class="button" >
                     <a
+                        id="embedded-checkout-modal-checkout-button"
                         target="_blank"
                         data-url="https://square.link/u/NUQoZXQS?src=embd"
                         href="https://square.link/u/NUQoZXQS?src=embed"
                     >
-                        Donate
+                        Support the Artist
                     </a>
                 </div>
             </div>
         </div>
         
         <script>
+        $('#download-button').click(() => {
+            gtag('event', 'download_guide', {});
+        })
         function showCheckoutWindow(e) {
             e.preventDefault();
     
