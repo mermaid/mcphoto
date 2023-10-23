@@ -132,6 +132,8 @@ p.clear {
     // background-color: $lightGrey;
     height: 100%;
     transition: opacity $button-transistion-duration ease-in-out;
+    padding-top: 50px;
+
     &.mobile-hidden {
         opacity: 0;
         pointer-events: none;
@@ -141,10 +143,6 @@ p.clear {
             opacity: 1;
             pointer-events: initial;
         }
-    }
-
-    &:first-child {
-        padding-top: 50px;
     }
 }
 
@@ -165,6 +163,10 @@ p.clear {
         color: #111;
     }
     transition: .2s all;
+
+    @media (max-width: $modile-width) {
+        font-size: 24px;
+    }
 }
 
 .content {
@@ -413,10 +415,18 @@ p.clear {
             padding: 0;
             margin-left: 0;
             margin-bottom: 20px;
+
+            @media (max-width: $modile-width) {
+                font-size: 24px;
+            }
         }
         #contact-button {
             position: relative;
             top: -10px;
+
+            @media (max-width: $modile-width) {
+                font-size: 24px;
+            }
         }
 
         .social .fa {
