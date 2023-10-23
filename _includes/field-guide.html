@@ -1,0 +1,74 @@
+<div class="field-guide-content">
+    <h1 class="title">
+        Free Intro to Photo Field Guide
+    </h1>
+    <img class="field-guide-image" src="images/field-guide.jpg"></img>
+    <br />
+    <div class="field-guide-text">
+        <p>Michelle Holiman is an avid hiker, scuba diver, and lover of the natural world. She has a BFA in Photography from Southern Utah University and has been using that degree to create art that has been displayed in the Southern Utah Museum of Art and the Hogle Zoo. She has also been published in news articles, on many professional websites, and in calendars and books.</p>
+        <p>Michelle uses her creative eye to capture the outdoor scenes she so loves. She focuses on communicating the wonder and story of the spaces she explores.</p>
+        <p>She is most happy traveling with her spouse Cameron, eating good food, and snuggling her two cats.</p>
+    </div>
+    <br />
+    <div class="button full">
+        <a
+            download
+            target="_blank"
+            href="/assets/Intro to Photo Field Guide.pdf"
+        >
+            Download the Field Guide
+        </a>
+    </div>
+    <br />
+    <div>
+        <div>
+            <div>
+                <div class="button" >
+                    <a
+                        target="_blank"
+                        data-url="https://square.link/u/NUQoZXQS?src=embd"
+                        href="https://square.link/u/NUQoZXQS?src=embed"
+                    >
+                        Donate
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        function showCheckoutWindow(e) {
+            e.preventDefault();
+    
+            const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url');
+            const title = 'Square Online Checkout';
+    
+            // Some platforms embed in an iframe, so we want to top window to calculate sizes correctly
+            const topWindow = window.top ? window.top : window;
+    
+            // Fixes dual-screen position                                Most browsers          Firefox
+            const dualScreenLeft = topWindow.screenLeft !==  undefined ? topWindow.screenLeft : topWindow.screenX;
+            const dualScreenTop = topWindow.screenTop !==  undefined   ? topWindow.screenTop  : topWindow.screenY;
+    
+            const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+            const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+    
+            const h = height * .75;
+            const w = 500;
+    
+            const systemZoom = width / topWindow.screen.availWidth;
+            const left = (width - w) / 2 / systemZoom + dualScreenLeft;
+            const top = (height - h) / 2 / systemZoom + dualScreenTop;
+            const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
+    
+            if (window.focus) newWindow.focus();
+        }
+    
+        // This overrides the default checkout button click handler to show the embed modal
+        // instead of opening a new tab with the given link url
+        document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function (e) {
+            showCheckoutWindow(e);
+        });
+        </script>
+    </div>
+    <br />
+</div>

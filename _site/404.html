@@ -46,6 +46,10 @@
 
     <!-- <p class="clear"></p> -->
     <div id="nav" class="mobile-hidden">
+        <h3><a data-cat="field-guide" class="big-link filter" href="#/field-guide">Field Guide</a></h3>
+
+        <br/>
+        
         <div class="portfolio-link">
             <h3 class="big-link">Portfolio</h3>
             <div class="gallery-nav hidden">
@@ -63,23 +67,20 @@
                         <a data-cat="3-wildlife" class="filter" href="#/portfolio/wildlife">Wildlife</a>
                     </li>
                     
-                    <li id="menu-4-studio" >
-                        <a data-cat="4-studio" class="filter" href="#/portfolio/studio">Studio</a>
-                    </li>
-                    
                 </ul>
             </div>
         </div>
 
+        <br/>
+
         <h3><a href="https://michelleholiman.square.site/" class="big-link">Store</a></h3>
 
         <br/>
+        
         <h3><a data-cat="about" class="big-link filter" href="#/about">About</a></h3>
 
         <br/>
         <!-- <h3><a data-cat="blog" class="big-link filter" href="/blog">Blog</a></h3> -->
-
-        <h3><a data-cat="field-guide" class="big-link filter" href="#/field-guide">Field Guide</a></h3>
 
         <div class="contact">
             <a id="contact-button" data-cat="contact" class="filter" href="#/contact">Contact</a> 
@@ -89,10 +90,6 @@
                     <i class="fa fa-instagram"></i>
                 </a>
                 
-                
-                <a type="button" href="http://facebook.com/michellecholiman">
-                    <i class="fa fa-facebook"></i>
-                </a>
                 
             </div>
         </div>
@@ -114,6 +111,83 @@ $(document).ready(function() {
 </script>
 
     <div id="splash" class="content slideshow-wrapper"></div>
+
+    <div id="field-guide" class="content slideshow-wrapper">
+        <div class="field-guide-content">
+    <h1 class="title">
+        Free Intro to Photo Field Guide
+    </h1>
+    <img class="field-guide-image" src="images/field-guide.jpg"></img>
+    <br />
+    <div class="field-guide-text">
+        <p>Michelle Holiman is an avid hiker, scuba diver, and lover of the natural world. She has a BFA in Photography from Southern Utah University and has been using that degree to create art that has been displayed in the Southern Utah Museum of Art and the Hogle Zoo. She has also been published in news articles, on many professional websites, and in calendars and books.</p>
+        <p>Michelle uses her creative eye to capture the outdoor scenes she so loves. She focuses on communicating the wonder and story of the spaces she explores.</p>
+        <p>She is most happy traveling with her spouse Cameron, eating good food, and snuggling her two cats.</p>
+    </div>
+    <br />
+    <div class="button full">
+        <a
+            download
+            target="_blank"
+            href="/assets/Intro to Photo Field Guide.pdf"
+        >
+            Download the Field Guide
+        </a>
+    </div>
+    <br />
+    <div>
+        <div>
+            <div>
+                <div class="button" >
+                    <a
+                        target="_blank"
+                        data-url="https://square.link/u/NUQoZXQS?src=embd"
+                        href="https://square.link/u/NUQoZXQS?src=embed"
+                    >
+                        Donate
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        function showCheckoutWindow(e) {
+            e.preventDefault();
+    
+            const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url');
+            const title = 'Square Online Checkout';
+    
+            // Some platforms embed in an iframe, so we want to top window to calculate sizes correctly
+            const topWindow = window.top ? window.top : window;
+    
+            // Fixes dual-screen position                                Most browsers          Firefox
+            const dualScreenLeft = topWindow.screenLeft !==  undefined ? topWindow.screenLeft : topWindow.screenX;
+            const dualScreenTop = topWindow.screenTop !==  undefined   ? topWindow.screenTop  : topWindow.screenY;
+    
+            const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+            const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+    
+            const h = height * .75;
+            const w = 500;
+    
+            const systemZoom = width / topWindow.screen.availWidth;
+            const left = (width - w) / 2 / systemZoom + dualScreenLeft;
+            const top = (height - h) / 2 / systemZoom + dualScreenTop;
+            const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
+    
+            if (window.focus) newWindow.focus();
+        }
+    
+        // This overrides the default checkout button click handler to show the embed modal
+        // instead of opening a new tab with the given link url
+        document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function (e) {
+            showCheckoutWindow(e);
+        });
+        </script>
+    </div>
+    <br />
+</div>
+    </div>
 
     
         
@@ -450,137 +524,31 @@ $(document).ready(function() {
             </div>
         </div>
     
-        
-        
-        
-
-        <div id="4-studio" class="content slideshow-wrapper ">
-            <div class="carousel">
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-1-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-1-small.jpg 1x, /images/portfolio/4-Studio/studio-1.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-10-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-10-small.jpg 1x, /images/portfolio/4-Studio/studio-10.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-11-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-11-small.jpg 1x, /images/portfolio/4-Studio/studio-11.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-12-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-12-small.jpg 1x, /images/portfolio/4-Studio/studio-12.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-2-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-2-small.jpg 1x, /images/portfolio/4-Studio/studio-2.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-3-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-3-small.jpg 1x, /images/portfolio/4-Studio/studio-3.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-4-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-4-small.jpg 1x, /images/portfolio/4-Studio/studio-4.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-5-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-5-small.jpg 1x, /images/portfolio/4-Studio/studio-5.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-6-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-6-small.jpg 1x, /images/portfolio/4-Studio/studio-6.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-7-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-7-small.jpg 1x, /images/portfolio/4-Studio/studio-7.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-8-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-8-small.jpg 1x, /images/portfolio/4-Studio/studio-8.jpg 2x">
-                    </div>
-                </div>
-                
-                
-
-                <div class="carousel-cell">
-                    <div class="center-helper">
-                        <img data-flickity-lazyload-src="/images/portfolio/4-Studio/studio-9-small.jpg" data-flickity-lazyload-srcset="/images/portfolio/4-Studio/studio-9-small.jpg 1x, /images/portfolio/4-Studio/studio-9.jpg 2x">
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    
 
     <div id="about" class="content slideshow-wrapper">
         <div class="about-image">
-            <img src="images/about.jpg"></img>
-        </div>
-        
-        <div class="about-text">
-            <p>Michelle Holiman is an avid hiker, scuba diver, and lover of the natural world. She has a BFA in Photography from Southern Utah University and has been using that degree to create art that has been displayed in the Southern Utah Museum of Art and the Hogle Zoo. She has also been published in news articles, on many professional websites, and in calendars and books.</p> <p>Michelle uses her creative eye to capture the outdoor scenes she so loves. She focuses on communicating the wonder and story of the spaces she explores.</p> <p>She is most happy traveling with her spouse Cameron, eating good food, and snuggling her two cats.</p>
-        </div>
+    <img src="images/about.jpg"></img>
+</div>
+
+<div class="about-text">
+    <p>Michelle Holiman is an avid hiker, scuba diver, and lover of the natural world. She has a BFA in Photography from Southern Utah University and has been using that degree to create art that has been displayed in the Southern Utah Museum of Art and the Hogle Zoo. She has also been published in news articles, on many professional websites, and in calendars and books.</p> <p>Michelle uses her creative eye to capture the outdoor scenes she so loves. She focuses on communicating the wonder and story of the spaces she explores.</p> <p>She is most happy traveling with her spouse Cameron, eating good food, and snuggling her two cats.</p>
+</div>
     </div>
     
     <div id="contact" class="content slideshow-wrapper">
         <form id="contact-form" method="POST">
-            <p id="thanks" style="display: none;">
-                Thanks for contacting! I'll be in touch soon!
-            </p>
-            <div class="medium-12 columns">
-                <input class="required" name="name" placeholder="name" type="text">
-                <input class="required email" name="_reply " placeholder="email" type="text">
-                <input class="required" name="subject" placeholder="subject" type="text">
-                <textarea class="required" name="message" placeholder="message"></textarea>
-                <input type="text" name="_gotcha" style="display:none" />
-                <a id="submit" href="#">Submit</a>
-            </div>
-        </form>
+    <p id="thanks" style="display: none;">
+        Thanks for contacting! I'll be in touch soon!
+    </p>
+    <div class="medium-12 columns">
+        <input class="required" name="name" placeholder="name" type="text">
+        <input class="required email" name="_reply " placeholder="email" type="text">
+        <input class="required" name="subject" placeholder="subject" type="text">
+        <textarea class="required" name="message" placeholder="message"></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+        <a id="submit" href="#">Submit</a>
+    </div>
+</form>
     </div>
 </body>
 <script src="/js/imagesloaded.pkgd.min.js"></script>
@@ -753,7 +721,7 @@ function setupContact() {
     submitHandler: function(form) {
         var email = "michellecholiman@gmail.com";
         $.ajax({
-        url: '//formspree.io/' + email,
+        url: '//formspree.io/f/' + email,
         method: 'POST',
         data: $(form).serialize(),
         dataType: 'json',
