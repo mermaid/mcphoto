@@ -80,7 +80,7 @@ Now that you know how to pay, let’s talk about how to use Japan’s amazing pu
 
  
 
-### Shinkansen and Nozomi
+### ![Bridge over a river in Hiroshima Japan](/images/PT/PT-1-6.jpg)Shinkansen and Nozomi
 
 Bullet trains are famous in Japan. They are comfortable, relatively inexpensive, and insanely fast. They are the most complicated trains to book in Japan, which isn’t saying much because all the transit is super simple to use. Essentially you need one extra ticket compared to any other train. These can be purchased in any train station (with a Shinkansen track of course) in the main Shinkansen ticket office. These are clearly marked and easy to find,
 simply follow the signs to the booths and hop in line. Let the agent know where you are going and they will get everything booked and purchased for you. You can also buy some of these online in advance, and then get your physical tickets at the kiosks. I should let you know that this is an “advanced train user move™️.” If you have connections you NEED to make to other trains and don’t purchase online correctly, you may miss your connections. Imagine if you booked two flights back-to-back manually, but overestimated your speed in the airport and missed your second flight. Same idea with manually booking trains. In addition, not all routes are available to be booked online. If in doubt, have one of the kind and knowledgeable desk agents book it for you.
@@ -100,12 +100,12 @@ Green Cars are distinguished the same way that female-only cars are –  with co
 
  
 
-##### High-Speed Train etiquette tips:
+##### High-Speed Train Etiquette Tips:
 
 * Stand behind the yellow lines when the train is approaching.
-* Book your seats near to the bag storage area if you have large luggage items. The bag storage area is specifically for passengers in those seats. Otherwise, you store your luggage on the rails above your head. If your luggage is too large, you will have to hang onto it. You can store your bags in these areas IF no one’s luggage is there, but if someone occupies the seats, the storage area is technically theirs.
+* Book your seats near the bag storage area if you have large luggage items. The bag storage area is specifically for passengers in those seats. Otherwise, you store your luggage on the rails above your head. If your luggage is too large, you will have to hang onto it. You can store your bags in these areas IF no one’s luggage is there, but if someone occupies the seats, the storage area is technically theirs.
 * As with ALL public transit in Japan, talking on your phone or playing any sort of audio is considered rude. Pop in your headphones and silence your phone.
-* On highspeed trains, it is not considered impolite to eat on the train. For other trains or subways, it is. If in doubt, highspeed trains have tray tables to make eating cleaner and easier. You will not find tray tables on the other
+* On high-speed trains, it is not considered impolite to eat on the train. For other trains or subways, it is. If in doubt, high-speed trains have tray tables to make eating cleaner and easier. You will not find tray tables on the other
   kinds of trains.
 * Listen to the announcements – usually told first in Japanese, then in English. They are useful to know how close you are, and, in some situations, the conductor will ask everyone to switch the seat’s directions. If this happens, a lever is on the aisle side of the chairs. Push this lever and swing the chairs around.
 
