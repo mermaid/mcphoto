@@ -72,7 +72,7 @@ Here are the Perks and Drawbacks:
 
 ·     The IC Cards do not cover highway bus fare. These busses are closer in style to Greyhound busses or tour busses.
 
-·     You have to keep track of and reload these cards. This may mean you make frequent stops at the 7/11 ATM to put more money on. This may be irksome to some people, and slightly inconvenient if you are low on funds and have to stop your fun-filled day to recharge. Make it an experience by grabbing a Pocari Sweat and a snack, it will only take about 5 minutes. 
+·     You have to keep track of and reload these cards. This may mean you make frequent stops at the 7/11 ATM to put more money on. This may be irksome to some people, and slightly inconvenient if you are low on funds and have to stop your fun-filled day to recharge. Make it an experience by grabbing a Pocari Sweat and a snack, it will only take about 5 minutes.
 
 ·     DO NOT RUN OUT OF MONEY ON YOUR CARD! I cannot emphasize this enough. One person did not have enough for her full fare and the driver held the bus until she got exact change from her bag to pay for the ride. What would happen if you ran out and couldn’t pay? I have no idea, but I didn’t get the chance to test it out. Train & Subway gates will alert you if funds are too low. There are always ATMs in the immediate vicinity if you are in this situation. A good rule of thumb in Japan is to always have cash on you, we had about 10,000 yen ($66 USD) between us, which felt pretty good. A fair amount of places we went to were cash only anyway, so it is a good idea to be prepared.
 
@@ -107,7 +107,7 @@ Green Cars are distinguished the same way that female-only cars are –  with co
 * As with ALL public transit in Japan, talking on your phone or playing any sort of audio is considered rude. Pop in your headphones and silence your phone.
 * On highspeed trains, it is not considered impolite to eat on the train. For other trains or subways, it is. If in doubt, highspeed trains have tray tables to make eating cleaner and easier. You will not find tray tables on the other
   kinds of trains.
-*  Listen to the announcements – usually told first in Japanese, then in English. They are useful to know how close you are, and, in some situations, the conductor will ask everyone to switch the seat’s directions. If this happens, a lever is on the aisle side of the chairs. Push this lever and swing the chairs around.
+* Listen to the announcements – usually told first in Japanese, then in English. They are useful to know how close you are, and, in some situations, the conductor will ask everyone to switch the seat’s directions. If this happens, a lever is on the aisle side of the chairs. Push this lever and swing the chairs around.
 
 ### Local Trains and Subways
 
@@ -176,4 +176,4 @@ Public transit in Japan is incredible. It is easy to learn and use and the most 
 
 [https://www.japan-guide.com/e/e2359\_003.html#digital](https://www.japan-guide.com/e/e2359_003.html#digital)
 
-[https://www.jrpass.com/blog/what-is-the-nozomi-train#:\~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.](https://www.jrpass.com/blog/what-is-the-nozomi-train#:~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.)
+[https://www.jrpass.com/blog/what-is-the-nozomi-train#:\~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.![](/images/PT/PT-1-2.jpg)](https://www.jrpass.com/blog/what-is-the-nozomi-train#:~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.)
