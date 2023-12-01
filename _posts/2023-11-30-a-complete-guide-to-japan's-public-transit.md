@@ -19,7 +19,7 @@ platform, which takes all of 5 steps to get to.) It is no big deal at all. Befor
 
  
 
-### ![Photo of a busy street in Japan](/images/PT/PT-1-8.jpg)JR Passes and IC Cards
+### ![Photo of a busy street in Japan](/images/PT/PT-1-8.jpg)JR Passes
 
 Most popular for international tourists, the JR passes are a convenient way to travel. You can purchase these passes for different lengths of time and use them as much as you want at any JR train, subway, and even a select few JR buses. We purchased a JR Pass for 2 weeks the first time we visited Japan (2019) and it was awesome for exploring large metropolitan areas like Tokyo, as well as going long distances between major cities. There are a few perks and drawbacks to the JR pass: 
 
@@ -124,7 +124,7 @@ This method is quite useful if you have no other way of routing yourself and are
 After riding to your stop, tap the IC card spot to be let out of the main gate area. Note which exit number you take when leaving your subway or train station. Sometimes your GPS will recommend taking a specific exit to be closer
 to your intended destination. It is also wise to remember where you came from to be able to orient yourself should you need to return the same way.
 
-##### Local Train tips:
+##### ![Monkey sitting on top of a motor bike in Kyoto Japan](/images/PT/PT-1-4.jpg)Local Train tips:
 
 * Sneezing or coughing loudly will earn you some side-eye from the locals on the train. If you are genuinely sick, it is a cultural standard to wear a mask. If you are not sick, try to sneeze/cough into a tissue or elbow as quietly as you can.
 * Blowing your nose loudly will also earn you the side-eye.
