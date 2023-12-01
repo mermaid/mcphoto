@@ -44,11 +44,13 @@ to 3 hours and 40 minutes. If time really matters, I would choose the Nozomi to 
 
 ·     JR Passes don’t work at non-JR lines. As you get away from major travel hubs like Tokyo, Kyoto, or Osaka, fewer JR line options are available. This means that you will have to pay for the subways, trains, or buses you plan to use. If you were hoping to save money, the JR Pass is no longer the way to do this, at least until their prices drop (if they ever do.) 
 
-Why doesn’t the JR pass cover the Nozomi? According to the [JR Site](https://www.jrpass.com/blog/what-is-the-nozomi-train#:~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.): 
+Why doesn’t the JR pass cover the Nozomi? According to the [JR Site](https://www.jrpass.com/blog/what-is-the-nozomi-train#:~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.):
 
 > “The answer is twofold. One reason is to keep the Nozomi for commuter travel only, and second is to offer the JR Pass at the price it currently is. Including the Nozomi would up the price significantly.”
 
 ### Onto Option B – IC Cards
+
+![Photo of a Pasmo card - one of the main payment methods for Japan's Public Transit](/images/PT/Pasmo.jpg)
 
 Everywhere accepts IC Cards, from busses, trains, subways, airport express trains, and even some vending machines. They are simply a card with money loaded onto it – like a debit card. You put money onto physical cards by visiting an ATM with IC charging capabilities. Any 7/11 ATM will do it (and they are EVERYWHERE.) As of late physical copies are not as available due to chip shortages. Certain places, like the Haneda and Narita Airports, and many train stations sell some, so keep your eye out. You can [purchase them online in advance](https://www.japan-experience.com/transportation/prepaid-cards/suica?click_id=837117e5aa22abb1a4c5f5be4a6985b0\&affiliate_id=31) and have the company mail them to you before your trip. We did this option for our Pasmo Cards and it was very convenient. The other option is to get a digital version, add it to your iPhone’s mobile wallet, and recharge it through Apple Pay. For non-iPhone users, you can download the specific IC card apps, but they are created for Japanese residents, are only in Japanese, and require a feature not found on mobile phones made outside of Japan. I would recommend NOT doing this, and buying your card in advance.
 
