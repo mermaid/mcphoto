@@ -5,7 +5,7 @@ date: 2023-11-30T07:00:00.000Z
 
 # Exploring Japan Like a Local: A Complete Guide to Japan's Public Transit
 
- 
+![Photo of train track in Kyoto under a canopy of cherry blossoms ](/images/PT/PT-1-2.jpg) 
 
 Note from Michelle: This article was written November of 2023, all prices and price conversions were made at this time and are subject to change. Keep an eye on current currency equivalents if you are planning a trip to Japan. The [ELK](https://elkapp.co/) app is a great tool to check these.
 
@@ -176,4 +176,4 @@ Public transit in Japan is incredible. It is easy to learn and use and the most 
 
 [https://www.japan-guide.com/e/e2359\_003.html#digital](https://www.japan-guide.com/e/e2359_003.html#digital)
 
-[https://www.jrpass.com/blog/what-is-the-nozomi-train#:\~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.![](/images/PT/PT-1-2.jpg)](https://www.jrpass.com/blog/what-is-the-nozomi-train#:~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.)
+[https://www.jrpass.com/blog/what-is-the-nozomi-train#:\~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.](https://www.jrpass.com/blog/what-is-the-nozomi-train#:~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.)
