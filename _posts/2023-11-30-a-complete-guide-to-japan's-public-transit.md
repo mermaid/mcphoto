@@ -19,7 +19,7 @@ platform, which takes all of 5 steps to get to.) It is no big deal at all. Befor
 
  
 
-### JR Passes and IC Cards
+### ![Photo of a busy street in Japan](/images/PT/PT-1-8.jpg)JR Passes and IC Cards
 
 Most popular for international tourists, the JR passes are a convenient way to travel. You can purchase these passes for different lengths of time and use them as much as you want at any JR train, subway, and even a select few JR buses. We purchased a JR Pass for 2 weeks the first time we visited Japan (2019) and it was awesome for exploring large metropolitan areas like Tokyo, as well as going long distances between major cities. There are a few perks and drawbacks to the JR pass: 
 
