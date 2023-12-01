@@ -25,7 +25,7 @@ Most popular for international tourists, the JR passes are a convenient way to t
 
 **Perks:**
 
-·     Super convenient! To get onto a Shinkansen, you just have to flash your pass to an attendant and they will reserve a seat for you (as all Shinkansen + the Nozomi are reserved seating.) This second trip to Japan, we did not opt for the JR Pass and had to stand in a long line to reserve both our tickets and our seats. You have to pay both your fare and for the express train reservation, whereas any normal train you would just pay for the fair. JR Passes cover both of these.
+·     Super convenient! To get onto a Shinkansen, you just have to flash your pass to an attendant and they will reserve a seat for you (as all Shinkansen + the Nozomi are reserved seating.) On this second trip to Japan, we did not opt for the JR Pass and had to stand in a long line to reserve both our tickets and our seats. You have to pay both your fare and for the express train reservation, whereas for any normal train, you would just pay for the fare. JR Passes cover both of these.
 
 ·     To get on any other JR Train that doesn’t require reserved seating, you simply show your pass at the gate window and go to your train. It is SUPER simple.
 
@@ -39,12 +39,14 @@ Most popular for international tourists, the JR passes are a convenient way to t
 
 ·     As of October 2023, the price has increased to 80,000 yen (the equivalent of $537.75 USD at the time of writing this.) Public transit itself is very inexpensive (Like 170-230 yen for a bus ride and slightly more than that at the subway or for non-JR trains depending on how far you go.) I will show a cost breakdown below, but for us, it wasn’t worth the price.
 
-·     JR passes do not include the Nozomi – which is one of the faster bullet trains in Japan. To get from Kyoto to Tokyo on the Nozomi took us 2 hours and 15 minutes, but the other main options vary from 2 hours and 40 minutes
+·     JR passes do not include the Nozomi – which is one of the fastest bullet trains in Japan. To get from Kyoto to Tokyo on the Nozomi took us 2 hours and 15 minutes, but the other main options vary from 2 hours and 40 minutes
 to 3 hours and 40 minutes. If time really matters, I would choose the Nozomi to maximize your time enjoying the beautiful country. The pass does cover the Hayabusa Train in northern Japan (Hokkaido area,) which is currently the fastest bullet train in Japan.
 
-·     JR Passes don’t work at non-JR lines. As you get away from major travel hubs like Tokyo, Kyoto, or Osaka, fewer JR line options are available. This means that you will have to pay for the subways, trains, or busses you plan to use. If you were hoping to save money, the JR Pass is no longer the way to do this, at least until their prices drop (if they ever do.) 
+·     JR Passes don’t work at non-JR lines. As you get away from major travel hubs like Tokyo, Kyoto, or Osaka, fewer JR line options are available. This means that you will have to pay for the subways, trains, or buses you plan to use. If you were hoping to save money, the JR Pass is no longer the way to do this, at least until their prices drop (if they ever do.) 
 
-Why doesn’t the JR pass cover the Nozomi? According to the [JR Site](https://www.jrpass.com/blog/what-is-the-nozomi-train#:~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.) “The answer is twofold. One reason is to keep the Nozomi for commuter travel only, and second is to offer the JR Pass at the price it currently is. Including the Nozomi would up the price significantly.”
+Why doesn’t the JR pass cover the Nozomi? According to the [JR Site](https://www.jrpass.com/blog/what-is-the-nozomi-train#:~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.): 
+
+> “The answer is twofold. One reason is to keep the Nozomi for commuter travel only, and second is to offer the JR Pass at the price it currently is. Including the Nozomi would up the price significantly.”
 
 ### Onto Option B – IC Cards
 
