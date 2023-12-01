@@ -185,6 +185,7 @@ p.clear {
 
     &.blog,
     &.post {
+        overflow: auto;
         padding: 20px;
     }
 
