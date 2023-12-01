@@ -136,6 +136,8 @@ to your intended destination. It is also wise to remember where you came from to
 Busses work the same way they work in the US, with buttons to press should you need to get off and priority seats for people in need. To use the bus, enter through the middle door, never the front. If you see an IC card tap pad, this bus charges you by distance, not a flat rate. Tap your card when you get in. Then, when your stop comes, exit through the front of the bus by the driver, tapping your card on your way out. If the bus does not have an IC card pad by the middle doors, it is a flat rate fare. Pay these when you leave! There are certain bus lines where you can purchase [day passes](https://www2.city.kyoto.lg.jp/kotsu/webguide/en/ticket/regular_1day_card_comm.html) and you pay a flat rate for the whole day. This can be an awesome deal if you want to
 see a lot of sights in one day. We saw these in Kyoto and they covered a huge amount of the city, but if you left the major metropolitan area, you would have to pay a supplemental amount to cover the extra distance. 
 
+![Man walking down the Philosopher's Path in Kyoto during cherry blossom season](/images/PT/PT-1-5.jpg)
+
 ### My actual Cost of Transit for 2 weeks in Japan (for a single person)
 
 ##### Cities Visited – Sapporo, Kinosaki Onsen, Kyoto, Osaka, and Tokyo
