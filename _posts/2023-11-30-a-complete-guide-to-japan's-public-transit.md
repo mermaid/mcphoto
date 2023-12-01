@@ -50,7 +50,7 @@ Why doesn’t the JR pass cover the Nozomi? According to the [JR Site](https://w
 
 ### Onto Option B – IC Cards
 
-Everywhere accepts IC Cards, from busses, trains, subways, airport express trains, and even some vending machines. They are simply a card with money loaded onto it – like a debit card. You put money onto physical cards by visiting an ATM with IC charging capabilities. Any 7/11 ATM will do it (and they are EVERYWHERE.) As of late physical copies are not as available due to chip shortages. Certain places, like the Haneda and Narita Airports, and many train stations sell some, so keep your eye out. You can [purchase them online in advance](https://www.japan-experience.com/transportation/prepaid-cards/suica?click_id=837117e5aa22abb1a4c5f5be4a6985b0\&affiliate_id=31) and have the company mail them to you before your trip. We did this option for our Pasmo Cards and it was very convenient. The other option is to get a digital version and add it to your iPhone’s mobile wallet and recharge it through Apple Pay. For non-iPhone users, you can download the specific IC card apps, but they are created for Japanese residents, are only in Japanese, and require a feature not found on mobile phones made outside of Japan. I would recommend NOT doing this, and buying your card in advance.
+Everywhere accepts IC Cards, from busses, trains, subways, airport express trains, and even some vending machines. They are simply a card with money loaded onto it – like a debit card. You put money onto physical cards by visiting an ATM with IC charging capabilities. Any 7/11 ATM will do it (and they are EVERYWHERE.) As of late physical copies are not as available due to chip shortages. Certain places, like the Haneda and Narita Airports, and many train stations sell some, so keep your eye out. You can [purchase them online in advance](https://www.japan-experience.com/transportation/prepaid-cards/suica?click_id=837117e5aa22abb1a4c5f5be4a6985b0\&affiliate_id=31) and have the company mail them to you before your trip. We did this option for our Pasmo Cards and it was very convenient. The other option is to get a digital version, add it to your iPhone’s mobile wallet, and recharge it through Apple Pay. For non-iPhone users, you can download the specific IC card apps, but they are created for Japanese residents, are only in Japanese, and require a feature not found on mobile phones made outside of Japan. I would recommend NOT doing this, and buying your card in advance.
 
  
 
@@ -94,7 +94,7 @@ Once you get your tickets, follow the marked signs to your Shinkansen’s platfo
 **\*A side note about specialty cars\***
 
 Many trains have “women-only cars.” This is clearly displayed with pink signs on the train car, in the train car, and on the floor markings on the platform. If you are waiting for your train and notice the floor markings are
-pink, the train car that stops where you are standing is for females only. While some of these cars only use this rule during specific times, better be safe if you aren’t a female and pick a different car.
+pink, the train car that stops where you are standing is for females only. While some of these cars only use this rule during specific times, better to be safe if you aren’t a female and pick a different car.
 
  
 
@@ -118,8 +118,6 @@ Green Cars are distinguished the same way that female-only cars are –  with co
 Local trains and subways are thoughtfully laid out and directions are available in both Japanese and English everywhere we went. The best part is that everything tends to be color-coordinated. If you are taking the Hankyu
 line and it is circled in purple, follow all of the purple arrows and you will find the correct platform. Once you tap your IC card at the gate, you can follow these signs. Then you must determine which direction you are going. If
 you look at the walls behind the trains or on the maps between the platforms, you will see signs with arrows pointing in the directions the trains are going. Then you should see labeled where you are, the stop the train is coming from will be listed on one side, and the stop where the train is going will be listed on the other with an arrow indicating the direction the train is going. Take a few moments to study the maps or information noted on the boards to help you better understand the area or any alerts there may be.
-
- 
 
 This method is quite useful if you have no other way of routing yourself and are told which line you need to take to get to your desired stop. The good news is both Apple and Google Maps are excellent and hyper-specific at getting you to the right station, platform, and even the best train car to get onto. I recommend using a GPS like this to route you, and then the aforementioned information to double-check your navigation.
 
@@ -166,7 +164,7 @@ Total spent on public transit = $270.11 (difference between the total cost of a 
 
  
 
-### Final thoughts:
+### ![Boats on a river in Arashiyama, Kyoto, Japan](/images/PT/PT-1.jpg)Final thoughts:
 
 As of right now, I do not think it is a better deal to get a JR pass. I liked having it in the past when it was less than or equal to $300 per person, but at its current price, I don’t think I would purchase it.
 
