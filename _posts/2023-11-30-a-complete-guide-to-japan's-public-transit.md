@@ -109,6 +109,8 @@ Green Cars are distinguished the same way that female-only cars are –  with co
   kinds of trains.
 * Listen to the announcements – usually told first in Japanese, then in English. They are useful to know how close you are, and, in some situations, the conductor will ask everyone to switch the seat’s directions. If this happens, a lever is on the aisle side of the chairs. Push this lever and swing the chairs around.
 
+![Busy street in Shibuya, Tokyo, Japan](/images/PT/PT-1-7.jpg)
+
 ### Local Trains and Subways
 
 Local trains and subways are thoughtfully laid out and directions are available in both Japanese and English everywhere we went. The best part is that everything tends to be color-coordinated. If you are taking the Hankyu
