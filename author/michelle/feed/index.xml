@@ -12,7 +12,7 @@
 	<atom:link href="/author/michelle/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Mon, 29 Jan 2024 05:49:24 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 05 Aug 2024 05:46:31 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -57,7 +57,7 @@
 
 
 
-<h3 class="has-text-align-left wp-block-heading" id="jr-passes">JR Passes</h3>
+<h3 class="wp-block-heading has-text-align-left" id="jr-passes">JR Passes</h3>
 
 
 
@@ -65,7 +65,7 @@
 
 
 <div class="wp-block-image">
-<figure class="alignright size-large is-resized"><img decoding="async" src="/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg" alt="Busy street in Japan" class="wp-image-61" width="377" height="565" srcset="/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg 682w, /wp-content/uploads/2024/01/PT-1-8-200x300.jpg 200w, /wp-content/uploads/2024/01/PT-1-8-768x1152.jpg 768w, /wp-content/uploads/2024/01/PT-1-8-1024x1536.jpg 1024w, /wp-content/uploads/2024/01/PT-1-8.jpg 1333w" sizes="(max-width: 377px) 100vw, 377px" /></figure></div>
+<figure class="alignright size-large is-resized"><img decoding="async" width="682" height="1024" src="/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg" alt="Busy street in Japan" class="wp-image-61" style="width:377px;height:565px" srcset="/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg 682w, /wp-content/uploads/2024/01/PT-1-8-200x300.jpg 200w, /wp-content/uploads/2024/01/PT-1-8-768x1152.jpg 768w, /wp-content/uploads/2024/01/PT-1-8-1024x1536.jpg 1024w, /wp-content/uploads/2024/01/PT-1-8.jpg 1333w" sizes="(max-width: 682px) 100vw, 682px" /></figure></div>
 
 
 <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Super convenient! To get onto a Shinkansen, you just have to flash your pass to an attendant and they will reserve a seat for you (as all Shinkansen + the Nozomi are reserved seating.) On this second trip to Japan, we did not opt for the JR Pass and had to stand in a long line to reserve both our tickets and our seats. You have to pay both your fare and for the express train reservation, whereas for any normal train, you would just pay for the fare. JR Passes cover both of these.</p>
@@ -180,7 +180,11 @@
 
 
 
-<h3 class="wp-block-heading" id="shinkansen-and-nozomi"><img decoding="async" src="https://michelleholiman.com/images/PT/PT-1-6.jpg" alt="Bridge over a river in Hiroshima Japan">Shinkansen and Nozomi</h3>
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="682" src="/wp-content/uploads/2024/01/PT-1-6-1024x682.jpg" alt="Bridge over river with cherry blossoms in bloom, Hiroshima, Japan" class="wp-image-59" srcset="/wp-content/uploads/2024/01/PT-1-6-1024x682.jpg 1024w, /wp-content/uploads/2024/01/PT-1-6-300x200.jpg 300w, /wp-content/uploads/2024/01/PT-1-6-768x512.jpg 768w, /wp-content/uploads/2024/01/PT-1-6-1536x1024.jpg 1536w, /wp-content/uploads/2024/01/PT-1-6.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h3 class="wp-block-heading" id="shinkansen-and-nozomi">Shinkansen and Nozomi</h3>
 
 
 
@@ -188,7 +192,7 @@
 
 
 <div class="wp-block-image">
-<figure class="alignright size-large is-resized"><img decoding="async" src="/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg" alt="Nozomi bullet train in a station in Tokyo, Japan" class="wp-image-64" width="246" height="436" srcset="/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg 578w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-169x300.jpeg 169w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-768x1360.jpeg 768w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-867x1536.jpeg 867w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1.jpeg 1084w" sizes="(max-width: 246px) 100vw, 246px" /></figure></div>
+<figure class="alignright size-large is-resized"><img decoding="async" width="578" height="1024" src="/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg" alt="Nozomi bullet train in a station in Tokyo, Japan" class="wp-image-64" style="width:246px;height:436px" srcset="/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg 578w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-169x300.jpeg 169w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-768x1360.jpeg 768w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-867x1536.jpeg 867w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1.jpeg 1084w" sizes="(max-width: 578px) 100vw, 578px" /></figure></div>
 
 
 <p>As I mentioned earlier on the page, these types of trains require reserved seating. Much like a plane, you cannot get on without a reservation. This means you MUST plan extra time in your travel to book your tickets. This ~usually~ doesn’t take a long time, but we have waited as long as 45 minutes to get our tickets booked one time. If you need to be somewhere at a specific time, you should try to arrive early at the station to get this squared away.</p>
@@ -257,7 +261,7 @@
 
 
 <div class="wp-block-image">
-<figure class="alignleft size-large is-resized"><img decoding="async" src="/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg" alt="Monkey on a scooter" class="wp-image-57" width="307" height="461" srcset="/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg 682w, /wp-content/uploads/2024/01/PT-1-4-200x300.jpg 200w, /wp-content/uploads/2024/01/PT-1-4-768x1152.jpg 768w, /wp-content/uploads/2024/01/PT-1-4-1024x1536.jpg 1024w, /wp-content/uploads/2024/01/PT-1-4.jpg 1333w" sizes="(max-width: 307px) 100vw, 307px" /><figcaption class="wp-element-caption">Don&#8217;t monkey around &#8211; follow these etiquette tips for a better public transit experience!</figcaption></figure></div>
+<figure class="alignleft size-large is-resized"><img decoding="async" width="682" height="1024" src="/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg" alt="Monkey on a scooter" class="wp-image-57" style="width:307px;height:461px" srcset="/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg 682w, /wp-content/uploads/2024/01/PT-1-4-200x300.jpg 200w, /wp-content/uploads/2024/01/PT-1-4-768x1152.jpg 768w, /wp-content/uploads/2024/01/PT-1-4-1024x1536.jpg 1024w, /wp-content/uploads/2024/01/PT-1-4.jpg 1333w" sizes="(max-width: 682px) 100vw, 682px" /><figcaption class="wp-element-caption">Don&#8217;t monkey around &#8211; follow these etiquette tips for a better public transit experience!</figcaption></figure></div>
 
 
 <h5 class="wp-block-heading" id="local-train-tips">Local Train tips:</h5>
