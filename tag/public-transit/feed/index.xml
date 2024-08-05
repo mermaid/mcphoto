@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Public Transit &#8211; Michell Holiman</title>
-	<atom:link href="/mcphoto/tag/public-transit/feed/" rel="self" type="application/rss+xml" />
-	<link>/mcphoto/</link>
+	<atom:link href="/tag/public-transit/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description></description>
 	<lastBuildDate>Mon, 29 Jan 2024 05:49:24 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,7 +21,7 @@
 	<generator>https://wordpress.org/?v=6.6.1</generator>
 	<item>
 		<title>Exploring Japan Like a Local: A Complete Guide to Japan’s Public Transit</title>
-		<link>/mcphoto/japan-public-transit-guide/</link>
+		<link>/japan-public-transit-guide/</link>
 		
 		<dc:creator><![CDATA[michelle]]></dc:creator>
 		<pubDate>Mon, 29 Jan 2024 05:10:39 +0000</pubDate>
@@ -29,7 +29,7 @@
 		<category><![CDATA[Japan]]></category>
 		<category><![CDATA[Public Transit]]></category>
 		<category><![CDATA[Travel Tips]]></category>
-		<guid isPermaLink="false">/mcphoto/?p=51</guid>
+		<guid isPermaLink="false">/?p=51</guid>
 
 					<description><![CDATA[30 Nov 2023 Note from Michelle: This article was written November of 2023, all prices and price conversions were made at this time and are subject to change. Keep an eye on current currency equivalents if you are planning a trip to Japan. The&#160;ELK&#160;app is a great tool to check these. &#160;Japan has one of [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -37,7 +37,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="682" src="/mcphoto/wp-content/uploads/2024/01/PT-1-2-1024x682.jpg" alt="Train Tracks under cherry blossom trees, Kyoto, Japan" class="wp-image-55" srcset="/mcphoto/wp-content/uploads/2024/01/PT-1-2-1024x682.jpg 1024w, /mcphoto/wp-content/uploads/2024/01/PT-1-2-300x200.jpg 300w, /mcphoto/wp-content/uploads/2024/01/PT-1-2-768x512.jpg 768w, /mcphoto/wp-content/uploads/2024/01/PT-1-2-1536x1024.jpg 1536w, /mcphoto/wp-content/uploads/2024/01/PT-1-2.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="682" src="/wp-content/uploads/2024/01/PT-1-2-1024x682.jpg" alt="Train Tracks under cherry blossom trees, Kyoto, Japan" class="wp-image-55" srcset="/wp-content/uploads/2024/01/PT-1-2-1024x682.jpg 1024w, /wp-content/uploads/2024/01/PT-1-2-300x200.jpg 300w, /wp-content/uploads/2024/01/PT-1-2-768x512.jpg 768w, /wp-content/uploads/2024/01/PT-1-2-1536x1024.jpg 1536w, /wp-content/uploads/2024/01/PT-1-2.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -65,7 +65,7 @@
 
 
 <div class="wp-block-image">
-<figure class="alignright size-large is-resized"><img decoding="async" src="/mcphoto/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg" alt="Busy street in Japan" class="wp-image-61" width="377" height="565" srcset="/mcphoto/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg 682w, /mcphoto/wp-content/uploads/2024/01/PT-1-8-200x300.jpg 200w, /mcphoto/wp-content/uploads/2024/01/PT-1-8-768x1152.jpg 768w, /mcphoto/wp-content/uploads/2024/01/PT-1-8-1024x1536.jpg 1024w, /mcphoto/wp-content/uploads/2024/01/PT-1-8.jpg 1333w" sizes="(max-width: 377px) 100vw, 377px" /></figure></div>
+<figure class="alignright size-large is-resized"><img decoding="async" src="/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg" alt="Busy street in Japan" class="wp-image-61" width="377" height="565" srcset="/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg 682w, /wp-content/uploads/2024/01/PT-1-8-200x300.jpg 200w, /wp-content/uploads/2024/01/PT-1-8-768x1152.jpg 768w, /wp-content/uploads/2024/01/PT-1-8-1024x1536.jpg 1024w, /wp-content/uploads/2024/01/PT-1-8.jpg 1333w" sizes="(max-width: 377px) 100vw, 377px" /></figure></div>
 
 
 <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Super convenient! To get onto a Shinkansen, you just have to flash your pass to an attendant and they will reserve a seat for you (as all Shinkansen + the Nozomi are reserved seating.) On this second trip to Japan, we did not opt for the JR Pass and had to stand in a long line to reserve both our tickets and our seats. You have to pay both your fare and for the express train reservation, whereas for any normal train, you would just pay for the fare. JR Passes cover both of these.</p>
@@ -114,7 +114,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="2560" height="1600" src="/mcphoto/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg" alt="Image of a Pasmo Card - one popular IC card used to access public transit" class="wp-image-63" srcset="/mcphoto/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg 2560w, /mcphoto/wp-content/uploads/2024/01/Pasmo-edited-300x188.jpg 300w, /mcphoto/wp-content/uploads/2024/01/Pasmo-edited-1024x640.jpg 1024w, /mcphoto/wp-content/uploads/2024/01/Pasmo-edited-768x480.jpg 768w, /mcphoto/wp-content/uploads/2024/01/Pasmo-edited-1536x960.jpg 1536w, /mcphoto/wp-content/uploads/2024/01/Pasmo-edited-2048x1280.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="2560" height="1600" src="/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg" alt="Image of a Pasmo Card - one popular IC card used to access public transit" class="wp-image-63" srcset="/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg 2560w, /wp-content/uploads/2024/01/Pasmo-edited-300x188.jpg 300w, /wp-content/uploads/2024/01/Pasmo-edited-1024x640.jpg 1024w, /wp-content/uploads/2024/01/Pasmo-edited-768x480.jpg 768w, /wp-content/uploads/2024/01/Pasmo-edited-1536x960.jpg 1536w, /wp-content/uploads/2024/01/Pasmo-edited-2048x1280.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></figure>
 
 
 
@@ -188,7 +188,7 @@
 
 
 <div class="wp-block-image">
-<figure class="alignright size-large is-resized"><img decoding="async" src="/mcphoto/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg" alt="Nozomi bullet train in a station in Tokyo, Japan" class="wp-image-64" width="246" height="436" srcset="/mcphoto/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg 578w, /mcphoto/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-169x300.jpeg 169w, /mcphoto/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-768x1360.jpeg 768w, /mcphoto/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-867x1536.jpeg 867w, /mcphoto/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1.jpeg 1084w" sizes="(max-width: 246px) 100vw, 246px" /></figure></div>
+<figure class="alignright size-large is-resized"><img decoding="async" src="/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg" alt="Nozomi bullet train in a station in Tokyo, Japan" class="wp-image-64" width="246" height="436" srcset="/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg 578w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-169x300.jpeg 169w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-768x1360.jpeg 768w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-867x1536.jpeg 867w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1.jpeg 1084w" sizes="(max-width: 246px) 100vw, 246px" /></figure></div>
 
 
 <p>As I mentioned earlier on the page, these types of trains require reserved seating. Much like a plane, you cannot get on without a reservation. This means you MUST plan extra time in your travel to book your tickets. This ~usually~ doesn’t take a long time, but we have waited as long as 45 minutes to get our tickets booked one time. If you need to be somewhere at a specific time, you should try to arrive early at the station to get this squared away.</p>
@@ -257,7 +257,7 @@
 
 
 <div class="wp-block-image">
-<figure class="alignleft size-large is-resized"><img decoding="async" src="/mcphoto/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg" alt="Monkey on a scooter" class="wp-image-57" width="307" height="461" srcset="/mcphoto/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg 682w, /mcphoto/wp-content/uploads/2024/01/PT-1-4-200x300.jpg 200w, /mcphoto/wp-content/uploads/2024/01/PT-1-4-768x1152.jpg 768w, /mcphoto/wp-content/uploads/2024/01/PT-1-4-1024x1536.jpg 1024w, /mcphoto/wp-content/uploads/2024/01/PT-1-4.jpg 1333w" sizes="(max-width: 307px) 100vw, 307px" /><figcaption class="wp-element-caption">Don&#8217;t monkey around &#8211; follow these etiquette tips for a better public transit experience!</figcaption></figure></div>
+<figure class="alignleft size-large is-resized"><img decoding="async" src="/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg" alt="Monkey on a scooter" class="wp-image-57" width="307" height="461" srcset="/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg 682w, /wp-content/uploads/2024/01/PT-1-4-200x300.jpg 200w, /wp-content/uploads/2024/01/PT-1-4-768x1152.jpg 768w, /wp-content/uploads/2024/01/PT-1-4-1024x1536.jpg 1024w, /wp-content/uploads/2024/01/PT-1-4.jpg 1333w" sizes="(max-width: 307px) 100vw, 307px" /><figcaption class="wp-element-caption">Don&#8217;t monkey around &#8211; follow these etiquette tips for a better public transit experience!</figcaption></figure></div>
 
 
 <h5 class="wp-block-heading" id="local-train-tips">Local Train tips:</h5>
