@@ -263,7 +263,7 @@ p.clear{
     }
 }
 #splash{
-    background:url("/wp-content/themes/beautiful-photo/images/splash.jpg");
+    background:url("/mcphoto/wp-content/themes/beautiful-photo/images/splash.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center
