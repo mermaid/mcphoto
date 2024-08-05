@@ -128,6 +128,10 @@
     </div>
 </div>
 <script src="/wp-content/themes/beautiful-photo/js/jquery.js"></script>
+<script src="/wp-content/themes/beautiful-photo/js/imagesloaded.pkgd.min.js"></script>
+<script src="/wp-content/themes/beautiful-photo/js/jquery.skidder.js"></script>
+<script src="/wp-content/themes/beautiful-photo/js/flickity.pkgd.min.js"></script>
+<script src="/wp-content/themes/beautiful-photo/js/jquery.validate.min.js"></script>
 <script>$(document).ready(function() {
      $('.gallery-nav').hover(function() {
         $('.gallery-nav').removeClass('hidden');
@@ -139,7 +143,12 @@
         $('.portfolio-link').removeClass('open');
      });
 });</script>
-<script>function setupContact() {
+<script>const idToHash = Array.from(document.querySelectorAll('a[data-cat]')).reduce((accl, el) => {
+    accl[el.getAttribute('data-cat')] = el.getAttribute('href');
+    return accl
+}, {});
+
+function setupContact() {
     $('#submit').click(function () {
         $('form#contact-form').submit();
     });
