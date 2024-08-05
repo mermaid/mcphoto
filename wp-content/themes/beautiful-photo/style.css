@@ -263,7 +263,7 @@ p.clear{
     }
 }
 #splash{
-    background:url("/mcphoto/wp-content/themes/beautiful-photo/images/splash.jpg");
+    background:url("/wp-content/themes/beautiful-photo/images/splash.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center
@@ -1134,4 +1134,31 @@ tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{
     bottom:0;
     transform:translateX(-2px) translateY(-1px) rotate(45deg)
 }
- 
+
+/* Posts and pages
+--------------------------------------------- */
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.entry
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
