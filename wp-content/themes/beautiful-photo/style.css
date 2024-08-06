@@ -1144,6 +1144,7 @@ tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{
 .post,
 .page {
 	margin: 0 0 1.5em;
+    word-break: break-word;
 }
 
 .updated:not(.published) {

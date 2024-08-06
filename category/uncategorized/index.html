@@ -52,6 +52,9 @@
 
 <body class="archive category category-uncategorized category-1 hfeed">
 
+<script src="/wp-content/themes/beautiful-photo/js/jquery.js"></script>
+<script src="/wp-content/themes/beautiful-photo/js/jquery.validate.min.js"></script>
+
 <div class="profile mobile-hidden">
     <img id="logo" src="/wp-content/themes/beautiful-photo/images/logo.svg">
     <img id="logo-mobile" src="/wp-content/themes/beautiful-photo/images/logo-mobile.svg">
@@ -127,11 +130,6 @@
         </div>
     </div>
 </div>
-<script src="/wp-content/themes/beautiful-photo/js/jquery.js"></script>
-<script src="/wp-content/themes/beautiful-photo/js/imagesloaded.pkgd.min.js"></script>
-<script src="/wp-content/themes/beautiful-photo/js/jquery.skidder.js"></script>
-<script src="/wp-content/themes/beautiful-photo/js/flickity.pkgd.min.js"></script>
-<script src="/wp-content/themes/beautiful-photo/js/jquery.validate.min.js"></script>
 <script>$(document).ready(function() {
      $('.gallery-nav').hover(function() {
         $('.gallery-nav').removeClass('hidden');
@@ -174,18 +172,24 @@ function setupContact() {
 
 function setupNav() {
     'use strict';
-    // if ($('#nav').hasClass('setup-complete')) {
-    //     return
-    // }
+    if (!$('#nav').hasClass('setup-complete')) {
+        $('.filter').click(function () {
+            var cat = $(this).attr('data-cat');
 
-    $('#menu-button').on('click', function (e) {
-        e.preventDefault();
-        if ($(this).hasClass('is-active')) {
-            hideProfile();
-        } else {
-            showProfile();
-        }
-    });
+            navigateTo(cat)
+        });
+
+        $('#menu-button').on('click', function (e) {
+            // debugger;
+            e.preventDefault();
+            if ($(this).hasClass('is-active')) {
+                hideProfile();
+            } else {
+                showProfile();
+            }
+        });
+    }
+
 
     function hideProfile() {
         $('#menu-button').removeClass('is-active');
@@ -217,11 +221,7 @@ function setupNav() {
         hideProfile();
     }
 
-    $('.filter').click(function () {
-        var cat = $(this).attr('data-cat');
 
-        navigateTo(cat)
-    });
 
     setupContact();
 
