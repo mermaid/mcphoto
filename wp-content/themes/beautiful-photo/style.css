@@ -2,13 +2,13 @@
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
-    -webkit-overflow-scrolling:touch
+    -webkit-overflow-scrolling:touch;
 }
 a{
-    color:rgb(117, 198, 232)
+    color:#75c6e8;
 }
 a:visited{
-    filter: brightness(85%);
+    color: #2092c2;
 }
 p.clear{
     clear:both
@@ -1173,6 +1173,12 @@ figcaption {
     font-size: var(--wp--preset--font-size--small)
 }
 
-.wp-block-post-title a {
+.wp-block-post-title a,
+.entry-title a {
+    color: #555;
+}
+
+.wp-block-post-title a:visited,
+.entry-title a:visited {
     color: #555;
 }
