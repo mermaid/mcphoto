@@ -5,10 +5,10 @@
     -webkit-overflow-scrolling:touch
 }
 a{
-    color:#999
+    color:rgb(117, 198, 232)
 }
-a:hover{
-    color:#555
+a:visited{
+    filter: brightness(85%);
 }
 p.clear{
     clear:both
@@ -114,6 +114,11 @@ p.clear{
         pointer-events:initial
     }
 }
+
+#nav a {
+    color:#999
+}   
+
 #menu-button{
     position:absolute;
     right:2vw;
@@ -125,11 +130,11 @@ p.clear{
         display:none
     }
 }
-.big-link{
+#nav .big-link {
     color:#555;
     transition:.2s all
 }
-.big-link:hover{
+#nav .big-link:hover{
     color:#111
 }
 @media (max-width: 768px){
@@ -1166,4 +1171,8 @@ tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{
 
 figcaption {
     font-size: var(--wp--preset--font-size--small)
+}
+
+.wp-block-post-title a {
+    color: #555;
 }
