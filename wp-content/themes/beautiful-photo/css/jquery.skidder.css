@@ -77,15 +77,15 @@
 .skidder-viewport .skidder-clickwrapper .skidder-prev {
   float: left;
   margin-left: 10px;
-  background-image: url('/wp-content/themes/beautiful-photo/css/images/slide_left.png');
+  background-image: url('http://nas.local/wordpress/wp-content/themes/beautiful-photo/css/images/slide_left.png');
 }
 .skidder-viewport .skidder-clickwrapper .skidder-next {
   float: right;
   margin-right: 10px;
-  background-image: url('/wp-content/themes/beautiful-photo/css/images/slide_right.png');
+  background-image: url('http://nas.local/wordpress/wp-content/themes/beautiful-photo/css/images/slide_right.png');
 }
 .skidder-viewport .skidder-clickwrapper .skidder-next.jumpback {
-  background-image: url('/wp-content/themes/beautiful-photo/css/images/slide_left.png');
+  background-image: url('http://nas.local/wordpress/wp-content/themes/beautiful-photo/css/images/slide_left.png');
 }
 
 /*TOUCHWRAPPER*/
