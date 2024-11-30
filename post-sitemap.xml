@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>/</loc>
-		<lastmod>2024-08-22T18:32:56+00:00</lastmod>
+		<lastmod>2024-11-30T20:46:12+00:00</lastmod>
 	</url>
 	<url>
 		<loc>/blog/norway-adventure-itinerary/</loc>
@@ -73,6 +73,40 @@
 		</image:image>
 		<image:image>
 			<image:loc>/wp-content/uploads/2024/08/Packing-list-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/blog/japan-public-transit-guide/</loc>
+		<lastmod>2024-11-30T20:46:12+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-2.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-2.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-8.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-6.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1.jpeg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-7.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-4.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-5.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/01/PT-1.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
