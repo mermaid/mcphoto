@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>/</loc>
-		<lastmod>2024-11-30T20:46:12+00:00</lastmod>
+		<lastmod>2025-04-08T19:29:23+00:00</lastmod>
 	</url>
 	<url>
 		<loc>/blog/norway-adventure-itinerary/</loc>
@@ -77,7 +77,7 @@
 	</url>
 	<url>
 		<loc>/blog/japan-public-transit-guide/</loc>
-		<lastmod>2024-11-30T20:46:12+00:00</lastmod>
+		<lastmod>2025-01-14T17:36:36+00:00</lastmod>
 		<image:image>
 			<image:loc>/wp-content/uploads/2024/01/PT-1-2.jpg</image:loc>
 		</image:image>
@@ -107,6 +107,67 @@
 		</image:image>
 		<image:image>
 			<image:loc>/wp-content/uploads/2024/01/PT-1.jpg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>/blog/visiting-the-us-virgin-islands-the-ultimate-guide/</loc>
+		<lastmod>2025-04-08T19:29:23+00:00</lastmod>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-19.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-19.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-28.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-3.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-5.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-2-1.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-12.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-8.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-7.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-15.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-16.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-24.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-22.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-29.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-25.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-27.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/USVI-18.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>
