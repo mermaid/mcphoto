@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://michelleholiman.com/main-sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
-		<loc>/post-sitemap.xml</loc>
+		<loc>https://michelleholiman.com/post-sitemap.xml</loc>
 		<lastmod>2025-04-09T03:21:45+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>/page-sitemap.xml</loc>
+		<loc>https://michelleholiman.com/page-sitemap.xml</loc>
 		<lastmod>2024-08-05T05:19:39+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>/category-sitemap.xml</loc>
+		<loc>https://michelleholiman.com/category-sitemap.xml</loc>
 		<lastmod>2025-04-09T03:21:45+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>/post_tag-sitemap.xml</loc>
+		<loc>https://michelleholiman.com/post_tag-sitemap.xml</loc>
 		<lastmod>2025-04-09T03:21:45+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>/author-sitemap.xml</loc>
+		<loc>https://michelleholiman.com/author-sitemap.xml</loc>
 		<lastmod>2025-01-08T05:55:33+00:00</lastmod>
 	</sitemap>
 </sitemapindex>
