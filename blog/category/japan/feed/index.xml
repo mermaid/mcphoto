@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Michelle Holiman -</title>
-	<atom:link href="https://michelleholiman.com/blog/category/japan/feed/" rel="self" type="application/rss+xml" />
-	<link>https://michelleholiman.com/</link>
+	<atom:link href="/blog/category/japan/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description></description>
 	<lastBuildDate>Tue, 14 Jan 2025 17:36:36 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,20 +21,20 @@
 	<generator>https://wordpress.org/?v=6.6.1</generator>
 	<item>
 		<title>Exploring Japan Like a Local: A Complete Guide to Japan’s Public Transit</title>
-		<link>https://michelleholiman.com/blog/japan-public-transit-guide/</link>
+		<link>/blog/japan-public-transit-guide/</link>
 		
 		<dc:creator><![CDATA[Michelle]]></dc:creator>
 		<pubDate>Mon, 29 Jan 2024 05:10:39 +0000</pubDate>
 				<category><![CDATA[Japan]]></category>
 		<category><![CDATA[Public Transit]]></category>
 		<category><![CDATA[Travel Tips]]></category>
-		<guid isPermaLink="false">https://michelleholiman.com/?p=51</guid>
+		<guid isPermaLink="false">/?p=51</guid>
 
 					<description><![CDATA[<p>Written 30 Nov 2023 Updated 14 Jan 2025Note from Michelle: This article was first written November of 2023, all prices and price conversions were made at this time and are subject to change. Keep an eye on current currency equivalents if you are planning a trip or using Japan&#8217;s public transit system. The ELK app is a [&#8230;]</p>
-<p>The post <a href="https://michelleholiman.com/blog/japan-public-transit-guide/">Exploring Japan Like a Local: A Complete Guide to Japan’s Public Transit</a> appeared first on <a href="https://michelleholiman.com/">Michelle Holiman</a>.</p>
+<p>The post <a href="/blog/japan-public-transit-guide/">Exploring Japan Like a Local: A Complete Guide to Japan’s Public Transit</a> appeared first on <a href="/">Michelle Holiman</a>.</p>
 ]]></description>
 										<content:encoded><![CDATA[
-<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="682" src="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-2-1024x682.jpg" alt="Train Tracks under cherry blossom trees, Kyoto, Japan" class="wp-image-55" srcset="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-2-1024x682.jpg 1024w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-2-300x200.jpg 300w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-2-768x512.jpg 768w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-2-1536x1024.jpg 1536w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-2.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="682" src="/wp-content/uploads/2024/01/PT-1-2-1024x682.jpg" alt="Train Tracks under cherry blossom trees, Kyoto, Japan" class="wp-image-55" srcset="/wp-content/uploads/2024/01/PT-1-2-1024x682.jpg 1024w, /wp-content/uploads/2024/01/PT-1-2-300x200.jpg 300w, /wp-content/uploads/2024/01/PT-1-2-768x512.jpg 768w, /wp-content/uploads/2024/01/PT-1-2-1536x1024.jpg 1536w, /wp-content/uploads/2024/01/PT-1-2.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -66,7 +66,7 @@
 
 
 <div class="wp-block-image">
-<figure class="alignright size-large is-resized"><img decoding="async" width="682" height="1024" src="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg" alt="Busy street in Japan" class="wp-image-61" style="width:377px;height:565px" srcset="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg 682w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-8-200x300.jpg 200w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-8-768x1152.jpg 768w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-8-1024x1536.jpg 1024w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-8.jpg 1333w" sizes="(max-width: 682px) 100vw, 682px" /></figure></div>
+<figure class="alignright size-large is-resized"><img decoding="async" width="682" height="1024" src="/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg" alt="Busy street in Japan" class="wp-image-61" style="width:377px;height:565px" srcset="/wp-content/uploads/2024/01/PT-1-8-682x1024.jpg 682w, /wp-content/uploads/2024/01/PT-1-8-200x300.jpg 200w, /wp-content/uploads/2024/01/PT-1-8-768x1152.jpg 768w, /wp-content/uploads/2024/01/PT-1-8-1024x1536.jpg 1024w, /wp-content/uploads/2024/01/PT-1-8.jpg 1333w" sizes="(max-width: 682px) 100vw, 682px" /></figure></div>
 
 
 <p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Super convenient! To get onto a Shinkansen, you just have to flash your pass to an attendant and they will reserve a seat for you (as all Shinkansen + the Nozomi are reserved seating.) On this second trip to Japan, we did not opt for the JR Pass and had to stand in a long line to reserve both our tickets and our seats. You have to pay both your fare and for the express train reservation, whereas for any normal train, you would just pay for the fare. JR Passes cover both of these.</p>
@@ -115,7 +115,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="2560" height="1600" src="https://michelleholiman.com/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg" alt="Image of a Pasmo Card - one popular IC card used to access public transit" class="wp-image-63" srcset="https://michelleholiman.com/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg 2560w, https://michelleholiman.com/wp-content/uploads/2024/01/Pasmo-edited-300x188.jpg 300w, https://michelleholiman.com/wp-content/uploads/2024/01/Pasmo-edited-1024x640.jpg 1024w, https://michelleholiman.com/wp-content/uploads/2024/01/Pasmo-edited-768x480.jpg 768w, https://michelleholiman.com/wp-content/uploads/2024/01/Pasmo-edited-1536x960.jpg 1536w, https://michelleholiman.com/wp-content/uploads/2024/01/Pasmo-edited-2048x1280.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="2560" height="1600" src="/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg" alt="Image of a Pasmo Card - one popular IC card used to access public transit" class="wp-image-63" srcset="/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg 2560w, /wp-content/uploads/2024/01/Pasmo-edited-300x188.jpg 300w, /wp-content/uploads/2024/01/Pasmo-edited-1024x640.jpg 1024w, /wp-content/uploads/2024/01/Pasmo-edited-768x480.jpg 768w, /wp-content/uploads/2024/01/Pasmo-edited-1536x960.jpg 1536w, /wp-content/uploads/2024/01/Pasmo-edited-2048x1280.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></figure>
 
 
 
@@ -185,7 +185,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="682" src="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-6-1024x682.jpg" alt="Bridge over river with cherry blossoms in bloom, Hiroshima, Japan" class="wp-image-59" srcset="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-6-1024x682.jpg 1024w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-6-300x200.jpg 300w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-6-768x512.jpg 768w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-6-1536x1024.jpg 1536w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-6.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="682" src="/wp-content/uploads/2024/01/PT-1-6-1024x682.jpg" alt="Bridge over river with cherry blossoms in bloom, Hiroshima, Japan" class="wp-image-59" srcset="/wp-content/uploads/2024/01/PT-1-6-1024x682.jpg 1024w, /wp-content/uploads/2024/01/PT-1-6-300x200.jpg 300w, /wp-content/uploads/2024/01/PT-1-6-768x512.jpg 768w, /wp-content/uploads/2024/01/PT-1-6-1536x1024.jpg 1536w, /wp-content/uploads/2024/01/PT-1-6.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -197,7 +197,7 @@
 
 
 <div class="wp-block-image">
-<figure class="alignright size-large is-resized"><img decoding="async" width="578" height="1024" src="https://michelleholiman.com/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg" alt="Nozomi bullet train in a station in Tokyo, Japan" class="wp-image-64" style="width:246px;height:436px" srcset="https://michelleholiman.com/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg 578w, https://michelleholiman.com/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-169x300.jpeg 169w, https://michelleholiman.com/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-768x1360.jpeg 768w, https://michelleholiman.com/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-867x1536.jpeg 867w, https://michelleholiman.com/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1.jpeg 1084w" sizes="(max-width: 578px) 100vw, 578px" /></figure></div>
+<figure class="alignright size-large is-resized"><img decoding="async" width="578" height="1024" src="/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg" alt="Nozomi bullet train in a station in Tokyo, Japan" class="wp-image-64" style="width:246px;height:436px" srcset="/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-578x1024.jpeg 578w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-169x300.jpeg 169w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-768x1360.jpeg 768w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1-867x1536.jpeg 867w, /wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1.jpeg 1084w" sizes="(max-width: 578px) 100vw, 578px" /></figure></div>
 
 
 <p>As I mentioned earlier on the page, these types of trains require reserved seating. Much like a plane, you cannot get on without a reservation. This means you MUST plan extra time in your travel to book your tickets. This ~usually~ doesn’t take a long time, but we once waited as long as 45 minutes to get our tickets booked. If you need to be somewhere at a specific time, you should try to arrive early at the station to get this squared away.</p>
@@ -246,7 +246,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="682" src="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-7-1024x682.jpg" alt="Shibuya Scramble Crossing in Tokyo, Japan" class="wp-image-60" srcset="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-7-1024x682.jpg 1024w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-7-300x200.jpg 300w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-7-768x512.jpg 768w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-7-1536x1024.jpg 1536w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-7.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="682" src="/wp-content/uploads/2024/01/PT-1-7-1024x682.jpg" alt="Shibuya Scramble Crossing in Tokyo, Japan" class="wp-image-60" srcset="/wp-content/uploads/2024/01/PT-1-7-1024x682.jpg 1024w, /wp-content/uploads/2024/01/PT-1-7-300x200.jpg 300w, /wp-content/uploads/2024/01/PT-1-7-768x512.jpg 768w, /wp-content/uploads/2024/01/PT-1-7-1536x1024.jpg 1536w, /wp-content/uploads/2024/01/PT-1-7.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -266,7 +266,7 @@
 
 
 <div class="wp-block-image">
-<figure class="alignleft size-large is-resized"><img decoding="async" width="682" height="1024" src="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg" alt="Monkey on a scooter" class="wp-image-57" style="width:307px;height:461px" srcset="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg 682w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-4-200x300.jpg 200w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-4-768x1152.jpg 768w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-4-1024x1536.jpg 1024w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-4.jpg 1333w" sizes="(max-width: 682px) 100vw, 682px" /><figcaption class="wp-element-caption">Don&#8217;t monkey around &#8211; follow these etiquette tips for a better public transit experience!</figcaption></figure></div>
+<figure class="alignleft size-large is-resized"><img decoding="async" width="682" height="1024" src="/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg" alt="Monkey on a scooter" class="wp-image-57" style="width:307px;height:461px" srcset="/wp-content/uploads/2024/01/PT-1-4-682x1024.jpg 682w, /wp-content/uploads/2024/01/PT-1-4-200x300.jpg 200w, /wp-content/uploads/2024/01/PT-1-4-768x1152.jpg 768w, /wp-content/uploads/2024/01/PT-1-4-1024x1536.jpg 1024w, /wp-content/uploads/2024/01/PT-1-4.jpg 1333w" sizes="(max-width: 682px) 100vw, 682px" /><figcaption class="wp-element-caption">Don&#8217;t monkey around &#8211; follow these etiquette tips for a better public transit experience!</figcaption></figure></div>
 
 
 <h5 class="wp-block-heading" id="local-train-tips">Local Train tips:</h5>
@@ -299,7 +299,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="682" src="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-5-1024x682.jpg" alt="Man walking along the Philosopher's Path during Cherry Blossom Season" class="wp-image-58" srcset="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-5-1024x682.jpg 1024w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-5-300x200.jpg 300w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-5-768x512.jpg 768w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-5-1536x1024.jpg 1536w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-5.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="682" src="/wp-content/uploads/2024/01/PT-1-5-1024x682.jpg" alt="Man walking along the Philosopher's Path during Cherry Blossom Season" class="wp-image-58" srcset="/wp-content/uploads/2024/01/PT-1-5-1024x682.jpg 1024w, /wp-content/uploads/2024/01/PT-1-5-300x200.jpg 300w, /wp-content/uploads/2024/01/PT-1-5-768x512.jpg 768w, /wp-content/uploads/2024/01/PT-1-5-1536x1024.jpg 1536w, /wp-content/uploads/2024/01/PT-1-5.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -339,7 +339,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="682" src="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-1024x682.jpg" alt="River at sunrise in Arashiyama, Kyoto, Japan" class="wp-image-62" srcset="https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-1024x682.jpg 1024w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-300x200.jpg 300w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-768x512.jpg 768w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-1536x1024.jpg 1536w, https://michelleholiman.com/wp-content/uploads/2024/01/PT-1.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="682" src="/wp-content/uploads/2024/01/PT-1-1024x682.jpg" alt="River at sunrise in Arashiyama, Kyoto, Japan" class="wp-image-62" srcset="/wp-content/uploads/2024/01/PT-1-1024x682.jpg 1024w, /wp-content/uploads/2024/01/PT-1-300x200.jpg 300w, /wp-content/uploads/2024/01/PT-1-768x512.jpg 768w, /wp-content/uploads/2024/01/PT-1-1536x1024.jpg 1536w, /wp-content/uploads/2024/01/PT-1.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -368,7 +368,7 @@
 
 
 <p><a href="https://www.jrpass.com/blog/what-is-the-nozomi-train#:~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.">https://www.jrpass.com/blog/what-is-the-nozomi-train#:~:text=Apart%20from%20that%2C%20the%20train,the%20price%20it%20currently%20is.</a></p>
-<p>The post <a href="https://michelleholiman.com/blog/japan-public-transit-guide/">Exploring Japan Like a Local: A Complete Guide to Japan’s Public Transit</a> appeared first on <a href="https://michelleholiman.com/">Michelle Holiman</a>.</p>
+<p>The post <a href="/blog/japan-public-transit-guide/">Exploring Japan Like a Local: A Complete Guide to Japan’s Public Transit</a> appeared first on <a href="/">Michelle Holiman</a>.</p>
 ]]></content:encoded>
 					
 		

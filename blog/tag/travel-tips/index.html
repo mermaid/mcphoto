@@ -41,7 +41,6 @@
 :where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style>
-<link rel="stylesheet" id="pinsavepinterest-style-css" href="/wp-content/plugins/simple-pin-it-for-pinterest/style.css?ver=1.0" media="all">
 <link rel="stylesheet" id="beautiful-photo-style-css" href="/wp-content/themes/beautiful-photo/style.css?ver=1.0.0" media="all">
 <link rel="https://api.w.org/" href="/wp-json/">
 <link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/tags/4">
@@ -53,7 +52,71 @@
 
 					<meta name="ssp-config-url" content="/wp-content/uploads/simply-static/configs/">
 		
-				
+				<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".wp-block-image img");
+  const origin = window.location.origin;
+  const pageUrl = origin + window.location.pathname;
+  const postTitle = document.title;
+
+  images.forEach((img) => {
+    // Skip if already wrapped
+    if (img.parentElement.classList.contains("pin-wrapper")) return;
+
+    // Create a new wrapper div
+    const wrapper = document.createElement("div");
+    wrapper.className = "pin-wrapper";
+    wrapper.style.position = "relative";
+    wrapper.style.display = "inline-block"; // prevent full-width wrapping
+    wrapper.style.width = img.width ? img.width + "px" : "auto";
+
+    // Insert wrapper before the image, then move the image into it
+    const parent = img.parentElement;
+    parent.insertBefore(wrapper, img);
+    wrapper.appendChild(img);
+
+    // Handle relative image URLs
+    let imageSrc = img.getAttribute("data-src") || img.getAttribute("src");
+    if (imageSrc && !imageSrc.startsWith("http")) {
+      if (!imageSrc.startsWith("/")) imageSrc = "/" + imageSrc;
+      imageSrc = origin + imageSrc;
+    }
+    if (!imageSrc) return;
+
+    // Create the Pinterest button
+    const pinBtn = document.createElement("a");
+    const pinterestUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(imageSrc)}&description=${encodeURIComponent(postTitle)}`;
+    pinBtn.setAttribute("href", pinterestUrl);
+    pinBtn.setAttribute("target", "_blank");
+    pinBtn.setAttribute("aria-label", "Pin it on Pinterest");
+    pinBtn.className = "pin-it-btn";
+
+    // Button styles
+    pinBtn.style.position = "absolute";
+    pinBtn.style.bottom = "10px";
+    pinBtn.style.right = "10px";
+    pinBtn.style.backgroundColor = "#e60023";
+    pinBtn.style.padding = "6px";
+    pinBtn.style.borderRadius = "50%";
+    pinBtn.style.display = "flex";
+    pinBtn.style.alignItems = "center";
+    pinBtn.style.justifyContent = "center";
+    pinBtn.style.width = "32px";
+    pinBtn.style.height = "32px";
+    pinBtn.style.zIndex = "10";
+    pinBtn.style.boxShadow = "0 2px 4px rgba(0,0,0,0.2)";
+    pinBtn.style.textDecoration = "none";
+
+    pinBtn.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#ffffff">
+        <path d="M12 0C5.372 0 0 5.372 0 12c0 4.99 3.657 9.128 8.438 10.146-.117-.861-.223-2.186.047-3.13.244-.84 1.575-5.35 1.575-5.35s-.4-.8-.4-1.981c0-1.856 1.076-3.242 2.417-3.242 1.14 0 1.69.855 1.69 1.878 0 1.145-.73 2.856-1.106 4.442-.316 1.338.669 2.428 1.984 2.428 2.38 0 4.204-2.506 4.204-6.123 0-3.2-2.3-5.437-5.58-5.437-3.8 0-6.03 2.85-6.03 5.796 0 1.146.443 2.376.996 3.044.11.135.125.254.093.39-.102.43-.328 1.363-.373 1.552-.058.24-.19.292-.438.176-1.63-.758-2.648-3.136-2.648-5.047 0-4.113 2.989-7.884 8.623-7.884 4.52 0 8.035 3.22 8.035 7.528 0 4.487-2.828 8.1-6.76 8.1-1.32 0-2.56-.685-2.98-1.487l-.81 3.087c-.292 1.108-1.084 2.496-1.613 3.342C9.51 23.835 10.74 24 12 24c6.628 0 12-5.372 12-12S18.628 0 12 0z"/>
+      <\/svg>
+    `;
+
+    wrapper.appendChild(pinBtn);
+  });
+});
+</script>
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
     <link href="/wp-content/themes/beautiful-photo/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/wp-content/themes/beautiful-photo/css/style.css"> -->

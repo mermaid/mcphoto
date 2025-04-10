@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://michelleholiman.com/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://michelleholiman.com/blog/tag/itineraries/</loc>
+		<loc>/blog/tag/itineraries/</loc>
 		<lastmod>2025-04-09T03:21:45+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://michelleholiman.com/blog/tag/japan/</loc>
+		<loc>/blog/tag/japan/</loc>
 		<lastmod>2025-01-14T17:36:36+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://michelleholiman.com/blog/tag/norway/</loc>
+		<loc>/blog/tag/norway/</loc>
 		<lastmod>2024-08-22T18:32:56+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://michelleholiman.com/blog/tag/packing-list/</loc>
+		<loc>/blog/tag/packing-list/</loc>
 		<lastmod>2024-08-22T18:32:56+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://michelleholiman.com/blog/tag/public-transit/</loc>
+		<loc>/blog/tag/public-transit/</loc>
 		<lastmod>2025-01-14T17:36:36+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://michelleholiman.com/blog/tag/travel-tips/</loc>
+		<loc>/blog/tag/travel-tips/</loc>
 		<lastmod>2025-04-09T03:21:45+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://michelleholiman.com/blog/tag/us-virgin-islands/</loc>
+		<loc>/blog/tag/us-virgin-islands/</loc>
 		<lastmod>2025-04-09T03:21:45+00:00</lastmod>
 	</url>
 </urlset>

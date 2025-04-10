@@ -1,173 +1,173 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://michelleholiman.com/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://michelleholiman.com/</loc>
+		<loc>/</loc>
 		<lastmod>2025-04-09T03:21:45+00:00</lastmod>
 	</url>
 	<url>
-		<loc>https://michelleholiman.com/blog/norway-adventure-itinerary/</loc>
+		<loc>/blog/norway-adventure-itinerary/</loc>
 		<lastmod>2024-08-07T15:57:32+00:00</lastmod>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-953-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-953-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-953-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-953-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-77-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-77-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-313-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-313-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-364-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-364-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-125-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-125-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-396-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-396-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-729-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-729-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-508-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-508-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-640-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-640-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-873-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-873-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-765-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-765-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-827-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-827-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-892-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-892-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Norway-975-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Norway-975-scaled.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://michelleholiman.com/blog/what-to-pack-for-your-norway-trip/</loc>
+		<loc>/blog/what-to-pack-for-your-norway-trip/</loc>
 		<lastmod>2024-08-22T18:32:56+00:00</lastmod>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Packing-list-5.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Packing-list-5.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Packing-list-5.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Packing-list-5.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Packing-list-2.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Packing-list-2.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Packing-list-1-2.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Packing-list-1-2.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Packing-list-4.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Packing-list-4.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/08/Packing-list-1.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/08/Packing-list-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://michelleholiman.com/blog/japan-public-transit-guide/</loc>
+		<loc>/blog/japan-public-transit-guide/</loc>
 		<lastmod>2025-01-14T17:36:36+00:00</lastmod>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-2.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-2.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-2.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-2.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-8.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-8.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/01/Pasmo-edited-scaled.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-6.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-6.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1.jpeg</image:loc>
+			<image:loc>/wp-content/uploads/2024/01/IMG_BE1BAB6995CC-1.jpeg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-7.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-7.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-4.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-4.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/01/PT-1-5.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/01/PT-1-5.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2024/01/PT-1.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2024/01/PT-1.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://michelleholiman.com/blog/visiting-the-us-virgin-islands-the-ultimate-guide/</loc>
+		<loc>/blog/visiting-the-us-virgin-islands-the-ultimate-guide/</loc>
 		<lastmod>2025-04-09T03:21:45+00:00</lastmod>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-19.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-19.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-19.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-19.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-28.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-28.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-3.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-3.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-5.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-5.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-2-1.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-2-1.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-12.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-12.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-8.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-8.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-7.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-7.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-15.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-15.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-16.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-16.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-24.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-24.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-22.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-22.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-29.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-29.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-25.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-25.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-27.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-27.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/USVI-18.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/USVI-18.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://michelleholiman.com/wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th.jpg</image:loc>
+			<image:loc>/wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th.jpg</image:loc>
 		</image:image>
 	</url>
 </urlset>

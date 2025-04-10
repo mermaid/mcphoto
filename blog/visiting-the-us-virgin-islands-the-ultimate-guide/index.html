@@ -53,7 +53,6 @@
 :where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style>
-<link rel="stylesheet" id="pinsavepinterest-style-css" href="/wp-content/plugins/simple-pin-it-for-pinterest/style.css?ver=1.0" media="all">
 <link rel="stylesheet" id="beautiful-photo-style-css" href="/wp-content/themes/beautiful-photo/style.css?ver=1.0.0" media="all">
 <link rel="https://api.w.org/" href="/wp-json/">
 <link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/187">
@@ -68,7 +67,71 @@
 
 					<meta name="ssp-config-url" content="/wp-content/uploads/simply-static/configs/">
 		
-				
+				<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".wp-block-image img");
+  const origin = window.location.origin;
+  const pageUrl = origin + window.location.pathname;
+  const postTitle = document.title;
+
+  images.forEach((img) => {
+    // Skip if already wrapped
+    if (img.parentElement.classList.contains("pin-wrapper")) return;
+
+    // Create a new wrapper div
+    const wrapper = document.createElement("div");
+    wrapper.className = "pin-wrapper";
+    wrapper.style.position = "relative";
+    wrapper.style.display = "inline-block"; // prevent full-width wrapping
+    wrapper.style.width = img.width ? img.width + "px" : "auto";
+
+    // Insert wrapper before the image, then move the image into it
+    const parent = img.parentElement;
+    parent.insertBefore(wrapper, img);
+    wrapper.appendChild(img);
+
+    // Handle relative image URLs
+    let imageSrc = img.getAttribute("data-src") || img.getAttribute("src");
+    if (imageSrc && !imageSrc.startsWith("http")) {
+      if (!imageSrc.startsWith("/")) imageSrc = "/" + imageSrc;
+      imageSrc = origin + imageSrc;
+    }
+    if (!imageSrc) return;
+
+    // Create the Pinterest button
+    const pinBtn = document.createElement("a");
+    const pinterestUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(imageSrc)}&description=${encodeURIComponent(postTitle)}`;
+    pinBtn.setAttribute("href", pinterestUrl);
+    pinBtn.setAttribute("target", "_blank");
+    pinBtn.setAttribute("aria-label", "Pin it on Pinterest");
+    pinBtn.className = "pin-it-btn";
+
+    // Button styles
+    pinBtn.style.position = "absolute";
+    pinBtn.style.bottom = "10px";
+    pinBtn.style.right = "10px";
+    pinBtn.style.backgroundColor = "#e60023";
+    pinBtn.style.padding = "6px";
+    pinBtn.style.borderRadius = "50%";
+    pinBtn.style.display = "flex";
+    pinBtn.style.alignItems = "center";
+    pinBtn.style.justifyContent = "center";
+    pinBtn.style.width = "32px";
+    pinBtn.style.height = "32px";
+    pinBtn.style.zIndex = "10";
+    pinBtn.style.boxShadow = "0 2px 4px rgba(0,0,0,0.2)";
+    pinBtn.style.textDecoration = "none";
+
+    pinBtn.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="#ffffff">
+        <path d="M12 0C5.372 0 0 5.372 0 12c0 4.99 3.657 9.128 8.438 10.146-.117-.861-.223-2.186.047-3.13.244-.84 1.575-5.35 1.575-5.35s-.4-.8-.4-1.981c0-1.856 1.076-3.242 2.417-3.242 1.14 0 1.69.855 1.69 1.878 0 1.145-.73 2.856-1.106 4.442-.316 1.338.669 2.428 1.984 2.428 2.38 0 4.204-2.506 4.204-6.123 0-3.2-2.3-5.437-5.58-5.437-3.8 0-6.03 2.85-6.03 5.796 0 1.146.443 2.376.996 3.044.11.135.125.254.093.39-.102.43-.328 1.363-.373 1.552-.058.24-.19.292-.438.176-1.63-.758-2.648-3.136-2.648-5.047 0-4.113 2.989-7.884 8.623-7.884 4.52 0 8.035 3.22 8.035 7.528 0 4.487-2.828 8.1-6.76 8.1-1.32 0-2.56-.685-2.98-1.487l-.81 3.087c-.292 1.108-1.084 2.496-1.613 3.342C9.51 23.835 10.74 24 12 24c6.628 0 12-5.372 12-12S18.628 0 12 0z"/>
+      <\/svg>
+    `;
+
+    wrapper.appendChild(pinBtn);
+  });
+});
+</script>
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
     <link href="/wp-content/themes/beautiful-photo/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/wp-content/themes/beautiful-photo/css/style.css"> -->
@@ -288,16 +351,7 @@ setupNav();</script>
 	
 	<div class="entry-content">
 		<div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img fetchpriority="high" decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-19-1024x683.jpg" alt="Visiting the US Virgin Islands Image 1" class="wp-image-188" srcset="/wp-content/uploads/2025/04/USVI-19-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-19-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-19-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-19.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-19-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div></figure>
+<figure class="aligncenter size-large"><img fetchpriority="high" decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-19-1024x683.jpg" alt="Visiting the US Virgin Islands Image 1" class="wp-image-188" srcset="/wp-content/uploads/2025/04/USVI-19-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-19-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-19-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-19.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
 </div>
 
 
@@ -321,17 +375,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-28-1024x683.jpg" alt="Visiting the US Virgin Islands Image 2" class="wp-image-189" srcset="/wp-content/uploads/2025/04/USVI-28-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-28-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-28-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-28.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-28-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">View of Charlotte Amalie</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-28-1024x683.jpg" alt="Visiting the US Virgin Islands Image 2" class="wp-image-189" srcset="/wp-content/uploads/2025/04/USVI-28-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-28-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-28-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-28.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">View of Charlotte Amalie</figcaption></figure>
 </div>
 
 
@@ -347,17 +391,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-1024x683.jpg" alt="Visiting the US Virgin Islands Image 3" class="wp-image-193" srcset="/wp-content/uploads/2025/04/USVI-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">Magen&#8217;s Bay</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-1024x683.jpg" alt="Visiting the US Virgin Islands Image 3" class="wp-image-193" srcset="/wp-content/uploads/2025/04/USVI-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">Magen&#8217;s Bay</figcaption></figure>
 </div>
 
 
@@ -391,17 +425,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-3-1024x683.jpg" alt="Visiting the US Virgin Islands Image 4" class="wp-image-191" srcset="/wp-content/uploads/2025/04/USVI-3-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-3-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-3-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-3.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-3-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">View from Drake&#8217;s Seat</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-3-1024x683.jpg" alt="Visiting the US Virgin Islands Image 4" class="wp-image-191" srcset="/wp-content/uploads/2025/04/USVI-3-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-3-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-3-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-3.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">View from Drake&#8217;s Seat</figcaption></figure>
 </div>
 
 
@@ -431,17 +455,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-5-1024x683.jpg" alt="Visiting the US Virgin Islands Image 5" class="wp-image-192" srcset="/wp-content/uploads/2025/04/USVI-5-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-5-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-5-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-5.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-5-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">Fort Christian</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-5-1024x683.jpg" alt="Visiting the US Virgin Islands Image 5" class="wp-image-192" srcset="/wp-content/uploads/2025/04/USVI-5-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-5-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-5-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-5.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">Fort Christian</figcaption></figure>
 </div>
 
 
@@ -467,17 +481,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-2-1-1024x683.jpg" alt="Visiting the US Virgin Islands Image 6" class="wp-image-194" srcset="/wp-content/uploads/2025/04/USVI-2-1-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-2-1-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-2-1-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-2-1.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-2-1-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">Secret Harbor Beach</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-2-1-1024x683.jpg" alt="Visiting the US Virgin Islands Image 6" class="wp-image-194" srcset="/wp-content/uploads/2025/04/USVI-2-1-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-2-1-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-2-1-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-2-1.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">Secret Harbor Beach</figcaption></figure>
 </div>
 
 
@@ -519,17 +523,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-12-1024x683.jpg" alt="Visiting the US Virgin Islands Image 7" class="wp-image-195" srcset="/wp-content/uploads/2025/04/USVI-12-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-12-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-12-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-12.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-12-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">View of Trunk Bay in St John</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-12-1024x683.jpg" alt="Visiting the US Virgin Islands Image 7" class="wp-image-195" srcset="/wp-content/uploads/2025/04/USVI-12-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-12-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-12-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-12.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">View of Trunk Bay in St John</figcaption></figure>
 </div>
 
 
@@ -545,17 +539,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-8-1024x683.jpg" alt="Visiting the US Virgin Islands Image 8" class="wp-image-202" srcset="/wp-content/uploads/2025/04/USVI-8-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-8-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-8-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-8.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-8-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">Palm Tree at Oppenheimer/Gibney Beach</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-8-1024x683.jpg" alt="Visiting the US Virgin Islands Image 8" class="wp-image-202" srcset="/wp-content/uploads/2025/04/USVI-8-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-8-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-8-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-8.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">Palm Tree at Oppenheimer/Gibney Beach</figcaption></figure>
 </div>
 
 
@@ -597,17 +581,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-7-1024x683.jpg" alt="Visiting the US Virgin Islands Image 9" class="wp-image-198" srcset="/wp-content/uploads/2025/04/USVI-7-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-7-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-7-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-7.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-7-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">Cruz Bay from Lind Point Trail</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-7-1024x683.jpg" alt="Visiting the US Virgin Islands Image 9" class="wp-image-198" srcset="/wp-content/uploads/2025/04/USVI-7-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-7-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-7-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-7.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">Cruz Bay from Lind Point Trail</figcaption></figure>
 </div>
 
 
@@ -633,17 +607,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-15-1024x683.jpg" alt="Visiting the US Virgin Islands Image 10" class="wp-image-199" srcset="/wp-content/uploads/2025/04/USVI-15-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-15-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-15-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-15.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-15-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">Catherineberg Ruins</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-15-1024x683.jpg" alt="Visiting the US Virgin Islands Image 10" class="wp-image-199" srcset="/wp-content/uploads/2025/04/USVI-15-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-15-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-15-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-15.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">Catherineberg Ruins</figcaption></figure>
 </div>
 
 
@@ -677,17 +641,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-16-1024x683.jpg" alt="" class="wp-image-200" srcset="/wp-content/uploads/2025/04/USVI-16-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-16-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-16-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-16.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-16-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">View from The Windmill Bar</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-16-1024x683.jpg" alt="" class="wp-image-200" srcset="/wp-content/uploads/2025/04/USVI-16-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-16-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-16-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-16.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">View from The Windmill Bar</figcaption></figure>
 </div>
 
 
@@ -753,17 +707,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-24-1024x683.jpg" alt="" class="wp-image-201" srcset="/wp-content/uploads/2025/04/USVI-24-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-24-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-24-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-24.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-24-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">Frederiksted Pier</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-24-1024x683.jpg" alt="" class="wp-image-201" srcset="/wp-content/uploads/2025/04/USVI-24-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-24-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-24-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-24.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">Frederiksted Pier</figcaption></figure>
 </div>
 
 
@@ -775,17 +719,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-22-1024x683.jpg" alt="" class="wp-image-203" srcset="/wp-content/uploads/2025/04/USVI-22-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-22-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-22-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-22.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-22-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">Sandy Point Beach</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-22-1024x683.jpg" alt="" class="wp-image-203" srcset="/wp-content/uploads/2025/04/USVI-22-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-22-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-22-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-22.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">Sandy Point Beach</figcaption></figure>
 </div>
 
 
@@ -823,17 +757,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-29-1024x683.jpg" alt="" class="wp-image-204" srcset="/wp-content/uploads/2025/04/USVI-29-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-29-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-29-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-29.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-29-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">View from Point Udall</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-29-1024x683.jpg" alt="" class="wp-image-204" srcset="/wp-content/uploads/2025/04/USVI-29-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-29-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-29-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-29.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">View from Point Udall</figcaption></figure>
 </div>
 
 
@@ -855,17 +779,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-25-1024x683.jpg" alt="Visiting the US Virgin Islands Image 15" class="wp-image-205" srcset="/wp-content/uploads/2025/04/USVI-25-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-25-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-25-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-25.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-25-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">Annaly Bay Tide Pools</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-25-1024x683.jpg" alt="Visiting the US Virgin Islands Image 15" class="wp-image-205" srcset="/wp-content/uploads/2025/04/USVI-25-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-25-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-25-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-25.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">Annaly Bay Tide Pools</figcaption></figure>
 </div>
 
 
@@ -903,17 +817,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-27-1024x683.jpg" alt="Visiting the US Virgin Islands Image 16" class="wp-image-207" srcset="/wp-content/uploads/2025/04/USVI-27-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-27-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-27-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-27.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-27-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div>
-<figcaption class="wp-element-caption">Plentiful food places on the Christiansted Boardwalk</figcaption></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-27-1024x683.jpg" alt="Visiting the US Virgin Islands Image 16" class="wp-image-207" srcset="/wp-content/uploads/2025/04/USVI-27-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-27-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-27-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-27.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption class="wp-element-caption">Plentiful food places on the Christiansted Boardwalk</figcaption></figure>
 </div>
 
 
@@ -959,16 +863,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-18-1024x683.jpg" alt="" class="wp-image-208" srcset="/wp-content/uploads/2025/04/USVI-18-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-18-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-18-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-18.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/USVI-18-1024x683.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="/wp-content/uploads/2025/04/USVI-18-1024x683.jpg" alt="" class="wp-image-208" srcset="/wp-content/uploads/2025/04/USVI-18-1024x683.jpg 1024w, /wp-content/uploads/2025/04/USVI-18-300x200.jpg 300w, /wp-content/uploads/2025/04/USVI-18-768x512.jpg 768w, /wp-content/uploads/2025/04/USVI-18.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
 </div>
 
 
@@ -988,16 +883,7 @@ setupNav();</script>
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large"><div class="pin-it-container " style="position:relative; display:inline-block;">
-<img decoding="async" width="683" height="1024" src="/wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th-683x1024.jpg" alt="Image that says &quot;Visiting the US Virgin Islands - The Ultimate Guide&quot;" class="wp-image-209" srcset="/wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th-683x1024.jpg 683w, /wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th-200x300.jpg 200w, /wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th-768x1152.jpg 768w, /wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th.jpg 1000w" sizes="(max-width: 683px) 100vw, 683px"><a class="pinsavepinterest-pin-it-button top-left" target="_blank" rel="noopener" title="Save" aria-label="Save" href="https://pinterest.com/pin/create/bookmarklet/?media=/wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th-683x1024.jpg&url=/blog/visiting-the-us-virgin-islands-the-ultimate-guide/&description=Visiting the US Virgin Islands &#8211; the Ultimate Guide" style="background-color:/#dd0b0b; color:#ffffff; text-decoration:none; display:flex; align-items:center;">
-                    <span class="pinsavepinterest-network-icon" style="display:flex; align-items:center; margin-right:5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="32" viewbox="0 0 23 32">
-                            <path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path>
-                        </svg>
-                    </span>
-                    <span class="pinsavepinterest-pin-it-text" style="display:flex; align-items:center;">Save</span>
-                </a>
-            </div></figure>
+<figure class="aligncenter size-large"><img decoding="async" width="683" height="1024" src="/wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th-683x1024.jpg" alt="Image that says &quot;Visiting the US Virgin Islands - The Ultimate Guide&quot;" class="wp-image-209" srcset="/wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th-683x1024.jpg 683w, /wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th-200x300.jpg 200w, /wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th-768x1152.jpg 768w, /wp-content/uploads/2025/04/Visiting-the-US-Virgin-Islands-Th.jpg 1000w" sizes="(max-width: 683px) 100vw, 683px"></figure>
 </div>	</div>
 <!-- .entry-content -->
 
