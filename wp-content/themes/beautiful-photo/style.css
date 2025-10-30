@@ -456,7 +456,7 @@ p.clear{
     text-align:center;
     border-spacing:8px;
     overflow:hidden;
-    max-height:200px;
+    max-height:288px;
     opacity:1;
     transition:.2s all
 }
@@ -486,7 +486,7 @@ p.clear{
     opacity:0
 }
 .portfolio-link:hover .gallery-nav.hidden{
-    max-height:200px;
+    max-height:288px;
     opacity:1
 }
 .portfolio-link:hover .big-link{
