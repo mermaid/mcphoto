@@ -19,6 +19,6 @@
   "homepage": "https://github.com/mermaid/mcphoto#readme",
   "dependencies": {
     "@tinacms/cli": "^1.5.31",
-    "tinacms": "^1.5.22"
+    "tinacms": "^3.1.1"
   }
 }
